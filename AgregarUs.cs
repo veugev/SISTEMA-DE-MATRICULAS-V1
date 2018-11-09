@@ -15,6 +15,8 @@ namespace SISTEMA_DE_MATRICULA_V1
         public AgregarUs()
         {
             InitializeComponent();
+
+            button1.BackgroundImage = Properties.Resources.button_icon_png_19;
         }
 
         private void button1_Click(object sender, EventArgs e)
