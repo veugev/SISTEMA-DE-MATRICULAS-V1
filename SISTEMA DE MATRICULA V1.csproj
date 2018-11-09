@@ -1,0 +1,248 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{92BFCDE4-6D5C-4812-A961-4EA1EDF033A4}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>SISTEMA_DE_MATRICULA_V1</RootNamespace>
+    <AssemblyName>SISTEMA DE MATRICULA V1</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MySql.Data, Version=6.10.8.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Administradores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administradores.Designer.cs">
+      <DependentUpon>Administradores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AgregarUs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AgregarUs.Designer.cs">
+      <DependentUpon>AgregarUs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BdConexion.cs" />
+    <Compile Include="LoginDir.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginDir.Designer.cs">
+      <DependentUpon>LoginDir.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Perfil_Soporte.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Perfil_Soporte.Designer.cs">
+      <DependentUpon>Perfil_Soporte.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginAdm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginAdm.Designer.cs">
+      <DependentUpon>LoginAdm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Agresar_Usuario1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Agresar_Usuario1.Designer.cs">
+      <DependentUpon>Agresar_Usuario1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tipos_Usuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tipos_Usuario.Designer.cs">
+      <DependentUpon>Tipos_Usuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Administradores.resx">
+      <DependentUpon>Administradores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AgregarUs.resx">
+      <DependentUpon>AgregarUs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginAdm.resx">
+      <DependentUpon>LoginAdm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginDir.resx">
+      <DependentUpon>LoginDir.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Perfil_Soporte.resx">
+      <DependentUpon>Perfil_Soporte.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Agresar_Usuario1.resx">
+      <DependentUpon>Agresar_Usuario1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tipos_Usuario.resx">
+      <DependentUpon>Tipos_Usuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fondo1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Administrador.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cuadrado2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LOGO 2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\people.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\button-icon-png-19.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\button-icon-png-20.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\button-icon-png-21.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Btn_Amarillo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Btn_Azulmarino.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Btn_Celeste.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Btn_Naranjo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Btn_Plomo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Btn_Rojo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Btn_Verde.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Btn_Violeta.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fondo 2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_Teachers-24_103847.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3592835 - general hierachy map office site structure.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3592847 - general office repair repair tool screwdriver tools wrench.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3592854 - add user business man employee general human member office.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3592869 - compose create edit edit file office pencil writing creative.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3592873 - document general letter note office page paper.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3592826 - employee human member office remove remove user user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3592844 - general office rising star shooting star star starred.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SALIR.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AGREGAR USER.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CURSOS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ELIMINAR USER.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exitPerson.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HERRAMIENTAS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MATRICULA.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MODIFICAR USER.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\REPORTES.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\USUARIOS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
