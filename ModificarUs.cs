@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace SISTEMA_DE_MATRICULA_V1
 {
-    public partial class AgregarUs : Form
+    public partial class ModificarUs : Form
     {
-        public AgregarUs()
+        public ModificarUs()
         {
             InitializeComponent();
 
@@ -30,16 +30,6 @@ namespace SISTEMA_DE_MATRICULA_V1
         }
 
         private void textBox3_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void button2_Click(object sender, EventArgs e)
         {
 
         }

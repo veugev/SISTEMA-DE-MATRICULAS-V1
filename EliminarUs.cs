@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace SISTEMA_DE_MATRICULA_V1
 {
-    public partial class AgregarUs : Form
+    public partial class EliminarUs : Form
     {
-        public AgregarUs()
+        public EliminarUs()
         {
             InitializeComponent();
 

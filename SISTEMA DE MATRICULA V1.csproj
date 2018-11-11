@@ -53,6 +53,18 @@
     <Compile Include="Administradores.Designer.cs">
       <DependentUpon>Administradores.cs</DependentUpon>
     </Compile>
+    <Compile Include="EliminarUs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EliminarUs.Designer.cs">
+      <DependentUpon>EliminarUs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModificarUs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModificarUs.Designer.cs">
+      <DependentUpon>ModificarUs.cs</DependentUpon>
+    </Compile>
     <Compile Include="AgregarUs.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -94,6 +106,12 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Administradores.resx">
       <DependentUpon>Administradores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EliminarUs.resx">
+      <DependentUpon>EliminarUs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModificarUs.resx">
+      <DependentUpon>ModificarUs.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="AgregarUs.resx">
       <DependentUpon>AgregarUs.cs</DependentUpon>
