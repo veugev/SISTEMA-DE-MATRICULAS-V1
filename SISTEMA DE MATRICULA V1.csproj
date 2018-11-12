@@ -53,6 +53,18 @@
     <Compile Include="Administradores.Designer.cs">
       <DependentUpon>Administradores.cs</DependentUpon>
     </Compile>
+    <Compile Include="ListasCurso.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListasCurso.Designer.cs">
+      <DependentUpon>ListasCurso.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cursos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cursos.Designer.cs">
+      <DependentUpon>Cursos.cs</DependentUpon>
+    </Compile>
     <Compile Include="EliminarUs.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -118,6 +130,12 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Administradores.resx">
       <DependentUpon>Administradores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListasCurso.resx">
+      <DependentUpon>ListasCurso.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cursos.resx">
+      <DependentUpon>Cursos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="EliminarUs.resx">
       <DependentUpon>EliminarUs.cs</DependentUpon>
