@@ -16,11 +16,11 @@ namespace SISTEMA_DE_MATRICULA_V1
         {
             InitializeComponent();
             
-            button1.BackgroundImage = Properties.Resources.Btn_Celeste;
+          
             button2.BackgroundImage = Properties.Resources.Btn_Celeste;
             button3.BackgroundImage = Properties.Resources.Btn_Celeste;
             button4.BackgroundImage = Properties.Resources.Btn_Celeste;
-            button5.BackgroundImage = Properties.Resources.Btn_Celeste;
+         
 
             this.MaximizeBox = false;
 
@@ -37,17 +37,10 @@ namespace SISTEMA_DE_MATRICULA_V1
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            Administradores cambiarformAd = new Administradores();
-            cambiarformAd.Show();
-            this.Hide();
-        }
-
+        
         private void button2_Click(object sender, EventArgs e)
         {
-            BdConexion.ObtenerConexion();
-            MessageBox.Show("conectado exitosamente");
+            
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -65,15 +58,7 @@ namespace SISTEMA_DE_MATRICULA_V1
             
         }
 
-        private void button1_MouseMove(object sender, MouseEventArgs e)
-        {
-            button1.BackgroundImage = Properties.Resources.Btn_Verde;
-        }
-
-        private void button1_MouseLeave(object sender, EventArgs e)
-        {
-            button1.BackgroundImage = Properties.Resources.Btn_Celeste;
-        }
+        
 
         private void button2_MouseMove(object sender, MouseEventArgs e)
         {
@@ -105,15 +90,7 @@ namespace SISTEMA_DE_MATRICULA_V1
             button4.BackgroundImage = Properties.Resources.Btn_Celeste;
         }
 
-        private void button5_MouseMove(object sender, MouseEventArgs e)
-        {
-            button5.BackgroundImage = Properties.Resources.Btn_Verde;
-        }
-
-        private void button5_MouseLeave(object sender, EventArgs e)
-        {
-            button5.BackgroundImage = Properties.Resources.Btn_Celeste;
-        }
+       
 
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
@@ -149,6 +126,11 @@ namespace SISTEMA_DE_MATRICULA_V1
         {
             Administradores entrarAgregarUs = new Administradores();
             entrarAgregarUs.Show();
+        }
+
+        private void pictureBox5_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

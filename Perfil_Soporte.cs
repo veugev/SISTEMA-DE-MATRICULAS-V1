@@ -46,8 +46,8 @@ namespace SISTEMA_DE_MATRICULA_V1
 
         private void button2_Click(object sender, EventArgs e)
         {
-            BdConexion.ObtenerConexion();
-            MessageBox.Show("conectado exitosamente");
+            
+           
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -149,6 +149,11 @@ namespace SISTEMA_DE_MATRICULA_V1
         {
             Administradores entrarAgregarUs = new Administradores();
             entrarAgregarUs.Show();
+        }
+
+        private void pictureBox4_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

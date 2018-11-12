@@ -47,6 +47,24 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="LibroMatricula.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LibroMatricula.Designer.cs">
+      <DependentUpon>LibroMatricula.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Matriculas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Matriculas.Designer.cs">
+      <DependentUpon>Matriculas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GestionMatricula.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GestionMatricula.Designer.cs">
+      <DependentUpon>GestionMatricula.cs</DependentUpon>
+    </Compile>
     <Compile Include="Administradores.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -128,6 +146,15 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="LibroMatricula.resx">
+      <DependentUpon>LibroMatricula.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Matriculas.resx">
+      <DependentUpon>Matriculas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestionMatricula.resx">
+      <DependentUpon>GestionMatricula.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Administradores.resx">
       <DependentUpon>Administradores.cs</DependentUpon>
     </EmbeddedResource>
@@ -297,6 +324,12 @@
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LIBRO DE MATRICULA.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\REGISTRO 2.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

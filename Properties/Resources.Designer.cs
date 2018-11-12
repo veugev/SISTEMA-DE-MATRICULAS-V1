@@ -343,6 +343,16 @@ namespace SISTEMA_DE_MATRICULA_V1.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap LIBRO_DE_MATRICULA {
+            get {
+                object obj = ResourceManager.GetObject("LIBRO DE MATRICULA", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap logo {
             get {
                 object obj = ResourceManager.GetObject("logo", resourceCulture);
@@ -386,6 +396,16 @@ namespace SISTEMA_DE_MATRICULA_V1.Properties {
         internal static System.Drawing.Bitmap people {
             get {
                 object obj = ResourceManager.GetObject("people", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap REGISTRO_2 {
+            get {
+                object obj = ResourceManager.GetObject("REGISTRO 2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

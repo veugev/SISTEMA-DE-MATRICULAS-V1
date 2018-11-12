@@ -1,6 +1,6 @@
 ﻿namespace SISTEMA_DE_MATRICULA_V1
 {
-    partial class Administradores
+    partial class GestionMatricula
     {
         /// <summary>
         /// Required designer variable.
@@ -29,16 +29,16 @@
         private void InitializeComponent()
         {
             this.panel2 = new System.Windows.Forms.Panel();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel_contenedor = new System.Windows.Forms.Panel();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.SuspendLayout();
             // 
             // panel2
@@ -54,10 +54,20 @@
             this.panel2.Size = new System.Drawing.Size(128, 514);
             this.panel2.TabIndex = 0;
             // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Image = global::SISTEMA_DE_MATRICULA_V1.Properties.Resources.LIBRO_DE_MATRICULA;
+            this.pictureBox4.Location = new System.Drawing.Point(12, 252);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(97, 97);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox4.TabIndex = 3;
+            this.pictureBox4.TabStop = false;
+            // 
             // pictureBox3
             // 
             this.pictureBox3.Image = global::SISTEMA_DE_MATRICULA_V1.Properties.Resources.exitPerson;
-            this.pictureBox3.Location = new System.Drawing.Point(12, 382);
+            this.pictureBox3.Location = new System.Drawing.Point(12, 368);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(97, 97);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -66,8 +76,8 @@
             // 
             // pictureBox2
             // 
-            this.pictureBox2.Image = global::SISTEMA_DE_MATRICULA_V1.Properties.Resources.ELIMINAR_USER;
-            this.pictureBox2.Location = new System.Drawing.Point(12, 261);
+            this.pictureBox2.Image = global::SISTEMA_DE_MATRICULA_V1.Properties.Resources.MATRICULA;
+            this.pictureBox2.Location = new System.Drawing.Point(12, 137);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(97, 97);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -76,7 +86,7 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::SISTEMA_DE_MATRICULA_V1.Properties.Resources.AGREGAR_USER;
+            this.pictureBox1.Image = global::SISTEMA_DE_MATRICULA_V1.Properties.Resources.REGISTRO_2;
             this.pictureBox1.Location = new System.Drawing.Point(12, 23);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(97, 97);
@@ -95,18 +105,9 @@
             this.panel_contenedor.Name = "panel_contenedor";
             this.panel_contenedor.Size = new System.Drawing.Size(738, 514);
             this.panel_contenedor.TabIndex = 1;
+            this.panel_contenedor.Paint += new System.Windows.Forms.PaintEventHandler(this.panel_contenedor_Paint);
             // 
-            // pictureBox4
-            // 
-            this.pictureBox4.Image = global::SISTEMA_DE_MATRICULA_V1.Properties.Resources.MODIFICAR_USER;
-            this.pictureBox4.Location = new System.Drawing.Point(12, 142);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(97, 97);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox4.TabIndex = 3;
-            this.pictureBox4.TabStop = false;
-            // 
-            // Administradores
+            // GestionMatricula
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -114,14 +115,14 @@
             this.ClientSize = new System.Drawing.Size(868, 514);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel_contenedor);
-            this.Name = "Administradores";
+            this.Name = "GestionMatricula";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "AGREGAR ADMINISTRADORES";
             this.panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.ResumeLayout(false);
 
         }

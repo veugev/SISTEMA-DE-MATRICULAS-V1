@@ -226,6 +226,7 @@
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox4.TabIndex = 13;
             this.pictureBox4.TabStop = false;
+            this.pictureBox4.Click += new System.EventHandler(this.pictureBox4_Click);
             // 
             // pictureBox3
             // 
@@ -314,7 +315,7 @@
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
-            // Perfil_Soporte
+            // Perfil_Administrador
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -324,7 +325,7 @@
             this.Controls.Add(this.panel1);
             this.Controls.Add(flowLayoutPanel1);
             this.Controls.Add(this.panel2);
-            this.Name = "Perfil_Soporte";
+            this.Name = "Perfil_Administrador";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "SOPORTE";
             this.Load += new System.EventHandler(this.Perfil_Soporte_Load);

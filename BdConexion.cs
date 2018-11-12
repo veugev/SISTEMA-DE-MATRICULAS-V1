@@ -7,15 +7,53 @@ using MySql.Data.MySqlClient;
 	
 namespace SISTEMA_DE_MATRICULA_V1
 {
-    public class BdConexion
+    class BdConexion
     {
-
-        public static MySqlConnection ObtenerConexion()
+        private MySqlConnection conexion;
+        private string servidor;
+        private string baseDatos;
+        private string usuario;
+        private string password;
+        public BdConexion()
         {
-            MySqlConnection conectar = new MySqlConnection("server=127.0.0.1; database=matricula; Uid=root; pwd=;");
+            establecerConfiguracion();
+        }
 
-            conectar.Open();
-            return conectar;
+        //Se configura la conexion al SGBD MySql, el constructor de la clase MySqlConnection establece la conexion de
+        //acuerdo a los parametros establecidos.
+        private void establecerConfiguracion()
+        {
+            servidor = "127.0.0.1";
+            baseDatos = "matricula";
+            usuario = "root";
+            password = "";
+            string cadenaConexion = "SERVER=" + servidor + ";" + "DATABASE=" + baseDatos + ";" + "UID=" + usuario + ";" + "PASSWORD=" + password + ";";
+            conexion = new MySqlConnection(cadenaConexion);
+        }
+
+        public bool abrirConexion()
+        {
+            try
+            {
+                conexion.Open();
+                return true;
+            }
+            catch (MySqlException ex)
+            {
+                return false;
+            }
+        }
+        public bool cerrarConexion()
+        {
+            try
+            {
+                conexion.Close();
+                return true;
+            }
+            catch (MySqlException ex)
+            {
+                return false;
+            }
         }
     }
 }

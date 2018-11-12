@@ -124,8 +124,8 @@
   <data name="cuadrado2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\cuadrado2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="button-icon-png-19" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\button-icon-png-19.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="3592869 - compose create edit edit file office pencil writing creative" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\3592869 - compose create edit edit file office pencil writing creative.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Administrador" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Administrador.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -136,11 +136,8 @@
   <data name="AGREGAR USER" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\AGREGAR USER.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="3592854 - add user business man employee general human member office" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\3592854 - add user business man employee general human member office.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="ELIMINAR USER" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ELIMINAR USER.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="USUARIOS" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\USUARIOS.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="exitPerson" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\exitPerson.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -151,8 +148,11 @@
   <data name="Btn_Celeste" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Btn_Celeste.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="logo" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\logo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="button-icon-png-19" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\button-icon-png-19.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="HERRAMIENTAS" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\HERRAMIENTAS.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Btn_Verde" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Btn_Verde.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -169,17 +169,11 @@
   <data name="Btn_Amarillo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Btn_Amarillo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="HERRAMIENTAS" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\HERRAMIENTAS.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="3592844 - general office rising star shooting star star starred" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\3592844 - general office rising star shooting star star starred.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="3592869 - compose create edit edit file office pencil writing creative" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\3592869 - compose create edit edit file office pencil writing creative.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="REPORTES" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\REPORTES.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ELIMINAR USER" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ELIMINAR USER.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="SALIR" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\SALIR.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -193,14 +187,23 @@
   <data name="3592847 - general office repair repair tool screwdriver tools wrench" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\3592847 - general office repair repair tool screwdriver tools wrench.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="3592844 - general office rising star shooting star star starred" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\3592844 - general office rising star shooting star star starred.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="3592835 - general hierachy map office site structure" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\3592835 - general hierachy map office site structure.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Btn_Naranjo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Btn_Naranjo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Btn_Azulmarino" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Btn_Azulmarino.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="3592826 - employee human member office remove remove user user" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\3592826 - employee human member office remove remove user user.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="logo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\logo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="CURSOS" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\CURSOS.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -208,8 +211,8 @@
   <data name="LOGO 2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\LOGO 2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Btn_Azulmarino" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Btn_Azulmarino.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="3592854 - add user business man employee general human member office" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\3592854 - add user business man employee general human member office.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="3592873 - document general letter note office page paper" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\3592873 - document general letter note office page paper.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -223,7 +226,10 @@
   <data name="people" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\people.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="USUARIOS" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\USUARIOS.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="LIBRO DE MATRICULA" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\LIBRO DE MATRICULA.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="REGISTRO 2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\REGISTRO 2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
