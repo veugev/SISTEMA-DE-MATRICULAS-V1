@@ -231,6 +231,7 @@
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "LoginAdm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "INICIO DE SESION";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.panel1.ResumeLayout(false);

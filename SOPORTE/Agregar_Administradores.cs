@@ -5,9 +5,9 @@ using System.Windows.Forms;
 
 namespace SISTEMA_DE_MATRICULA_V1
 {
-    public partial class Tipos_Usuarios : Form
+    public partial class Agregar_Administradores: Form
     {
-        public Tipos_Usuarios()
+        public Agregar_Administradores()
         {
             InitializeComponent();
             button1.BackgroundImage = Properties.Resources.button_icon_png_20;
@@ -61,6 +61,11 @@ namespace SISTEMA_DE_MATRICULA_V1
         private void Tipos_Usuarios_FormClosed(object sender, FormClosedEventArgs e)
         {
             Application.Exit();
+        }
+
+        private void Agregar_Administradores_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

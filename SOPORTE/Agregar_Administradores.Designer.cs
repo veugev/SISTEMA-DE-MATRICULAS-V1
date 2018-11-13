@@ -1,6 +1,6 @@
 ﻿namespace SISTEMA_DE_MATRICULA_V1
 {
-    partial class Tipos_Usuarios
+    partial class Agregar_Administradores
     {
         /// <summary>
         /// Variable del diseñador necesaria.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Tipos_Usuarios));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Agregar_Administradores));
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.button1 = new System.Windows.Forms.Button();
@@ -129,7 +129,7 @@
             this.button2.MouseLeave += new System.EventHandler(this.button2_MouseLeave);
             this.button2.MouseMove += new System.Windows.Forms.MouseEventHandler(this.button2_MouseMove);
             // 
-            // Tipos_Usuarios
+            // Agregar_Administradores
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -144,10 +144,11 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MinimizeBox = false;
-            this.Name = "Tipos_Usuarios";
+            this.Name = "Agregar_Administradores";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "TIPO DE USUARIO";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Tipos_Usuarios_FormClosed);
+            this.Load += new System.EventHandler(this.Agregar_Administradores_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.panel1.ResumeLayout(false);
