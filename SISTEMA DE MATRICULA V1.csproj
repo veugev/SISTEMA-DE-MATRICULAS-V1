@@ -47,6 +47,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="SOPORTE\Directivos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SOPORTE\Directivos.Designer.cs">
+      <DependentUpon>Directivos.cs</DependentUpon>
+    </Compile>
     <Compile Include="SOPORTE\Herramientas.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -158,6 +164,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="SOPORTE\Directivos.resx">
+      <DependentUpon>Directivos.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="SOPORTE\Herramientas.resx">
       <DependentUpon>Herramientas.cs</DependentUpon>
     </EmbeddedResource>
@@ -360,6 +369,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\document_delete_256_icon-icons.com_75995.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\home_house_13984.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\house_home_13944.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

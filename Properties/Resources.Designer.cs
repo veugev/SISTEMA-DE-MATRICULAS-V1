@@ -343,6 +343,26 @@ namespace SISTEMA_DE_MATRICULA_V1.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap home_house_13984 {
+            get {
+                object obj = ResourceManager.GetObject("home_house_13984", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap house_home_13944 {
+            get {
+                object obj = ResourceManager.GetObject("house_home_13944", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap if_Teachers_24_103847 {
             get {
                 object obj = ResourceManager.GetObject("if_Teachers-24_103847", resourceCulture);

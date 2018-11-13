@@ -15,13 +15,15 @@ namespace SISTEMA_DE_MATRICULA_V1
         public Perfil_Soporte()
         {
             InitializeComponent();
-            
+
+            //agregar imagen a botones
             button1.BackgroundImage = Properties.Resources.Btn_Celeste;
             button2.BackgroundImage = Properties.Resources.Btn_Celeste;
             button3.BackgroundImage = Properties.Resources.Btn_Celeste;
             button4.BackgroundImage = Properties.Resources.Btn_Celeste;
             button5.BackgroundImage = Properties.Resources.Btn_Celeste;
 
+            //bloquear el maximizar y agrandar tamaño
             this.MaximizeBox = false;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
         }
@@ -50,23 +52,51 @@ namespace SISTEMA_DE_MATRICULA_V1
 
         private void button2_Click(object sender, EventArgs e)
         {
-            
-           
+            //ir a formulario Cursos
+
+             Cursos entrarCursos = new Cursos();
+            entrarCursos.Show();
+
+
+            //ocultar formulario al abrir otro
+            this.Hide();
+
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-            
+            //ir a formulario Gestion de Matricula
+
+             GestionMatricula entrarGestionMatricula = new GestionMatricula();
+            entrarGestionMatricula.Show();
+
+
+            //ocultar formulario al abrir otro
+            this.Hide();
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
-            
+            //ir a formulario Reportes
+
+            Reportes entrarReportes = new Reportes();
+            entrarReportes.Show();
+
+
+            //ocultar formulario al abrir otro
+            this.Hide();
         }
 
         private void button5_Click(object sender, EventArgs e)
         {
-            
+            //ir a formulario Herramientas
+
+            Herramientas entrarHerramientas = new Herramientas();
+            entrarHerramientas.Show();
+
+
+            //ocultar formulario al abrir otro
+            this.Hide();
         }
 
         private void button1_MouseMove(object sender, MouseEventArgs e)

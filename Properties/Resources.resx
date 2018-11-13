@@ -130,6 +130,9 @@
   <data name="3592835 - general hierachy map office site structure" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\3592835 - general hierachy map office site structure.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Btn_Violeta" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Btn_Violeta.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Administrador" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Administrador.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -141,6 +144,9 @@
   </data>
   <data name="USUARIOS" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\USUARIOS.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="document_delete_256_icon-icons.com_75995" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\document_delete_256_icon-icons.com_75995.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="exitPerson" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\exitPerson.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -190,9 +196,6 @@
   <data name="HERRAMIENTAS" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\HERRAMIENTAS.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Btn_Naranjo" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Btn_Naranjo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="Btn_Rojo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Btn_Rojo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -208,14 +211,17 @@
   <data name="MATRICULA" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\MATRICULA.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Btn_Violeta" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Btn_Violeta.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Btn_Naranjo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Btn_Naranjo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Btn_Azulmarino" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Btn_Azulmarino.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="3592826 - employee human member office remove remove user user" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\3592826 - employee human member office remove remove user user.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="home_house_13984" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\home_house_13984.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="REGISTRO 2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\REGISTRO 2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -241,7 +247,7 @@
   <data name="people" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\people.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="document_delete_256_icon-icons.com_75995" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\document_delete_256_icon-icons.com_75995.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="house_home_13944" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\house_home_13944.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

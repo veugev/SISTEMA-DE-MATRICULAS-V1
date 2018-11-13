@@ -23,18 +23,28 @@ namespace SISTEMA_DE_MATRICULA_V1
 
         private void button1_Click(object sender, EventArgs e)
         {
-            LoginAdm cambiarform = new LoginAdm();
-            cambiarform.Show();
-            this.Hide();
-            
 
-            
+            //ir a formulario Agregar Administradores
+
+            Agregar_Administradores entrarAgregarAdm = new Agregar_Administradores();
+            entrarAgregarAdm.Show();
+
+
+            //ocultar formulario al abrir otro
+            this.Hide();
+
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            LoginDir cambiarform3 = new LoginDir ();
-            cambiarform3.Show();
+
+            //ir a formulario Agregar Directivos
+
+            Agregar_Administradores entrarAgregarAdm = new Agregar_Administradores();
+            entrarAgregarAdm.Show();
+
+
+            //ocultar formulario al abrir otro
             this.Hide();
         }
 
@@ -66,6 +76,26 @@ namespace SISTEMA_DE_MATRICULA_V1
         private void Agregar_Administradores_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void pictureBox7_Click(object sender, EventArgs e)
+        {
+            //volver a formulario pricipal soporte
+            Perfil_Soporte entrarSoporte = new Perfil_Soporte();
+            entrarSoporte.Show();
+
+            //cerrar formulario al abrir otro
+            this.Hide();
+        }
+
+        private void pictureBox7_MouseMove(object sender, MouseEventArgs e)
+        {
+            pictureBox7.Image = Properties.Resources.house_home_13944;
+        }
+
+        private void pictureBox7_MouseLeave(object sender, EventArgs e)
+        {
+            pictureBox7.Image = Properties.Resources.home_house_13984;
         }
     }
 }
