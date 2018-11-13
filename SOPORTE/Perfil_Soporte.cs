@@ -23,7 +23,6 @@ namespace SISTEMA_DE_MATRICULA_V1
             button5.BackgroundImage = Properties.Resources.Btn_Celeste;
 
             this.MaximizeBox = false;
-
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
         }
 

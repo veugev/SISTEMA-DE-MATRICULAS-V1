@@ -283,6 +283,16 @@ namespace SISTEMA_DE_MATRICULA_V1.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap document_delete_256_icon_icons_com_75995 {
+            get {
+                object obj = ResourceManager.GetObject("document_delete_256_icon-icons.com_75995", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap ELIMINAR_USER {
             get {
                 object obj = ResourceManager.GetObject("ELIMINAR USER", resourceCulture);
@@ -343,6 +353,16 @@ namespace SISTEMA_DE_MATRICULA_V1.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap images {
+            get {
+                object obj = ResourceManager.GetObject("images", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap LIBRO_DE_MATRICULA {
             get {
                 object obj = ResourceManager.GetObject("LIBRO DE MATRICULA", resourceCulture);
@@ -383,9 +403,29 @@ namespace SISTEMA_DE_MATRICULA_V1.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Microsoft_Excel_icon {
+            get {
+                object obj = ResourceManager.GetObject("Microsoft-Excel-icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap MODIFICAR_USER {
             get {
                 object obj = ResourceManager.GetObject("MODIFICAR USER", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap NAP {
+            get {
+                object obj = ResourceManager.GetObject("NAP", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

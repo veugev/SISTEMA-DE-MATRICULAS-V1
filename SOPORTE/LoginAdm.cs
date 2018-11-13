@@ -15,8 +15,16 @@ namespace SISTEMA_DE_MATRICULA_V1
         public LoginAdm()
         {
             InitializeComponent();
+
+            //agregar imagen a botones
+
             button1.BackgroundImage = Properties.Resources.button_icon_png_20;
             button2.BackgroundImage = Properties.Resources.Btn_Rojo;
+
+            //bloquear el maximizar y agrandar tamaño
+
+            this.MaximizeBox = false;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
         }
 
         private void Form1_Load(object sender, EventArgs e)

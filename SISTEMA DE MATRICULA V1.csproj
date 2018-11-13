@@ -47,95 +47,107 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="LibroMatricula.cs">
+    <Compile Include="SOPORTE\Herramientas.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="LibroMatricula.Designer.cs">
+    <Compile Include="SOPORTE\Herramientas.Designer.cs">
+      <DependentUpon>Herramientas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SOPORTE\Reportes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SOPORTE\Reportes.Designer.cs">
+      <DependentUpon>Reportes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SOPORTE\LibroMatricula.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SOPORTE\LibroMatricula.Designer.cs">
       <DependentUpon>LibroMatricula.cs</DependentUpon>
     </Compile>
-    <Compile Include="Matriculas.cs">
+    <Compile Include="SOPORTE\Matriculas.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Matriculas.Designer.cs">
+    <Compile Include="SOPORTE\Matriculas.Designer.cs">
       <DependentUpon>Matriculas.cs</DependentUpon>
     </Compile>
-    <Compile Include="GestionMatricula.cs">
+    <Compile Include="SOPORTE\GestionMatricula.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="GestionMatricula.Designer.cs">
+    <Compile Include="SOPORTE\GestionMatricula.Designer.cs">
       <DependentUpon>GestionMatricula.cs</DependentUpon>
     </Compile>
-    <Compile Include="Administradores.cs">
+    <Compile Include="SOPORTE\Administradores.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Administradores.Designer.cs">
+    <Compile Include="SOPORTE\Administradores.Designer.cs">
       <DependentUpon>Administradores.cs</DependentUpon>
     </Compile>
-    <Compile Include="ListasCurso.cs">
+    <Compile Include="SOPORTE\ListasCurso.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ListasCurso.Designer.cs">
+    <Compile Include="SOPORTE\ListasCurso.Designer.cs">
       <DependentUpon>ListasCurso.cs</DependentUpon>
     </Compile>
-    <Compile Include="Cursos.cs">
+    <Compile Include="SOPORTE\Cursos.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Cursos.Designer.cs">
+    <Compile Include="SOPORTE\Cursos.Designer.cs">
       <DependentUpon>Cursos.cs</DependentUpon>
     </Compile>
-    <Compile Include="EliminarUs.cs">
+    <Compile Include="SOPORTE\EliminarUs.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="EliminarUs.Designer.cs">
+    <Compile Include="SOPORTE\EliminarUs.Designer.cs">
       <DependentUpon>EliminarUs.cs</DependentUpon>
     </Compile>
-    <Compile Include="ModificarUs.cs">
+    <Compile Include="SOPORTE\ModificarUs.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ModificarUs.Designer.cs">
+    <Compile Include="SOPORTE\ModificarUs.Designer.cs">
       <DependentUpon>ModificarUs.cs</DependentUpon>
     </Compile>
-    <Compile Include="AgregarUs.cs">
+    <Compile Include="SOPORTE\AgregarUs.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AgregarUs.Designer.cs">
+    <Compile Include="SOPORTE\AgregarUs.Designer.cs">
       <DependentUpon>AgregarUs.cs</DependentUpon>
     </Compile>
     <Compile Include="BdConexion.cs" />
-    <Compile Include="LoginDir.cs">
+    <Compile Include="DIRECTIVO\LoginDir.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="LoginDir.Designer.cs">
+    <Compile Include="DIRECTIVO\LoginDir.Designer.cs">
       <DependentUpon>LoginDir.cs</DependentUpon>
     </Compile>
-    <Compile Include="Perfil_Administrador.cs">
+    <Compile Include="ADMINISTRADOR\Perfil_Administrador.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Perfil_Administrador.Designer.cs">
+    <Compile Include="ADMINISTRADOR\Perfil_Administrador.Designer.cs">
       <DependentUpon>Perfil_Administrador.cs</DependentUpon>
     </Compile>
-    <Compile Include="Perfil_Directivo.cs">
+    <Compile Include="DIRECTIVO\Perfil_Directivo.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Perfil_Directivo.Designer.cs">
+    <Compile Include="DIRECTIVO\Perfil_Directivo.Designer.cs">
       <DependentUpon>Perfil_Directivo.cs</DependentUpon>
     </Compile>
-    <Compile Include="Perfil_Soporte.cs">
+    <Compile Include="SOPORTE\Perfil_Soporte.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Perfil_Soporte.Designer.cs">
+    <Compile Include="SOPORTE\Perfil_Soporte.Designer.cs">
       <DependentUpon>Perfil_Soporte.cs</DependentUpon>
     </Compile>
-    <Compile Include="LoginAdm.cs">
+    <Compile Include="SOPORTE\LoginAdm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="LoginAdm.Designer.cs">
+    <Compile Include="SOPORTE\LoginAdm.Designer.cs">
       <DependentUpon>LoginAdm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Agresar_Usuario1.cs">
+    <Compile Include="SOPORTE\Agresar_Usuario1.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Agresar_Usuario1.Designer.cs">
+    <Compile Include="SOPORTE\Agresar_Usuario1.Designer.cs">
       <DependentUpon>Agresar_Usuario1.cs</DependentUpon>
     </Compile>
     <Compile Include="Tipos_Usuario.cs">
@@ -146,49 +158,55 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="LibroMatricula.resx">
+    <EmbeddedResource Include="SOPORTE\Herramientas.resx">
+      <DependentUpon>Herramientas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SOPORTE\Reportes.resx">
+      <DependentUpon>Reportes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SOPORTE\LibroMatricula.resx">
       <DependentUpon>LibroMatricula.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Matriculas.resx">
+    <EmbeddedResource Include="SOPORTE\Matriculas.resx">
       <DependentUpon>Matriculas.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GestionMatricula.resx">
+    <EmbeddedResource Include="SOPORTE\GestionMatricula.resx">
       <DependentUpon>GestionMatricula.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Administradores.resx">
+    <EmbeddedResource Include="SOPORTE\Administradores.resx">
       <DependentUpon>Administradores.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ListasCurso.resx">
+    <EmbeddedResource Include="SOPORTE\ListasCurso.resx">
       <DependentUpon>ListasCurso.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Cursos.resx">
+    <EmbeddedResource Include="SOPORTE\Cursos.resx">
       <DependentUpon>Cursos.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="EliminarUs.resx">
+    <EmbeddedResource Include="SOPORTE\EliminarUs.resx">
       <DependentUpon>EliminarUs.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ModificarUs.resx">
+    <EmbeddedResource Include="SOPORTE\ModificarUs.resx">
       <DependentUpon>ModificarUs.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="AgregarUs.resx">
+    <EmbeddedResource Include="SOPORTE\AgregarUs.resx">
       <DependentUpon>AgregarUs.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="LoginAdm.resx">
+    <EmbeddedResource Include="SOPORTE\LoginAdm.resx">
       <DependentUpon>LoginAdm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="LoginDir.resx">
+    <EmbeddedResource Include="DIRECTIVO\LoginDir.resx">
       <DependentUpon>LoginDir.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Perfil_Administrador.resx">
+    <EmbeddedResource Include="ADMINISTRADOR\Perfil_Administrador.resx">
       <DependentUpon>Perfil_Administrador.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Perfil_Directivo.resx">
+    <EmbeddedResource Include="DIRECTIVO\Perfil_Directivo.resx">
       <DependentUpon>Perfil_Directivo.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Perfil_Soporte.resx">
+    <EmbeddedResource Include="SOPORTE\Perfil_Soporte.resx">
       <DependentUpon>Perfil_Soporte.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Agresar_Usuario1.resx">
+    <EmbeddedResource Include="SOPORTE\Agresar_Usuario1.resx">
       <DependentUpon>Agresar_Usuario1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Tipos_Usuario.resx">
@@ -330,6 +348,18 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\REGISTRO 2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Microsoft-Excel-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NAP.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\document_delete_256_icon-icons.com_75995.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

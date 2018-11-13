@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace SISTEMA_DE_MATRICULA_V1
 {
-    public partial class Administradores : Form
+    public partial class Herramientas: Form
     {
-        public Administradores()
+        public Herramientas()
         {
             InitializeComponent();
         }

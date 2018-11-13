@@ -129,7 +129,7 @@
             this.button2.MouseLeave += new System.EventHandler(this.button2_MouseLeave);
             this.button2.MouseMove += new System.Windows.Forms.MouseEventHandler(this.button2_MouseMove);
             // 
-            // Tipos_Usuarios
+            // Tipos_Usuario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -144,10 +144,11 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MinimizeBox = false;
-            this.Name = "Tipos_Usuarios";
+            this.Name = "Tipos_Usuario";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "TIPO DE USUARIO";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Tipos_Usuarios_FormClosed);
+            this.Load += new System.EventHandler(this.Tipos_Usuario_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.panel1.ResumeLayout(false);
