@@ -24,27 +24,49 @@ namespace SISTEMA_DE_MATRICULA_V1
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
-            AbrirAgregarUs(new AgregarUs());
+            //Llamar al metodo para abrir formulario dentro de otro 
+            AbrirForm2(new AgregarUs());
         }
 
-        private void AbrirAgregarUs(object formularioAgregarUs)
+        private void Administradores_Load_1(object sender, EventArgs e)
+        {
+           
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            //Llamar al metodo para abrir formulario dentro de otro
+            AbrirForm2(new EliminarUs());
+        }
+
+        private void pictureBox4_Click(object sender, EventArgs e)
+        {
+            //Llamar al metodo para abrir formulario dentro de otro
+            AbrirForm2(new ModificarUs());
+        }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+            //volver a formulario Agregar administradores
+            Agregar_Administradores RegresarAgregar_Adm = new Agregar_Administradores();
+            RegresarAgregar_Adm.Show();
+
+            //cerrar formulario al abrir otro
+            this.Hide();
+        }
+
+        //Metodo para abrir un formulario dentro de otro
+        private void AbrirForm2(object formularioAgregarform2)
         {
             if (this.panel_contenedor.Controls.Count > 0)
                 this.panel_contenedor.Controls.RemoveAt(0);
 
-            Form fh = formularioAgregarUs as Form;
+            Form fh = formularioAgregarform2 as Form;
             fh.TopLevel = false;
             fh.Dock = DockStyle.Fill;
             this.panel_contenedor.Controls.Add(fh);
             this.panel_contenedor.Tag = fh;
             fh.Show();
-
-            
-            }
-
-        private void Administradores_Load_1(object sender, EventArgs e)
-        {
-
         }
     }
     }

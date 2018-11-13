@@ -63,6 +63,7 @@
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox4.TabIndex = 3;
             this.pictureBox4.TabStop = false;
+            this.pictureBox4.Click += new System.EventHandler(this.pictureBox4_Click);
             // 
             // pictureBox3
             // 
@@ -73,6 +74,7 @@
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox3.TabIndex = 2;
             this.pictureBox3.TabStop = false;
+            this.pictureBox3.Click += new System.EventHandler(this.pictureBox3_Click);
             // 
             // pictureBox2
             // 
@@ -83,6 +85,7 @@
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 1;
             this.pictureBox2.TabStop = false;
+            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
             // pictureBox1
             // 
@@ -101,22 +104,22 @@
             this.panel_contenedor.BackgroundImage = global::SISTEMA_DE_MATRICULA_V1.Properties.Resources.fondo1;
             this.panel_contenedor.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel_contenedor.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel_contenedor.Location = new System.Drawing.Point(130, 0);
+            this.panel_contenedor.Location = new System.Drawing.Point(127, 0);
             this.panel_contenedor.Name = "panel_contenedor";
-            this.panel_contenedor.Size = new System.Drawing.Size(738, 514);
+            this.panel_contenedor.Size = new System.Drawing.Size(751, 514);
             this.panel_contenedor.TabIndex = 1;
             // 
-            // Administradores
+            // Directivos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightGreen;
-            this.ClientSize = new System.Drawing.Size(868, 514);
+            this.ClientSize = new System.Drawing.Size(878, 514);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel_contenedor);
-            this.Name = "Administradores";
+            this.Name = "Directivos";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "AGREGAR ADMINISTRADORES";
+            this.Text = "AGREGAR DIRECTIVOS";
             this.Load += new System.EventHandler(this.Administradores_Load_1);
             this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();

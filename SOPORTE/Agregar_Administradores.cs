@@ -26,7 +26,7 @@ namespace SISTEMA_DE_MATRICULA_V1
 
             //ir a formulario Agregar Administradores
 
-            Agregar_Administradores entrarAgregarAdm = new Agregar_Administradores();
+             Administradores entrarAgregarAdm = new  Administradores();
             entrarAgregarAdm.Show();
 
 
@@ -40,8 +40,8 @@ namespace SISTEMA_DE_MATRICULA_V1
 
             //ir a formulario Agregar Directivos
 
-            Agregar_Administradores entrarAgregarAdm = new Agregar_Administradores();
-            entrarAgregarAdm.Show();
+            Directivos entrarDirectivos = new Directivos();
+                entrarDirectivos.Show();
 
 
             //ocultar formulario al abrir otro

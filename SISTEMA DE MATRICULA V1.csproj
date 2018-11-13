@@ -47,6 +47,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="SOPORTE\EliminarDir.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SOPORTE\EliminarDir.Designer.cs">
+      <DependentUpon>EliminarDir.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SOPORTE\AgregarDir.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SOPORTE\AgregarDir.Designer.cs">
+      <DependentUpon>AgregarDir.cs</DependentUpon>
+    </Compile>
     <Compile Include="SOPORTE\Directivos.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -58,6 +70,12 @@
     </Compile>
     <Compile Include="SOPORTE\Herramientas.Designer.cs">
       <DependentUpon>Herramientas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SOPORTE\ModificarDir.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SOPORTE\ModificarDir.Designer.cs">
+      <DependentUpon>ModificarDir.cs</DependentUpon>
     </Compile>
     <Compile Include="SOPORTE\Reportes.cs">
       <SubType>Form</SubType>
@@ -164,11 +182,20 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="SOPORTE\EliminarDir.resx">
+      <DependentUpon>EliminarDir.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SOPORTE\AgregarDir.resx">
+      <DependentUpon>AgregarDir.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="SOPORTE\Directivos.resx">
       <DependentUpon>Directivos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="SOPORTE\Herramientas.resx">
       <DependentUpon>Herramientas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SOPORTE\ModificarDir.resx">
+      <DependentUpon>ModificarDir.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="SOPORTE\Reportes.resx">
       <DependentUpon>Reportes.cs</DependentUpon>
