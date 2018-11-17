@@ -74,6 +74,8 @@
             this.button2.TabIndex = 34;
             this.button2.Text = "MODIFICAR";
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.MouseLeave += new System.EventHandler(this.button2_MouseLeave);
+            this.button2.MouseMove += new System.Windows.Forms.MouseEventHandler(this.button2_MouseMove);
             // 
             // label6
             // 
@@ -198,6 +200,8 @@
             this.button1.TabIndex = 23;
             this.button1.Text = "BUSCAR";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.MouseLeave += new System.EventHandler(this.button1_MouseLeave);
+            this.button1.MouseMove += new System.Windows.Forms.MouseEventHandler(this.button1_MouseMove);
             // 
             // textBox1
             // 
@@ -206,6 +210,7 @@
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(157, 30);
             this.textBox1.TabIndex = 22;
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // panel1
             // 
@@ -254,6 +259,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "ModificarUs";
             this.Text = "AgregarUs";
+            this.Load += new System.EventHandler(this.ModificarUs_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

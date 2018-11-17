@@ -31,7 +31,24 @@ namespace SISTEMA_DE_MATRICULA_V1
 
         private void button1_Click(object sender, EventArgs e)
         {
+            CLASES.Ddirectivos ddir = new CLASES.Ddirectivos();
+            CLASES.ValidarDir valdir = new CLASES.ValidarDir();
 
+            if (txtusuariodir.Text != String.Empty && txtcontraseñadir.Text != String.Empty)
+            {
+                        MessageBox.Show("Bienvenido" + txtusuariodir.Text);
+
+                        //ocultar formulario al abrir otro
+                        this.Hide();
+
+                        Perfil_Directivo volverform = new Perfil_Directivo();
+                        volverform.Show();
+            }
+            else
+            {
+                 MessageBox.Show("Error de ingreso");
+            }
+            
         }
 
         private void LoginDir_Load(object sender, EventArgs e)

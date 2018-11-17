@@ -155,5 +155,12 @@ namespace SISTEMA_DE_MATRICULA_V1
         {
 
         }
+
+        private void Perfil_Administrador_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            //cerrar aplicacion
+
+            Application.Exit();
+        }
     }
 }

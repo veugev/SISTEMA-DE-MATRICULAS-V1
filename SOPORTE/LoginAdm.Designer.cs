@@ -34,12 +34,12 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btn_volverAdm = new System.Windows.Forms.Button();
+            this.btn_ingresarAdm = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtcontraseña = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtusuario = new System.Windows.Forms.TextBox();
             this.panel3 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
@@ -99,60 +99,60 @@
             this.panel2.BackColor = System.Drawing.Color.Transparent;
             this.panel2.BackgroundImage = global::SISTEMA_DE_MATRICULA_V1.Properties.Resources.cuadrado2;
             this.panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel2.Controls.Add(this.button2);
-            this.panel2.Controls.Add(this.button1);
+            this.panel2.Controls.Add(this.btn_volverAdm);
+            this.panel2.Controls.Add(this.btn_ingresarAdm);
             this.panel2.Controls.Add(this.label5);
-            this.panel2.Controls.Add(this.textBox2);
+            this.panel2.Controls.Add(this.txtcontraseña);
             this.panel2.Controls.Add(this.label4);
-            this.panel2.Controls.Add(this.textBox1);
+            this.panel2.Controls.Add(this.txtusuario);
             this.panel2.Location = new System.Drawing.Point(306, 110);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(356, 204);
             this.panel2.TabIndex = 1;
             // 
-            // button2
+            // btn_volverAdm
             // 
-            this.button2.BackColor = System.Drawing.Color.Transparent;
-            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button2.FlatAppearance.BorderColor = System.Drawing.SystemColors.Control;
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(61, 142);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(102, 40);
-            this.button2.TabIndex = 8;
-            this.button2.Text = "VOLVER";
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click_1);
-            this.button2.MouseLeave += new System.EventHandler(this.button2_MouseLeave);
-            this.button2.MouseMove += new System.Windows.Forms.MouseEventHandler(this.button2_MouseMove);
+            this.btn_volverAdm.BackColor = System.Drawing.Color.Transparent;
+            this.btn_volverAdm.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btn_volverAdm.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_volverAdm.FlatAppearance.BorderColor = System.Drawing.SystemColors.Control;
+            this.btn_volverAdm.FlatAppearance.BorderSize = 0;
+            this.btn_volverAdm.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btn_volverAdm.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.btn_volverAdm.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_volverAdm.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_volverAdm.ForeColor = System.Drawing.Color.White;
+            this.btn_volverAdm.Location = new System.Drawing.Point(61, 142);
+            this.btn_volverAdm.Name = "btn_volverAdm";
+            this.btn_volverAdm.Size = new System.Drawing.Size(102, 40);
+            this.btn_volverAdm.TabIndex = 8;
+            this.btn_volverAdm.Text = "VOLVER";
+            this.btn_volverAdm.UseVisualStyleBackColor = false;
+            this.btn_volverAdm.Click += new System.EventHandler(this.button2_Click_1);
+            this.btn_volverAdm.MouseLeave += new System.EventHandler(this.button2_MouseLeave);
+            this.btn_volverAdm.MouseMove += new System.Windows.Forms.MouseEventHandler(this.button2_MouseMove);
             // 
-            // button1
+            // btn_ingresarAdm
             // 
-            this.button1.BackColor = System.Drawing.Color.Transparent;
-            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button1.FlatAppearance.BorderColor = System.Drawing.SystemColors.Control;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(189, 142);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(102, 40);
-            this.button1.TabIndex = 7;
-            this.button1.Text = "INGRESAR";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            this.button1.MouseLeave += new System.EventHandler(this.button1_MouseLeave);
-            this.button1.MouseMove += new System.Windows.Forms.MouseEventHandler(this.button1_MouseMove);
+            this.btn_ingresarAdm.BackColor = System.Drawing.Color.Transparent;
+            this.btn_ingresarAdm.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btn_ingresarAdm.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_ingresarAdm.FlatAppearance.BorderColor = System.Drawing.SystemColors.Control;
+            this.btn_ingresarAdm.FlatAppearance.BorderSize = 0;
+            this.btn_ingresarAdm.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btn_ingresarAdm.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.btn_ingresarAdm.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_ingresarAdm.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_ingresarAdm.ForeColor = System.Drawing.Color.White;
+            this.btn_ingresarAdm.Location = new System.Drawing.Point(189, 142);
+            this.btn_ingresarAdm.Name = "btn_ingresarAdm";
+            this.btn_ingresarAdm.Size = new System.Drawing.Size(102, 40);
+            this.btn_ingresarAdm.TabIndex = 7;
+            this.btn_ingresarAdm.Text = "INGRESAR";
+            this.btn_ingresarAdm.UseVisualStyleBackColor = false;
+            this.btn_ingresarAdm.Click += new System.EventHandler(this.button1_Click);
+            this.btn_ingresarAdm.MouseLeave += new System.EventHandler(this.button1_MouseLeave);
+            this.btn_ingresarAdm.MouseMove += new System.Windows.Forms.MouseEventHandler(this.button1_MouseMove);
             // 
             // label5
             // 
@@ -166,14 +166,14 @@
             this.label5.Text = "Contraseña";
             this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
-            // textBox2
+            // txtcontraseña
             // 
-            this.textBox2.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(61, 101);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(230, 30);
-            this.textBox2.TabIndex = 3;
-            this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
+            this.txtcontraseña.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtcontraseña.Location = new System.Drawing.Point(61, 101);
+            this.txtcontraseña.Name = "txtcontraseña";
+            this.txtcontraseña.Size = new System.Drawing.Size(230, 30);
+            this.txtcontraseña.TabIndex = 3;
+            this.txtcontraseña.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // label4
             // 
@@ -186,13 +186,13 @@
             this.label4.TabIndex = 2;
             this.label4.Text = "Usuario";
             // 
-            // textBox1
+            // txtusuario
             // 
-            this.textBox1.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(61, 40);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(230, 30);
-            this.textBox1.TabIndex = 1;
+            this.txtusuario.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtusuario.Location = new System.Drawing.Point(61, 40);
+            this.txtusuario.Name = "txtusuario";
+            this.txtusuario.Size = new System.Drawing.Size(230, 30);
+            this.txtusuario.TabIndex = 1;
             // 
             // panel3
             // 
@@ -250,15 +250,15 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtusuario;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtcontraseña;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btn_volverAdm;
+        private System.Windows.Forms.Button btn_ingresarAdm;
     }
 }

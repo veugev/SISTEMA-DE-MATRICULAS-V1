@@ -48,5 +48,21 @@ namespace SISTEMA_DE_MATRICULA_V1
         {
 
         }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void AgregarDir_Load(object sender, EventArgs e)
+        {
+            CLASES.Datos datos = new CLASES.Datos();
+            datos.Cargar_Directivos(dgv_directivos);
+        }
     }
 }

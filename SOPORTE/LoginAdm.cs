@@ -1,12 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
-using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data;
 
 namespace SISTEMA_DE_MATRICULA_V1
 {
@@ -18,8 +18,8 @@ namespace SISTEMA_DE_MATRICULA_V1
 
             //agregar imagen a botones
 
-            button1.BackgroundImage = Properties.Resources.button_icon_png_20;
-            button2.BackgroundImage = Properties.Resources.Btn_Rojo;
+            btn_ingresarAdm.BackgroundImage = Properties.Resources.button_icon_png_20;
+            btn_volverAdm.BackgroundImage = Properties.Resources.Btn_Rojo;
 
             //bloquear el maximizar y agrandar tamaño
 
@@ -50,24 +50,66 @@ namespace SISTEMA_DE_MATRICULA_V1
         private void button1_MouseMove(object sender, MouseEventArgs e)
         {
             //cambiar color e imagen de boton al pasar por arriba
-            button1.BackgroundImage = Properties.Resources.button_icon_png_21;
+            btn_ingresarAdm.BackgroundImage = Properties.Resources.button_icon_png_21;
         }
 
         private void button1_MouseLeave(object sender, EventArgs e)
         {
-            //volver al color e imagen de inicio de boton al salir de encima
-            button1.BackgroundImage = Properties.Resources.button_icon_png_20;
+            //volver al color de imagen de inicio de boton al salir de encima
+            btn_ingresarAdm.BackgroundImage = Properties.Resources.button_icon_png_20;
         }
 
         
         private void button1_Click(object sender, EventArgs e)
         {
-            //ir a formulario login Administradores
-            Perfil_Soporte entrarSoporte = new Perfil_Soporte();
-            entrarSoporte.Show();
+            
+            CLASES.Dadministradores dadm = new CLASES.Dadministradores();
+            CLASES.ValidarAdm valUs = new CLASES.ValidarAdm();
 
-            //ocultar formulario al abrir otro
-            this.Hide();
+            if (txtusuario.Text != String.Empty && txtcontraseña.Text != String.Empty)
+            {
+                DataTable dt = new DataTable();
+
+                dadm.set_usuario(txtusuario.Text);
+                dadm.set_password(txtcontraseña.Text);
+                dt = valUs.validar_administradores(dadm);
+
+                if (dt.Rows.Count !=0)
+                {
+                    String nivel;
+                    nivel = Convert.ToString(dt.Rows[0]["tipo_usuario"]);
+                    if (nivel.Equals("Soporte"))
+                    {
+                        MessageBox.Show("Bienvenido" + txtusuario.Text);
+
+                        //ocultar formulario al abrir otro
+                        this.Hide();
+
+                        Perfil_Soporte volverform = new Perfil_Soporte();
+                        volverform.Show();
+                    }
+                    else if(nivel.Equals("Administrador"))
+                    {
+                        MessageBox.Show("Bienvenido" + txtusuario.Text);
+
+                        //ocultar formulario al abrir otro
+                        this.Hide();
+
+                        Perfil_Administrador volverform = new Perfil_Administrador();
+                        volverform.Show();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Error de ingreso");
+                    }
+                }
+
+            }
+
+            
+
+
+            
         }
 
         private void button2_Click_1(object sender, EventArgs e)
@@ -81,12 +123,12 @@ namespace SISTEMA_DE_MATRICULA_V1
 
         private void button2_MouseMove(object sender, MouseEventArgs e)
         {
-            button2.BackgroundImage = Properties.Resources.Btn_Naranjo;
+            btn_volverAdm.BackgroundImage = Properties.Resources.Btn_Naranjo;
         }
 
         private void button2_MouseLeave(object sender, EventArgs e)
         {
-            button2.BackgroundImage = Properties.Resources.Btn_Rojo;
+            btn_volverAdm.BackgroundImage = Properties.Resources.Btn_Rojo;
         }
     }
 }

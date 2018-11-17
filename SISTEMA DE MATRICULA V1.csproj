@@ -47,6 +47,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CLASES\Dadministradores.cs" />
+    <Compile Include="CLASES\Datos.cs" />
+    <Compile Include="CLASES\Ddirectivos.cs" />
+    <Compile Include="CLASES\ValidarAdm.cs" />
+    <Compile Include="CLASES\ValidarDir.cs" />
     <Compile Include="SOPORTE\EliminarDir.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -137,7 +142,7 @@
     <Compile Include="SOPORTE\AgregarUs.Designer.cs">
       <DependentUpon>AgregarUs.cs</DependentUpon>
     </Compile>
-    <Compile Include="BdConexion.cs" />
+    <Compile Include="CLASES\BdConexion.cs" />
     <Compile Include="DIRECTIVO\LoginDir.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -258,6 +263,7 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <None Include="app.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -403,5 +409,6 @@
   <ItemGroup>
     <None Include="Resources\house_home_13944.png" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

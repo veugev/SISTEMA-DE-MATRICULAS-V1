@@ -328,6 +328,7 @@
             this.Name = "Perfil_Administrador";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "SOPORTE";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Perfil_Administrador_FormClosed);
             this.Load += new System.EventHandler(this.Perfil_Soporte_Load);
             flowLayoutPanel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);

@@ -36,9 +36,9 @@
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtcontraseñadir = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtusuariodir = new System.Windows.Forms.TextBox();
             this.panel3 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
@@ -100,9 +100,9 @@
             this.panel2.Controls.Add(this.button2);
             this.panel2.Controls.Add(this.button1);
             this.panel2.Controls.Add(this.label5);
-            this.panel2.Controls.Add(this.textBox2);
+            this.panel2.Controls.Add(this.txtcontraseñadir);
             this.panel2.Controls.Add(this.label4);
-            this.panel2.Controls.Add(this.textBox1);
+            this.panel2.Controls.Add(this.txtusuariodir);
             this.panel2.Location = new System.Drawing.Point(307, 117);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(356, 204);
@@ -163,13 +163,13 @@
             this.label5.TabIndex = 4;
             this.label5.Text = "Contraseña";
             // 
-            // textBox2
+            // txtcontraseñadir
             // 
-            this.textBox2.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(61, 101);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(230, 30);
-            this.textBox2.TabIndex = 3;
+            this.txtcontraseñadir.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtcontraseñadir.Location = new System.Drawing.Point(61, 101);
+            this.txtcontraseñadir.Name = "txtcontraseñadir";
+            this.txtcontraseñadir.Size = new System.Drawing.Size(230, 30);
+            this.txtcontraseñadir.TabIndex = 3;
             // 
             // label4
             // 
@@ -182,13 +182,13 @@
             this.label4.TabIndex = 2;
             this.label4.Text = "Usuario";
             // 
-            // textBox1
+            // txtusuariodir
             // 
-            this.textBox1.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(61, 40);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(230, 30);
-            this.textBox1.TabIndex = 1;
+            this.txtusuariodir.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtusuariodir.Location = new System.Drawing.Point(61, 40);
+            this.txtusuariodir.Name = "txtusuariodir";
+            this.txtusuariodir.Size = new System.Drawing.Size(230, 30);
+            this.txtusuariodir.TabIndex = 1;
             // 
             // panel3
             // 
@@ -247,9 +247,9 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtcontraseñadir;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtusuariodir;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Button button2;
     }
