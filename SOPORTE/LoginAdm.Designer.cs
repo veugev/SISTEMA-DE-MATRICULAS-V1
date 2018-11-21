@@ -171,8 +171,11 @@
             this.txtcontraseña.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtcontraseña.Location = new System.Drawing.Point(61, 101);
             this.txtcontraseña.Name = "txtcontraseña";
+            this.txtcontraseña.PasswordChar = '*';
+            this.txtcontraseña.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.txtcontraseña.Size = new System.Drawing.Size(230, 30);
             this.txtcontraseña.TabIndex = 3;
+            this.txtcontraseña.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.txtcontraseña.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // label4
@@ -191,8 +194,10 @@
             this.txtusuario.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtusuario.Location = new System.Drawing.Point(61, 40);
             this.txtusuario.Name = "txtusuario";
+            this.txtusuario.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.txtusuario.Size = new System.Drawing.Size(230, 30);
             this.txtusuario.TabIndex = 1;
+            this.txtusuario.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // panel3
             // 
@@ -223,6 +228,7 @@
             this.BackgroundImage = global::SISTEMA_DE_MATRICULA_V1.Properties.Resources.fondo1;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(682, 333);
+            this.ControlBox = false;
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
@@ -232,7 +238,6 @@
             this.MinimizeBox = false;
             this.Name = "LoginAdm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "INICIO DE SESION";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

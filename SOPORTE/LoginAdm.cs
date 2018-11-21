@@ -22,7 +22,7 @@ namespace SISTEMA_DE_MATRICULA_V1
             btn_volverAdm.BackgroundImage = Properties.Resources.Btn_Rojo;
 
             //bloquear el maximizar y agrandar tamaño
-
+            
             this.MaximizeBox = false;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
         }
@@ -74,13 +74,13 @@ namespace SISTEMA_DE_MATRICULA_V1
                 dadm.set_password(txtcontraseña.Text);
                 dt = valUs.validar_administradores(dadm);
 
-                if (dt.Rows.Count !=0)
+                if (dt.Rows.Count != 0)
                 {
                     String nivel;
                     nivel = Convert.ToString(dt.Rows[0]["tipo_usuario"]);
                     if (nivel.Equals("Soporte"))
                     {
-                        MessageBox.Show("Bienvenido" + txtusuario.Text);
+                        MessageBox.Show("Bienvenido " + txtusuario.Text);
 
                         //ocultar formulario al abrir otro
                         this.Hide();
@@ -88,9 +88,9 @@ namespace SISTEMA_DE_MATRICULA_V1
                         Perfil_Soporte volverform = new Perfil_Soporte();
                         volverform.Show();
                     }
-                    else if(nivel.Equals("Administrador"))
+                    else if (nivel.Equals("Administrador"))
                     {
-                        MessageBox.Show("Bienvenido" + txtusuario.Text);
+                        MessageBox.Show("Bienvenido " + txtusuario.Text);
 
                         //ocultar formulario al abrir otro
                         this.Hide();
@@ -98,18 +98,17 @@ namespace SISTEMA_DE_MATRICULA_V1
                         Perfil_Administrador volverform = new Perfil_Administrador();
                         volverform.Show();
                     }
-                    else
-                    {
-                        MessageBox.Show("Error de ingreso");
-                    }
                 }
-
+                else
+                {
+                    MessageBox.Show("Error de ingreso");
+                }
             }
-
-            
-
-
-            
+            else
+            {
+                MessageBox.Show("Ingrese sus datos");
+            }
+    
         }
 
         private void button2_Click_1(object sender, EventArgs e)

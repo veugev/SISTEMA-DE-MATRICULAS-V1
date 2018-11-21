@@ -83,7 +83,7 @@
             this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.DarkCyan;
-            this.label6.Location = new System.Drawing.Point(416, 120);
+            this.label6.Location = new System.Drawing.Point(322, 114);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(140, 23);
             this.label6.TabIndex = 33;
@@ -97,9 +97,9 @@
             this.comboBox1.Items.AddRange(new object[] {
             "Administrador",
             "Soporte"});
-            this.comboBox1.Location = new System.Drawing.Point(562, 117);
+            this.comboBox1.Location = new System.Drawing.Point(468, 111);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 31);
+            this.comboBox1.Size = new System.Drawing.Size(269, 31);
             this.comboBox1.TabIndex = 32;
             // 
             // label5
