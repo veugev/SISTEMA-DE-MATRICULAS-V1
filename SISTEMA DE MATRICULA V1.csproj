@@ -12,6 +12,21 @@
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -52,11 +67,65 @@
     <Compile Include="CLASES\Ddirectivos.cs" />
     <Compile Include="CLASES\ValidarAdm.cs" />
     <Compile Include="CLASES\ValidarDir.cs" />
+    <Compile Include="SOPORTE\Datos_Matricula.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SOPORTE\Datos_Matricula.Designer.cs">
+      <DependentUpon>Datos_Matricula.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SOPORTE\Datos_Apoderado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SOPORTE\Datos_Apoderado.Designer.cs">
+      <DependentUpon>Datos_Apoderado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SOPORTE\Datos_Padre.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SOPORTE\Datos_Padre.Designer.cs">
+      <DependentUpon>Datos_Padre.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SOPORTE\Datos_Madre.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SOPORTE\Datos_Madre.Designer.cs">
+      <DependentUpon>Datos_Madre.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SOPORTE\Datos_Alumno.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SOPORTE\Datos_Alumno.Designer.cs">
+      <DependentUpon>Datos_Alumno.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SOPORTE\ModificarDir.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SOPORTE\ModificarDir.Designer.cs">
+      <DependentUpon>ModificarDir.cs</DependentUpon>
+    </Compile>
     <Compile Include="SOPORTE\EliminarDir.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="SOPORTE\EliminarDir.Designer.cs">
       <DependentUpon>EliminarDir.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SOPORTE\EliminarUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SOPORTE\EliminarUsuario.Designer.cs">
+      <DependentUpon>EliminarUsuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SOPORTE\Ficha_matricula.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SOPORTE\Ficha_matricula.Designer.cs">
+      <DependentUpon>Ficha_matricula.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SOPORTE\ModificarUsu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SOPORTE\ModificarUsu.Designer.cs">
+      <DependentUpon>ModificarUsu.cs</DependentUpon>
     </Compile>
     <Compile Include="SOPORTE\AgregarDir.cs">
       <SubType>Form</SubType>
@@ -75,12 +144,6 @@
     </Compile>
     <Compile Include="SOPORTE\Herramientas.Designer.cs">
       <DependentUpon>Herramientas.cs</DependentUpon>
-    </Compile>
-    <Compile Include="SOPORTE\ModificarDir.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="SOPORTE\ModificarDir.Designer.cs">
-      <DependentUpon>ModificarDir.cs</DependentUpon>
     </Compile>
     <Compile Include="SOPORTE\Reportes.cs">
       <SubType>Form</SubType>
@@ -123,18 +186,6 @@
     </Compile>
     <Compile Include="SOPORTE\Cursos.Designer.cs">
       <DependentUpon>Cursos.cs</DependentUpon>
-    </Compile>
-    <Compile Include="SOPORTE\EliminarUs.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="SOPORTE\EliminarUs.Designer.cs">
-      <DependentUpon>EliminarUs.cs</DependentUpon>
-    </Compile>
-    <Compile Include="SOPORTE\ModificarUs.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="SOPORTE\ModificarUs.Designer.cs">
-      <DependentUpon>ModificarUs.cs</DependentUpon>
     </Compile>
     <Compile Include="SOPORTE\AgregarUs.cs">
       <SubType>Form</SubType>
@@ -187,8 +238,35 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="SOPORTE\Datos_Matricula.resx">
+      <DependentUpon>Datos_Matricula.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SOPORTE\Datos_Apoderado.resx">
+      <DependentUpon>Datos_Apoderado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SOPORTE\Datos_Padre.resx">
+      <DependentUpon>Datos_Padre.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SOPORTE\Datos_Madre.resx">
+      <DependentUpon>Datos_Madre.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SOPORTE\Datos_Alumno.resx">
+      <DependentUpon>Datos_Alumno.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SOPORTE\ModificarDir.resx">
+      <DependentUpon>ModificarDir.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="SOPORTE\EliminarDir.resx">
       <DependentUpon>EliminarDir.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SOPORTE\EliminarUsuario.resx">
+      <DependentUpon>EliminarUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SOPORTE\Ficha_matricula.resx">
+      <DependentUpon>Ficha_matricula.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SOPORTE\ModificarUsu.resx">
+      <DependentUpon>ModificarUsu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="SOPORTE\AgregarDir.resx">
       <DependentUpon>AgregarDir.cs</DependentUpon>
@@ -198,9 +276,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="SOPORTE\Herramientas.resx">
       <DependentUpon>Herramientas.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="SOPORTE\ModificarDir.resx">
-      <DependentUpon>ModificarDir.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="SOPORTE\Reportes.resx">
       <DependentUpon>Reportes.cs</DependentUpon>
@@ -222,12 +297,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="SOPORTE\Cursos.resx">
       <DependentUpon>Cursos.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="SOPORTE\EliminarUs.resx">
-      <DependentUpon>EliminarUs.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="SOPORTE\ModificarUs.resx">
-      <DependentUpon>ModificarUs.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="SOPORTE\AgregarUs.resx">
       <DependentUpon>AgregarUs.cs</DependentUpon>
@@ -409,6 +478,17 @@
   <ItemGroup>
     <None Include="Resources\house_home_13944.png" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.6.1">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.6.1 %28x86 y x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

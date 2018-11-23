@@ -14,7 +14,7 @@ namespace SISTEMA_DE_MATRICULA_V1
 
         public void conectado()
         {
-            ccn = new SqlConnection("server=DESKTOP-CM1ROJC\\EXPRESS2014 ; database=matri ; integrated security = true");
+            ccn = new SqlConnection("server=DESKTOP-CM1ROJC\\EXPRESS2014 ; database=BD_Matricula ; integrated security = true");
             ccn.Open();
 
         }

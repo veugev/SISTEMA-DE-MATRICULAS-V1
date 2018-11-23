@@ -10,13 +10,13 @@ using System.Windows.Forms;
 
 namespace SISTEMA_DE_MATRICULA_V1
 {
-    public partial class ModificarDir : Form
+    public partial class ModificarDir: Form
     {
         public ModificarDir()
         {
             InitializeComponent();
 
-            button1.BackgroundImage = Properties.Resources.button_icon_png_19;
+        
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -34,7 +34,38 @@ namespace SISTEMA_DE_MATRICULA_V1
 
         }
 
-        private void button1_Click_1(object sender, EventArgs e)
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void AgregarDir_Load(object sender, EventArgs e)
+        {
+            CLASES.Datos datos = new CLASES.Datos();
+            datos.Cargar_Directivos(dgv_Directivos);
+        }
+
+        private void dgv_Directivos_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
         }

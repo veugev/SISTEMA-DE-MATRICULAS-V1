@@ -36,13 +36,13 @@ namespace SISTEMA_DE_MATRICULA_V1
         private void pictureBox2_Click(object sender, EventArgs e)
         {
             //Llamar al metodo para abrir formulario dentro de otro
-            AbrirForm2(new EliminarUs());
+            AbrirForm2(new EliminarUsuario());
         }
 
         private void pictureBox4_Click(object sender, EventArgs e)
         {
             //Llamar al metodo para abrir formulario dentro de otro
-            AbrirForm2(new ModificarUs());
+            AbrirForm2(new ModificarUsu());
         }
 
         private void pictureBox3_Click(object sender, EventArgs e)

@@ -46,6 +46,26 @@ namespace SISTEMA_DE_MATRICULA_V1
         {
 
         }
+
+        private void GestionMatricula_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            AbrirAgregarUs(new SOPORTE.Ficha_matricula());
+        }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+            //volver a formulario Agregar administradores
+            Agregar_Administradores RegresarAgregar_Adm = new Agregar_Administradores();
+            RegresarAgregar_Adm.Show();
+
+            //cerrar formulario al abrir otro
+            this.Hide();
+        }
     }
     }
 

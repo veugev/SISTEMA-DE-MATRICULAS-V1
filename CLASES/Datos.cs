@@ -103,10 +103,39 @@ namespace SISTEMA_DE_MATRICULA_V1.CLASES
             return contador;
         }
 
-        public void mostrar_registro(object sender, EventArgs e)
+        public void buscar_registro(Dadministradores dts)
         {
             
-        }
+            try
+            {
+                conectado();
+                SqlCommand cmd = new SqlCommand("validar_existente", ccn);
+                string rut = dts.get_rut();
+                string nom = dts.get_nombre();
+                string usu = dts.get_usuario();
+                string pass = dts.get_password();
+                string tipous = dts.get_tipoUsuario();
 
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.AddWithValue("@ids", rut);
+
+                cmd.ExecuteNonQuery();
+                dr = cmd.ExecuteReader();
+                while (dr.Read())
+
+                {
+                    nom = dr["nombre"].ToString();
+                    usu = dr["usuario"].ToString();
+                    pass = dr["contrasena"].ToString();
+                    tipous = dr["tipo_usuario"].ToString();
+                }
+                dr.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("no se pudo llenar los campos " + ex.ToString());
+            }
+           
+        }
     }
 }

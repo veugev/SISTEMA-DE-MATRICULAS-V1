@@ -16,7 +16,6 @@ namespace SISTEMA_DE_MATRICULA_V1
         {
             InitializeComponent();
 
-            button1.BackgroundImage = Properties.Resources.button_icon_png_19;
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -62,7 +61,12 @@ namespace SISTEMA_DE_MATRICULA_V1
         private void AgregarDir_Load(object sender, EventArgs e)
         {
             CLASES.Datos datos = new CLASES.Datos();
-            datos.Cargar_Directivos(dgv_directivos);
+            datos.Cargar_Directivos(dgv_Directivos);
+        }
+
+        private void dgv_Directivos_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }

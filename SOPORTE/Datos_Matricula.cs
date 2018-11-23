@@ -10,13 +10,13 @@ using System.Windows.Forms;
 
 namespace SISTEMA_DE_MATRICULA_V1
 {
-    public partial class EliminarDir: Form
+    public partial class Datos_Matricula: Form
     {
-        public EliminarDir()
+        public Datos_Matricula()
         {
             InitializeComponent();
 
-            
+            button2.BackgroundImage = Properties.Resources.button_icon_png_20;
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -62,10 +62,50 @@ namespace SISTEMA_DE_MATRICULA_V1
         private void AgregarDir_Load(object sender, EventArgs e)
         {
             CLASES.Datos datos = new CLASES.Datos();
-            datos.Cargar_Directivos(dgv_Directivos);
+         
         }
 
-        private void dgv_Directivos_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        private void combobox_tipo_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label7_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label8_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label9_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label11_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void comboBox3_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label12_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox1_TextChanged_1(object sender, EventArgs e)
         {
 
         }

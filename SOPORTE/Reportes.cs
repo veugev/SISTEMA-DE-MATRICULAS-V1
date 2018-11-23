@@ -12,6 +12,10 @@ namespace SISTEMA_DE_MATRICULA_V1
             InitializeComponent();
             button1.BackgroundImage = Properties.Resources.button_icon_png_20;
             button2.BackgroundImage = Properties.Resources.button_icon_png_20;
+            button3.BackgroundImage = Properties.Resources.button_icon_png_20;
+            button4.BackgroundImage = Properties.Resources.button_icon_png_20;
+            button5.BackgroundImage = Properties.Resources.button_icon_png_20;
+            button6.BackgroundImage = Properties.Resources.button_icon_png_20;
 
         }
 
@@ -64,6 +68,16 @@ namespace SISTEMA_DE_MATRICULA_V1
         }
 
         private void button3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Reportes_Load(object sender, EventArgs e)
         {
 
         }
