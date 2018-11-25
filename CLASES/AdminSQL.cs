@@ -69,6 +69,11 @@ namespace SISTEMA_DE_MATRICULA_V1.CLASES
             return Tabla;
         }
 
+        public void Insertar_admi()
+        {
+
+        }
+
     }
 
 }
