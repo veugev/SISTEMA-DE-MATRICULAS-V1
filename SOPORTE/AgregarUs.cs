@@ -83,6 +83,8 @@ namespace SISTEMA_DE_MATRICULA_V1
                     txt_pass.Clear();
                     combobox_tipo.SelectedIndex = -1;
 
+                    ListarAdmin();
+
                     MessageBox.Show("El Usuario fue insertado exitosamente");
                
             }
@@ -118,9 +120,15 @@ namespace SISTEMA_DE_MATRICULA_V1
 
         private void AgregarUs_Load(object sender, EventArgs e)
         {
-            
+            ListarAdmin();
 
           
+        }
+        public void ListarAdmin()
+        {
+            CLASES.AdminSQL ObjetadminSQL = new CLASES.AdminSQL();
+            dgv_Administradores.DataSource = ObjetadminSQL.Listar_administradores();
+
         }
 
         

@@ -55,6 +55,20 @@ namespace SISTEMA_DE_MATRICULA_V1.CLASES
             }
             return contador;
         }
+
+        public DataTable Listar_administradores()
+        {
+            DataTable Tabla = new DataTable();
+            Comando.Connection = Conexion.AbrirConexion();
+            Comando.CommandText = "Listar_Administradores";
+            Comando.CommandType = CommandType.StoredProcedure;
+            LeerFilas = Comando.ExecuteReader();
+            Tabla.Load(LeerFilas);
+            LeerFilas.Close();
+            Conexion.CerrarConexion();
+            return Tabla;
+        }
+
     }
 
 }
