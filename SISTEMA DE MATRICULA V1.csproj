@@ -62,11 +62,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CLASES\AdminSQL.cs" />
     <Compile Include="CLASES\Dadministradores.cs" />
-    <Compile Include="CLASES\Datos.cs" />
     <Compile Include="CLASES\Ddirectivos.cs" />
     <Compile Include="CLASES\ValidarAdm.cs" />
     <Compile Include="CLASES\ValidarDir.cs" />
+    <Compile Include="matriculaDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>matriculaDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="SOPORTE\Datos_Matricula.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -333,6 +338,17 @@
       <DesignTime>True</DesignTime>
     </Compile>
     <None Include="app.config" />
+    <None Include="matriculaDataSet.xsc">
+      <DependentUpon>matriculaDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="matriculaDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>matriculaDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="matriculaDataSet.xss">
+      <DependentUpon>matriculaDataSet.xsd</DependentUpon>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

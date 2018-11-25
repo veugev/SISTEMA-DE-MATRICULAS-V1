@@ -211,6 +211,7 @@
             this.dgv_Administradores.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgv_Administradores.Size = new System.Drawing.Size(650, 150);
             this.dgv_Administradores.TabIndex = 20;
+            this.dgv_Administradores.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_Administradores_CellContentClick);
             // 
             // label2
             // 
@@ -231,6 +232,7 @@
             this.txt_rutadmin.Name = "txt_rutadmin";
             this.txt_rutadmin.Size = new System.Drawing.Size(215, 30);
             this.txt_rutadmin.TabIndex = 9;
+            this.txt_rutadmin.TextChanged += new System.EventHandler(this.txt_rutadmin_TextChanged);
             // 
             // ModificarUsu
             // 

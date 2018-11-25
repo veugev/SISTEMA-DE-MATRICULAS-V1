@@ -13,12 +13,10 @@ namespace SISTEMA_DE_MATRICULA_V1
     public partial class AgregarUs : Form
     {
 
-        CLASES.Datos datito=new CLASES.Datos();
-        CLASES.Dadministradores dadm = new CLASES.Dadministradores();
-        BdConexion ccn = new BdConexion();
-
         
-
+        CLASES.AdminSQL Objadminsql = new CLASES.AdminSQL();
+        CLASES.Dadministradores Objdadmin = new CLASES.Dadministradores();
+       
         public AgregarUs()
         {
             InitializeComponent();
@@ -63,22 +61,20 @@ namespace SISTEMA_DE_MATRICULA_V1
                     string tipous = combobox_tipo.SelectedItem.ToString();
 
                     //enviamos el valor de las variables a los metodos set de la clase Dadministradores
-                    dadm.set_rut(rut);
-                    dadm.set_nombre(nom);
-                    dadm.set_usuario(usadm);
-                    dadm.set_password(pass);
-                    dadm.set_tipoUsuario(tipous);
+                    Objdadmin.set_rut(rut);
+                    Objdadmin.set_nombre(nom);
+                    Objdadmin.set_usuario(usadm);
+                    Objdadmin.set_password(pass);
+                    Objdadmin.set_tipoUsuario(tipous);
 
-            if (txt_rutadmin.Text != String.Empty && txt_nombreadm.Text != String.Empty && txt_usuarioadm.Text != String.Empty && txt_pass.Text != String.Empty && combobox_tipo.SelectedIndex.ToString() != String.Empty) {
-                if (datito.Persona_registrada(dadm)==0)
-                {
-                    
-
+            if (txt_rutadmin.Text != String.Empty && txt_nombreadm.Text != String.Empty && txt_usuarioadm.Text != String.Empty && txt_pass.Text != String.Empty && combobox_tipo.SelectedIndex.ToString() != String.Empty)
+            {
+                                    
                     //invocar al metodo insertar
-                    datito.Insertar_usuario(dadm);
+                    Objadminsql.InsertarAdmin(Objdadmin);
 
                     // refrescamos datagridview
-                    datito.Cargar_Administrativos(dgv_Administradores);
+                   
 
                     //limpiar 
                     txt_rutadmin.Clear();
@@ -88,11 +84,7 @@ namespace SISTEMA_DE_MATRICULA_V1
                     combobox_tipo.SelectedIndex = -1;
 
                     MessageBox.Show("El Usuario fue insertado exitosamente");
-                }
-                else
-                {
-                    MessageBox.Show("El Usuario ya existe");
-                }
+               
             }
             else
             {
@@ -128,7 +120,7 @@ namespace SISTEMA_DE_MATRICULA_V1
         {
             
 
-            datito.Cargar_Administrativos(dgv_Administradores);
+          
         }
 
         

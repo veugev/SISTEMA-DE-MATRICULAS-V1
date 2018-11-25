@@ -11,19 +11,25 @@ namespace SISTEMA_DE_MATRICULA_V1.CLASES
 {
     class ValidarAdm : BdConexion
     {
+        public BdConexion Conexion = new BdConexion();
+        public SqlCommand Comando = new SqlCommand();
+        public SqlDataReader LeerFilas;
+        public SqlDataAdapter da;
+        public DataTable dt;
         public DataTable validar_administradores(Dadministradores dts)
         {
             try
             {
-                conectado();
-                cmd = new SqlCommand("Validar_usuario",ccn);
+                Comando.Connection = Conexion.AbrirConexion();
+                //Comando = new SqlCommand("Validar_usuario");
+                Comando.CommandText = "Validar_usuario";
 
-                cmd.CommandType = CommandType.StoredProcedure;
-                cmd.Parameters.AddWithValue("@usu", dts.get_usuario());
-                cmd.Parameters.AddWithValue("@pass", dts.get_password());
+                Comando.CommandType = CommandType.StoredProcedure;
+                Comando.Parameters.AddWithValue("@usu", dts.get_usuario());
+                Comando.Parameters.AddWithValue("@pass", dts.get_password());
 
                 DataTable dt = new DataTable();
-                SqlDataAdapter da = new SqlDataAdapter(cmd);
+                SqlDataAdapter da = new SqlDataAdapter(Comando);
 
                 da.Fill(dt);
                 return dt;

@@ -13,7 +13,6 @@ namespace SISTEMA_DE_MATRICULA_V1
     public partial class EliminarUsuario : Form
     {
 
-        CLASES.Datos datito=new CLASES.Datos();
         CLASES.Dadministradores dadm = new CLASES.Dadministradores();
         BdConexion ccn = new BdConexion();
 
@@ -55,53 +54,7 @@ namespace SISTEMA_DE_MATRICULA_V1
         private void button2_Click(object sender, EventArgs e)
             
         {
-            //declaramos variables que recibe valores que el usuario ingresa
-                    string rut = txt_rutadmin.Text;
-                    string nom = txt_nombreadm.Text;
-                    string usadm = txt_usuarioadm.Text;
-                    string pass = txt_pass.Text;
-                    string tipous = combobox_tipo.SelectedItem.ToString();
-
-                    //enviamos el valor de las variables a los metodos set de la clase Dadministradores
-                    dadm.set_rut(rut);
-                    dadm.set_nombre(nom);
-                    dadm.set_usuario(usadm);
-                    dadm.set_password(pass);
-                    dadm.set_tipoUsuario(tipous);
-
-            if (txt_rutadmin.Text != String.Empty && txt_nombreadm.Text != String.Empty && txt_usuarioadm.Text != String.Empty && txt_pass.Text != String.Empty && combobox_tipo.SelectedIndex.ToString() != String.Empty) {
-                if (datito.Persona_registrada(dadm)==0)
-                {
-                    
-
-                    //invocar al metodo insertar
-                    datito.Insertar_usuario(dadm);
-
-                    // refrescamos datagridview
-                    datito.Cargar_Administrativos(dgv_Administradores);
-
-                    //limpiar 
-                    txt_rutadmin.Clear();
-                    txt_nombreadm.Clear();
-                    txt_usuarioadm.Clear();
-                    txt_pass.Clear();
-                    combobox_tipo.SelectedIndex = -1;
-
-                    MessageBox.Show("El Usuario fue insertado exitosamente");
-                }
-                else
-                {
-                    MessageBox.Show("El Usuario ya existe");
-                }
-            }
-            else
-            {
-                MessageBox.Show("Debe ingresar todos los datos");
-            }
-
-
-
-            //dd
+          
 
         }
 
@@ -128,7 +81,6 @@ namespace SISTEMA_DE_MATRICULA_V1
         {
             
 
-            datito.Cargar_Administrativos(dgv_Administradores);
         }
 
         

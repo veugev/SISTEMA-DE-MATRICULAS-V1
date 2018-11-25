@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.textBox2 = new System.Windows.Forms.TextBox();
@@ -63,7 +64,16 @@
             this.comboBox4 = new System.Windows.Forms.ComboBox();
             this.comboBox5 = new System.Windows.Forms.ComboBox();
             this.label17 = new System.Windows.Forms.Label();
+            this.matriculaDataSet = new SISTEMA_DE_MATRICULA_V1.matriculaDataSet();
+            this.administradoresBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.administradoresTableAdapter = new SISTEMA_DE_MATRICULA_V1.matriculaDataSetTableAdapters.administradoresTableAdapter();
+            this.matriculaDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.administradoresBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.matriculaDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.administradoresBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.matriculaDataSetBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.administradoresBindingSource1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -206,7 +216,6 @@
             this.combobox_tipo.Name = "combobox_tipo";
             this.combobox_tipo.Size = new System.Drawing.Size(270, 31);
             this.combobox_tipo.TabIndex = 21;
-            this.combobox_tipo.Text = "Seleccione Genero...";
             this.combobox_tipo.SelectedIndexChanged += new System.EventHandler(this.combobox_tipo_SelectedIndexChanged);
             // 
             // comboBox1
@@ -460,6 +469,30 @@
             this.label17.TabIndex = 45;
             this.label17.Text = "Beneficios";
             // 
+            // matriculaDataSet
+            // 
+            this.matriculaDataSet.DataSetName = "matriculaDataSet";
+            this.matriculaDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // administradoresBindingSource
+            // 
+            this.administradoresBindingSource.DataMember = "administradores";
+            this.administradoresBindingSource.DataSource = this.matriculaDataSet;
+            // 
+            // administradoresTableAdapter
+            // 
+            this.administradoresTableAdapter.ClearBeforeFill = true;
+            // 
+            // matriculaDataSetBindingSource
+            // 
+            this.matriculaDataSetBindingSource.DataSource = this.matriculaDataSet;
+            this.matriculaDataSetBindingSource.Position = 0;
+            // 
+            // administradoresBindingSource1
+            // 
+            this.administradoresBindingSource1.DataMember = "administradores";
+            this.administradoresBindingSource1.DataSource = this.matriculaDataSetBindingSource;
+            // 
             // Datos_Alumno
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -507,6 +540,10 @@
             this.Load += new System.EventHandler(this.AgregarDir_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.matriculaDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.administradoresBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.matriculaDataSetBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.administradoresBindingSource1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -549,5 +586,10 @@
         private System.Windows.Forms.ComboBox comboBox4;
         private System.Windows.Forms.ComboBox comboBox5;
         private System.Windows.Forms.Label label17;
+        private matriculaDataSet matriculaDataSet;
+        private System.Windows.Forms.BindingSource administradoresBindingSource;
+        private matriculaDataSetTableAdapters.administradoresTableAdapter administradoresTableAdapter;
+        private System.Windows.Forms.BindingSource matriculaDataSetBindingSource;
+        private System.Windows.Forms.BindingSource administradoresBindingSource1;
     }
 }

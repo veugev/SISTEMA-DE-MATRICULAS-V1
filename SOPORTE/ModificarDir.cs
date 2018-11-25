@@ -61,8 +61,7 @@ namespace SISTEMA_DE_MATRICULA_V1
 
         private void AgregarDir_Load(object sender, EventArgs e)
         {
-            CLASES.Datos datos = new CLASES.Datos();
-            datos.Cargar_Directivos(dgv_Directivos);
+           
         }
 
         private void dgv_Directivos_CellContentClick(object sender, DataGridViewCellEventArgs e)

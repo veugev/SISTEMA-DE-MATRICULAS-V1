@@ -3,20 +3,30 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Data;
 using System.Data.SqlClient;
 	
 namespace SISTEMA_DE_MATRICULA_V1
 {
     class BdConexion
     {
-        public SqlConnection ccn = new SqlConnection();
-        public SqlCommand cmd = new SqlCommand();
+        static public string CadenaConexion ="server=DESKTOP-CM1ROJC\\EXPRESS2014 ; database=BD_Matricula ; integrated security = true";
+        public SqlConnection Conexion = new SqlConnection(CadenaConexion);    
 
-        public void conectado()
+        public SqlConnection AbrirConexion()
         {
-            ccn = new SqlConnection("server=DESKTOP-CM1ROJC\\EXPRESS2014 ; database=BD_Matricula ; integrated security = true");
-            ccn.Open();
+            if (Conexion.State == ConnectionState.Closed)
+            
+                Conexion.Open();
+                return Conexion;
+            
+        }
 
+        public SqlConnection CerrarConexion()
+        {
+            if (Conexion.State == ConnectionState.Open)
+                Conexion.Close();
+            return Conexion;
         }
     }
 }

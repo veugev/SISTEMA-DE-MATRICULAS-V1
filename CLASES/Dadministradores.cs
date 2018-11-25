@@ -64,10 +64,5 @@ namespace SISTEMA_DE_MATRICULA_V1.CLASES
             this.tipo_usuario = value;
         }
 
-        private void Cargaruser(String id,String nombre, String usuario, String password, String tipoUS)
-        {
-           
-        }
-
     }
 }
