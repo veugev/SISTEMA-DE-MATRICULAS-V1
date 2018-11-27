@@ -87,6 +87,7 @@
             // 
             // txt_nombreadm
             // 
+            this.txt_nombreadm.Enabled = false;
             this.txt_nombreadm.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_nombreadm.Location = new System.Drawing.Point(468, 162);
             this.txt_nombreadm.Name = "txt_nombreadm";
@@ -108,6 +109,7 @@
             // 
             // txt_usuarioadm
             // 
+            this.txt_usuarioadm.Enabled = false;
             this.txt_usuarioadm.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_usuarioadm.Location = new System.Drawing.Point(121, 216);
             this.txt_usuarioadm.Name = "txt_usuarioadm";
@@ -128,6 +130,7 @@
             // 
             // txt_pass
             // 
+            this.txt_pass.Enabled = false;
             this.txt_pass.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_pass.Location = new System.Drawing.Point(468, 220);
             this.txt_pass.Name = "txt_pass";
@@ -136,6 +139,7 @@
             // 
             // combobox_tipo
             // 
+            this.combobox_tipo.Enabled = false;
             this.combobox_tipo.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.combobox_tipo.ForeColor = System.Drawing.Color.DarkCyan;
             this.combobox_tipo.FormattingEnabled = true;
@@ -212,6 +216,7 @@
             this.dgv_Administradores.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgv_Administradores.Size = new System.Drawing.Size(650, 150);
             this.dgv_Administradores.TabIndex = 20;
+            this.dgv_Administradores.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_Administradores_CellContentClick);
             // 
             // label2
             // 
@@ -227,6 +232,7 @@
             // 
             // txt_rutadmin
             // 
+            this.txt_rutadmin.Enabled = false;
             this.txt_rutadmin.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_rutadmin.Location = new System.Drawing.Point(121, 162);
             this.txt_rutadmin.Name = "txt_rutadmin";
@@ -251,6 +257,9 @@
             this.button1.TabIndex = 21;
             this.button1.Text = "SELECCIONAR";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
+            this.button1.MouseLeave += new System.EventHandler(this.button1_MouseLeave);
+            this.button1.MouseMove += new System.Windows.Forms.MouseEventHandler(this.button1_MouseMove);
             // 
             // EliminarUsuario
             // 

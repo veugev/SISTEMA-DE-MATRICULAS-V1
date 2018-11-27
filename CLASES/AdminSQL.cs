@@ -68,7 +68,18 @@ namespace SISTEMA_DE_MATRICULA_V1.CLASES
         public void Modificar_admin(Dadministradores dts)
         {
             Comando.Connection = Conexion.AbrirConexion();
-            Comando.CommandText = "update Administradores set nombre = '"+dts.get_nombre()+"', usuario = '"+dts.get_usuario()+"', contrasena = '"+dts.get_password()+"', tipo_usuario = '"+dts.get_tipoUsuario()+"'";
+            Comando.CommandText = "update Administradores set nombre = '"+dts.get_nombre()+"', usuario = '"+dts.get_usuario()+"', contrasena = '"+dts.get_password()+"', tipo_usuario = '"+dts.get_tipoUsuario()+ "' where id_administradores = '" + dts.get_rut() + "'";
+            Comando.CommandType = CommandType.Text;
+            Comando.ExecuteNonQuery();
+            Conexion.CerrarConexion();
+
+
+        }
+
+        public void Eliminar_admin(Dadministradores dts)
+        {
+            Comando.Connection = Conexion.AbrirConexion();
+            Comando.CommandText = "delete Administradores where id_administradores = '"+dts.get_rut()+"'";
             Comando.CommandType = CommandType.Text;
             Comando.ExecuteNonQuery();
             Conexion.CerrarConexion();
