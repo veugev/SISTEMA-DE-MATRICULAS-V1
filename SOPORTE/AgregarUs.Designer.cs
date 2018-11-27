@@ -145,7 +145,7 @@
             this.combobox_tipo.Name = "combobox_tipo";
             this.combobox_tipo.Size = new System.Drawing.Size(270, 31);
             this.combobox_tipo.TabIndex = 17;
-            this.combobox_tipo.Text = "Seleccione tipo usuario...";
+            this.combobox_tipo.Text = "Selecione...";
             // 
             // label6
             // 

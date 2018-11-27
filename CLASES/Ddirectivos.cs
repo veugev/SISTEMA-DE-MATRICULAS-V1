@@ -10,6 +10,8 @@ namespace SISTEMA_DE_MATRICULA_V1.CLASES
     {
         public string nick;
         public string contras;
+        public string nombre;
+        public string usuario;
 
         public string get_nick()
         {
@@ -20,6 +22,15 @@ namespace SISTEMA_DE_MATRICULA_V1.CLASES
         {
             return contras;
         }
+        public string get_nombre()
+        {
+            return nombre;
+        }
+
+        public string get_usuario()
+        {
+            return usuario;
+        }
 
         public void set_nick(String value)
         {
@@ -29,6 +40,15 @@ namespace SISTEMA_DE_MATRICULA_V1.CLASES
         public void set_contras(String value)
         {
             this.contras = value;
+        }
+        public void set_nombre(String value)
+        {
+            this.nombre = value;
+        }
+
+        public void set_usuario(String value)
+        {
+            this.usuario = value;
         }
     }
 }
