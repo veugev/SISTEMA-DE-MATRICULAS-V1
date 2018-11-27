@@ -19,18 +19,13 @@ namespace SISTEMA_DE_MATRICULA_V1.CLASES
         public void InsertarAdmin(Dadministradores dts)
         {
             Comando.Connection = Conexion.AbrirConexion();
-            Comando.CommandText = "Registrar_usuario";
-            Comando.CommandType = CommandType.StoredProcedure;
-            Comando.Parameters.AddWithValue("@idus", dts.get_rut());
-            Comando.Parameters.AddWithValue("@nom", dts.get_nombre());
-            Comando.Parameters.AddWithValue("@usua", dts.get_usuario());
-            Comando.Parameters.AddWithValue("@passw", dts.get_password());
-            Comando.Parameters.AddWithValue("@tipoUs", dts.get_tipoUsuario());
+            Comando.CommandText = "insert into Administradores values('" + dts.get_rut()+"','" + dts.get_nombre()+"','" + dts.get_usuario()+ "','" + dts.get_password()+ "','" + dts.get_tipoUsuario()+ "')";
+            Comando.CommandType = CommandType.Text;
             Comando.ExecuteNonQuery();
             Comando.Parameters.Clear();
+            
 
         }
-
         public int Persona_registrada(Dadministradores dts)
         {
             int contador = 0;
@@ -55,6 +50,7 @@ namespace SISTEMA_DE_MATRICULA_V1.CLASES
             }
             return contador;
         }
+     
 
         public DataTable Listar_administradores()
         {
@@ -69,10 +65,17 @@ namespace SISTEMA_DE_MATRICULA_V1.CLASES
             return Tabla;
         }
 
-        public void Insertar_admi()
+        public void Modificar_admin(Dadministradores dts)
         {
+            Comando.Connection = Conexion.AbrirConexion();
+            Comando.CommandText = "update Administradores set nombre = '"+dts.get_nombre()+"', usuario = '"+dts.get_usuario()+"', contrasena = '"+dts.get_password()+"', tipo_usuario = '"+dts.get_tipoUsuario()+"'";
+            Comando.CommandType = CommandType.Text;
+            Comando.ExecuteNonQuery();
+            Conexion.CerrarConexion();
+
 
         }
+
 
     }
 

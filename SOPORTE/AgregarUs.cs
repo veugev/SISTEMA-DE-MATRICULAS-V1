@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace SISTEMA_DE_MATRICULA_V1
 {
@@ -14,7 +15,7 @@ namespace SISTEMA_DE_MATRICULA_V1
     {
 
         
-        CLASES.AdminSQL Objadminsql = new CLASES.AdminSQL();
+        CLASES.AdminSQL Objadministradoresql = new CLASES.AdminSQL();
         CLASES.Dadministradores Objdadmin = new CLASES.Dadministradores();
        
         public AgregarUs()
@@ -26,6 +27,7 @@ namespace SISTEMA_DE_MATRICULA_V1
             //agregar imagen a botones
 
             button2.BackgroundImage = Properties.Resources.button_icon_png_20;
+            
 
            
         }
@@ -69,37 +71,31 @@ namespace SISTEMA_DE_MATRICULA_V1
 
             if (txt_rutadmin.Text != String.Empty && txt_nombreadm.Text != String.Empty && txt_usuarioadm.Text != String.Empty && txt_pass.Text != String.Empty && combobox_tipo.SelectedIndex.ToString() != String.Empty)
             {
-                                    
+               try { 
                     //invocar al metodo insertar
-                    Objadminsql.InsertarAdmin(Objdadmin);
+                    Objadministradoresql.InsertarAdmin(Objdadmin);
 
-                    // refrescamos datagridview
-                   
-
-                    //limpiar 
-                    txt_rutadmin.Clear();
-                    txt_nombreadm.Clear();
-                    txt_usuarioadm.Clear();
-                    txt_pass.Clear();
-                    combobox_tipo.SelectedIndex = -1;
+                  //limpiar 
+                   txt_rutadmin.Clear();
+                   txt_nombreadm.Clear();
+                   txt_usuarioadm.Clear();
+                   txt_pass.Clear();
+                   combobox_tipo.SelectedIndex = -1;
 
                     ListarAdmin();
 
                     MessageBox.Show("El Usuario fue insertado exitosamente");
-               
+
+                }catch (SqlException )
+                {
+                    MessageBox.Show("El Usuario ya existe");
+                }
             }
             else
             {
                 MessageBox.Show("Debe ingresar todos los datos");
             }
-
-
-
-            //dd
-
         }
-
-        
 
         private void button2_MouseMove(object sender, MouseEventArgs e)
         {

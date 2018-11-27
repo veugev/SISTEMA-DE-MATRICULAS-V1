@@ -44,6 +44,7 @@
             this.dgv_Administradores = new System.Windows.Forms.DataGridView();
             this.label2 = new System.Windows.Forms.Label();
             this.txt_rutadmin = new System.Windows.Forms.TextBox();
+            this.button1 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_Administradores)).BeginInit();
             this.SuspendLayout();
@@ -232,6 +233,25 @@
             this.txt_rutadmin.Size = new System.Drawing.Size(215, 30);
             this.txt_rutadmin.TabIndex = 9;
             // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.Transparent;
+            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button1.FlatAppearance.BorderColor = System.Drawing.SystemColors.Control;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Location = new System.Drawing.Point(448, 279);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(142, 52);
+            this.button1.TabIndex = 21;
+            this.button1.Text = "SELECCIONAR";
+            this.button1.UseVisualStyleBackColor = false;
+            // 
             // EliminarUsuario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -239,6 +259,7 @@
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(789, 510);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.dgv_Administradores);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.label6);
@@ -280,5 +301,6 @@
         private System.Windows.Forms.DataGridView dgv_Administradores;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txt_rutadmin;
+        private System.Windows.Forms.Button button1;
     }
 }
