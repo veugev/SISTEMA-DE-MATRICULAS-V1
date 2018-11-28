@@ -63,8 +63,17 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CLASES\AdminSQL.cs" />
+    <Compile Include="CLASES\MantencionTablaSQL.cs" />
+    <Compile Include="CLASES\DmantencionTabla.cs" />
     <Compile Include="CLASES\Dadministradores.cs" />
     <Compile Include="CLASES\Ddirectivos.cs" />
+    <Compile Include="CLASES\Destudiantes.cs" />
+    <Compile Include="CLASES\DirecSQL.cs" />
+    <Compile Include="CLASES\EstudiantesSQL.cs" />
+    <Compile Include="CLASES\DfichaMatri.cs" />
+    <Compile Include="CLASES\FichaMatriSQL.cs" />
+    <Compile Include="CLASES\Dpersonas.cs" />
+    <Compile Include="CLASES\PersonasSQL.cs" />
     <Compile Include="CLASES\ValidarAdm.cs" />
     <Compile Include="CLASES\ValidarDir.cs" />
     <Compile Include="matriculaDataSet.Designer.cs">

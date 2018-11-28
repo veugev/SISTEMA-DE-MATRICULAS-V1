@@ -32,16 +32,17 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txt_rutdirec = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txt_nombredir = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.txt_usuariodir = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.txt_passdir = new System.Windows.Forms.TextBox();
             this.button2 = new System.Windows.Forms.Button();
             this.dgv_Directivos = new System.Windows.Forms.DataGridView();
+            this.button1 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_Directivos)).BeginInit();
             this.SuspendLayout();
@@ -70,14 +71,15 @@
             this.label1.Text = "ELIMINAR DIRECTIVOS";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
-            // textBox2
+            // txt_rutdirec
             // 
-            this.textBox2.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(126, 123);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(215, 30);
-            this.textBox2.TabIndex = 9;
-            this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
+            this.txt_rutdirec.Enabled = false;
+            this.txt_rutdirec.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_rutdirec.Location = new System.Drawing.Point(126, 123);
+            this.txt_rutdirec.Name = "txt_rutdirec";
+            this.txt_rutdirec.Size = new System.Drawing.Size(215, 30);
+            this.txt_rutdirec.TabIndex = 9;
+            this.txt_rutdirec.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // label2
             // 
@@ -104,14 +106,15 @@
             this.label3.Text = "Nombre";
             this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
-            // textBox3
+            // txt_nombredir
             // 
-            this.textBox3.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(473, 123);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(270, 30);
-            this.textBox3.TabIndex = 11;
-            this.textBox3.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
+            this.txt_nombredir.Enabled = false;
+            this.txt_nombredir.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_nombredir.Location = new System.Drawing.Point(473, 123);
+            this.txt_nombredir.Name = "txt_nombredir";
+            this.txt_nombredir.Size = new System.Drawing.Size(270, 30);
+            this.txt_nombredir.TabIndex = 11;
+            this.txt_nombredir.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
             // 
             // label4
             // 
@@ -125,13 +128,14 @@
             this.label4.TabIndex = 14;
             this.label4.Text = "Usuario";
             // 
-            // textBox4
+            // txt_usuariodir
             // 
-            this.textBox4.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox4.Location = new System.Drawing.Point(126, 177);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(215, 30);
-            this.textBox4.TabIndex = 13;
+            this.txt_usuariodir.Enabled = false;
+            this.txt_usuariodir.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_usuariodir.Location = new System.Drawing.Point(126, 177);
+            this.txt_usuariodir.Name = "txt_usuariodir";
+            this.txt_usuariodir.Size = new System.Drawing.Size(215, 30);
+            this.txt_usuariodir.TabIndex = 13;
             // 
             // label5
             // 
@@ -145,13 +149,14 @@
             this.label5.TabIndex = 16;
             this.label5.Text = "Contraseña";
             // 
-            // textBox5
+            // txt_passdir
             // 
-            this.textBox5.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox5.Location = new System.Drawing.Point(473, 181);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(270, 30);
-            this.textBox5.TabIndex = 15;
+            this.txt_passdir.Enabled = false;
+            this.txt_passdir.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_passdir.Location = new System.Drawing.Point(473, 181);
+            this.txt_passdir.Name = "txt_passdir";
+            this.txt_passdir.Size = new System.Drawing.Size(270, 30);
+            this.txt_passdir.TabIndex = 15;
             // 
             // button2
             // 
@@ -205,6 +210,26 @@
             this.dgv_Directivos.TabIndex = 21;
             this.dgv_Directivos.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_Directivos_CellContentClick);
             // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.Transparent;
+            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button1.FlatAppearance.BorderColor = System.Drawing.SystemColors.Control;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Location = new System.Drawing.Point(453, 240);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(142, 52);
+            this.button1.TabIndex = 22;
+            this.button1.Text = "SELECCIONAR";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
+            // 
             // EliminarDir
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -212,16 +237,17 @@
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(789, 510);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.dgv_Directivos);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.textBox5);
+            this.Controls.Add(this.txt_passdir);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.textBox4);
+            this.Controls.Add(this.txt_usuariodir);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.txt_nombredir);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.txt_rutdirec);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "EliminarDir";
@@ -239,15 +265,16 @@
 
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txt_rutdirec;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox txt_nombredir;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox txt_usuariodir;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox txt_passdir;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.DataGridView dgv_Directivos;
+        private System.Windows.Forms.Button button1;
     }
 }

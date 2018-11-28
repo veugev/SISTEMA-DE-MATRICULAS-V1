@@ -9,41 +9,39 @@ using System.Windows.Forms;
 
 namespace SISTEMA_DE_MATRICULA_V1.CLASES
 {
-    class AdminSQL
+    class DirecSQL
     {
-        
         private BdConexion Conexion = new BdConexion();
         private SqlCommand Comando = new SqlCommand();
         private SqlDataReader LeerFilas;
 
-        public void InsertarAdmin(Dadministradores dts)
+        public void InsertarAdmin(Ddirectivos dts)
         {
             Comando.Connection = Conexion.AbrirConexion();
-            Comando.CommandText = "insert into Administradores values('" + dts.get_rut()+"','" + dts.get_nombre()+"','" + dts.get_usuario()+ "','" + dts.get_password()+ "','" + dts.get_tipoUsuario()+ "')";
+            Comando.CommandText = "insert into Directivos values('" + dts.get_nick() + "','" + dts.get_nombre() + "','" + dts.get_usuario() + "','" + dts.get_contras() + "')";
             Comando.CommandType = CommandType.Text;
             Comando.ExecuteNonQuery();
             Comando.Parameters.Clear();
-            
+
         }
         
-        public DataTable Listar_administradores()
+        public DataTable Listar_Directivos()
         {
             DataTable Tabla = new DataTable();
             Comando.Connection = Conexion.AbrirConexion();
-            Comando.CommandText = "Listar_Administradores";
+            Comando.CommandText = "Listar_Directivos";
             Comando.CommandType = CommandType.StoredProcedure;
             LeerFilas = Comando.ExecuteReader();
             Tabla.Load(LeerFilas);
             LeerFilas.Close();
-            { }
             Conexion.CerrarConexion();
             return Tabla;
         }
 
-        public void Modificar_admin(Dadministradores dts)
+        public void Modificar_direc(Ddirectivos dts)
         {
             Comando.Connection = Conexion.AbrirConexion();
-            Comando.CommandText = "update Administradores set nombre = '"+dts.get_nombre()+"', usuario = '"+dts.get_usuario()+"', contrasena = '"+dts.get_password()+"', tipo_usuario = '"+dts.get_tipoUsuario()+ "' where id_administradores = '" + dts.get_rut() + "'";
+            Comando.CommandText = "update Directivos set nombre_dir = '" + dts.get_nombre() + "', usuario_dir = '" + dts.get_usuario() + "', contrasena_dir = '" + dts.get_contras() + "' where id_directivos = '" + dts.get_nick() + "'";
             Comando.CommandType = CommandType.Text;
             Comando.ExecuteNonQuery();
             Conexion.CerrarConexion();
@@ -51,18 +49,16 @@ namespace SISTEMA_DE_MATRICULA_V1.CLASES
 
         }
 
-        public void Eliminar_admin(Dadministradores dts)
+        public void Eliminar_admin(Ddirectivos dts)
         {
             Comando.Connection = Conexion.AbrirConexion();
-            Comando.CommandText = "delete Administradores where id_administradores = '"+dts.get_rut()+"'";
+            Comando.CommandText = "delete Directivos where id_directivos = '" + dts.get_nick() + "'";
             Comando.CommandType = CommandType.Text;
             Comando.ExecuteNonQuery();
             Conexion.CerrarConexion();
 
 
         }
-
-
     }
 
 }

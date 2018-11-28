@@ -44,6 +44,7 @@
             this.dgv_Administradores = new System.Windows.Forms.DataGridView();
             this.label2 = new System.Windows.Forms.Label();
             this.txt_rutadmin = new System.Windows.Forms.TextBox();
+            this.button1 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_Administradores)).BeginInit();
             this.SuspendLayout();
@@ -145,7 +146,7 @@
             this.combobox_tipo.Name = "combobox_tipo";
             this.combobox_tipo.Size = new System.Drawing.Size(270, 31);
             this.combobox_tipo.TabIndex = 17;
-            this.combobox_tipo.Text = "Seleccione tipo usuario...";
+            this.combobox_tipo.Text = "Seleccione...";
             // 
             // label6
             // 
@@ -175,7 +176,7 @@
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(142, 52);
             this.button2.TabIndex = 19;
-            this.button2.Text = "MODIFICAR";
+            this.button2.Text = "MODIFICAR ";
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             this.button2.MouseLeave += new System.EventHandler(this.button2_MouseLeave);
@@ -227,12 +228,35 @@
             // 
             // txt_rutadmin
             // 
+            this.txt_rutadmin.Enabled = false;
             this.txt_rutadmin.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_rutadmin.Location = new System.Drawing.Point(121, 162);
             this.txt_rutadmin.Name = "txt_rutadmin";
             this.txt_rutadmin.Size = new System.Drawing.Size(215, 30);
             this.txt_rutadmin.TabIndex = 9;
             this.txt_rutadmin.TextChanged += new System.EventHandler(this.txt_rutadmin_TextChanged);
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.Transparent;
+            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button1.FlatAppearance.BorderColor = System.Drawing.SystemColors.Control;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Location = new System.Drawing.Point(448, 279);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(142, 52);
+            this.button1.TabIndex = 21;
+            this.button1.Text = "EDITAR";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
+            this.button1.MouseLeave += new System.EventHandler(this.button1_MouseLeave);
+            this.button1.MouseMove += new System.Windows.Forms.MouseEventHandler(this.button1_MouseMove);
             // 
             // ModificarUsu
             // 
@@ -241,6 +265,7 @@
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(789, 510);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.dgv_Administradores);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.label6);
@@ -282,5 +307,6 @@
         private System.Windows.Forms.DataGridView dgv_Administradores;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txt_rutadmin;
+        private System.Windows.Forms.Button button1;
     }
 }
