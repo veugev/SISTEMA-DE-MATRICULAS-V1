@@ -65,6 +65,7 @@ namespace SISTEMA_DE_MATRICULA_V1.CLASES
             LeerFilas = Comando.ExecuteReader();
             Tabla.Load(LeerFilas);
             LeerFilas.Close();
+            { }
             Conexion.CerrarConexion();
             return Tabla;
         }
