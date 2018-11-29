@@ -81,6 +81,18 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>matriculaDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="SOPORTE\Agregar_Comunas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SOPORTE\Agregar_Comunas.Designer.cs">
+      <DependentUpon>Agregar_Comunas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SOPORTE\Agregar_Anio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SOPORTE\Agregar_Anio.Designer.cs">
+      <DependentUpon>Agregar_Anio.cs</DependentUpon>
+    </Compile>
     <Compile Include="SOPORTE\Datos_Matricula.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -110,6 +122,12 @@
     </Compile>
     <Compile Include="SOPORTE\Datos_Alumno.Designer.cs">
       <DependentUpon>Datos_Alumno.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SOPORTE\Mantencion_tablas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SOPORTE\Mantencion_tablas.Designer.cs">
+      <DependentUpon>Mantencion_tablas.cs</DependentUpon>
     </Compile>
     <Compile Include="SOPORTE\ModificarDir.cs">
       <SubType>Form</SubType>
@@ -252,6 +270,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="SOPORTE\Agregar_Comunas.resx">
+      <DependentUpon>Agregar_Comunas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SOPORTE\Agregar_Anio.resx">
+      <DependentUpon>Agregar_Anio.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="SOPORTE\Datos_Matricula.resx">
       <DependentUpon>Datos_Matricula.cs</DependentUpon>
     </EmbeddedResource>
@@ -266,6 +290,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="SOPORTE\Datos_Alumno.resx">
       <DependentUpon>Datos_Alumno.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SOPORTE\Mantencion_tablas.resx">
+      <DependentUpon>Mantencion_tablas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="SOPORTE\ModificarDir.resx">
       <DependentUpon>ModificarDir.cs</DependentUpon>

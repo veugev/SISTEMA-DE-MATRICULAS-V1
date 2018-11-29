@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace SISTEMA_DE_MATRICULA_V1
 {
-    public partial class Herramientas: Form
+    public partial class Herramientas : Form
     {
         public Herramientas()
         {
@@ -24,23 +24,25 @@ namespace SISTEMA_DE_MATRICULA_V1
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
-            AbrirAgregarUs(new AgregarUs());
+
+            AbrirMantencion_tablas(new());
         }
 
-        private void AbrirAgregarUs(object formularioAgregarUs)
-        {
-            if (this.panel_contenedor.Controls.Count > 0)
-                this.panel_contenedor.Controls.RemoveAt(0);
+            private void AbrirMantencion_tablas(object formularioAgregar_Anio)
+            {
+                if (this.panel_contenedor.Controls.Count > 0)
+                    this.panel_contenedor.Controls.RemoveAt(0);
 
-            Form fh = formularioAgregarUs as Form;
-            fh.TopLevel = false;
-            fh.Dock = DockStyle.Fill;
-            this.panel_contenedor.Controls.Add(fh);
-            this.panel_contenedor.Tag = fh;
-            fh.Show();
+                Form fh = formularioAgregar_Anio as Form;
+                fh.TopLevel = false;
+                fh.Dock = DockStyle.Fill;
+                this.panel_contenedor.Controls.Add(fh);
+                this.panel_contenedor.Tag = fh;
+                fh.Show();
 
-            
+
             }
-        }
+        
     }
+}
 
