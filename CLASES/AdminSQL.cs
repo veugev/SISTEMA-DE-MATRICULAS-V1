@@ -19,7 +19,8 @@ namespace SISTEMA_DE_MATRICULA_V1.CLASES
         public void InsertarAdmin(Dadministradores dts)
         {
             Comando.Connection = Conexion.AbrirConexion();
-            Comando.CommandText = "insert into Administradores values('" + dts.get_rut()+"','" + dts.get_nombre()+"','" + dts.get_usuario()+ "','" + dts.get_password()+ "','" + dts.get_tipoUsuario()+ "')";
+            Comando.CommandText = "insert into Administradores values('" + dts.get_rut()+"','" + dts.get_nombre()+"'," +
+                                    "'" + dts.get_usuario()+ "','" + dts.get_password()+ "','" + dts.get_tipoUsuario()+ "')";
             Comando.CommandType = CommandType.Text;
             Comando.ExecuteNonQuery();
             Comando.Parameters.Clear();

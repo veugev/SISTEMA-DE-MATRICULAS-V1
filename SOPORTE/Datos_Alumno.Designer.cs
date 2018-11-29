@@ -29,6 +29,8 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.txt_rut_e = new System.Windows.Forms.TextBox();
@@ -69,11 +71,14 @@
             this.matriculaDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.administradoresBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.dtp_Fnac_e = new System.Windows.Forms.DateTimePicker();
+            this.button1 = new System.Windows.Forms.Button();
+            this.dgv_Administradores = new System.Windows.Forms.DataGridView();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.matriculaDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.administradoresBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.matriculaDataSetBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.administradoresBindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_Administradores)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -504,7 +509,58 @@
             this.dtp_Fnac_e.Name = "dtp_Fnac_e";
             this.dtp_Fnac_e.Size = new System.Drawing.Size(171, 30);
             this.dtp_Fnac_e.TabIndex = 47;
-            this.dtp_Fnac_e.Value = new System.DateTime(2018, 11, 6, 0, 0, 0, 0);
+            this.dtp_Fnac_e.Value = new System.DateTime(2018, 11, 28, 0, 0, 0, 0);
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.Transparent;
+            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button1.FlatAppearance.BorderColor = System.Drawing.SystemColors.Control;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Location = new System.Drawing.Point(248, 83);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(114, 35);
+            this.button1.TabIndex = 48;
+            this.button1.Text = "BUSCAR";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
+            // 
+            // dgv_Administradores
+            // 
+            this.dgv_Administradores.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.dgv_Administradores.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
+            this.dgv_Administradores.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
+            this.dgv_Administradores.BackgroundColor = System.Drawing.SystemColors.Control;
+            this.dgv_Administradores.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.DarkCyan;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.DarkCyan;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgv_Administradores.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.DarkCyan;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.DarkCyan;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgv_Administradores.DefaultCellStyle = dataGridViewCellStyle2;
+            this.dgv_Administradores.Location = new System.Drawing.Point(35, 774);
+            this.dgv_Administradores.Name = "dgv_Administradores";
+            this.dgv_Administradores.RowHeadersVisible = false;
+            this.dgv_Administradores.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgv_Administradores.Size = new System.Drawing.Size(650, 150);
+            this.dgv_Administradores.TabIndex = 49;
             // 
             // Datos_Alumno
             // 
@@ -513,6 +569,8 @@
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(789, 510);
+            this.Controls.Add(this.dgv_Administradores);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.dtp_Fnac_e);
             this.Controls.Add(this.cmb_beneficio);
             this.Controls.Add(this.label17);
@@ -557,6 +615,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.administradoresBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.matriculaDataSetBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.administradoresBindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_Administradores)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -604,5 +663,7 @@
         private System.Windows.Forms.BindingSource matriculaDataSetBindingSource;
         private System.Windows.Forms.BindingSource administradoresBindingSource1;
         private System.Windows.Forms.DateTimePicker dtp_Fnac_e;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.DataGridView dgv_Administradores;
     }
 }

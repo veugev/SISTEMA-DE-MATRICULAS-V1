@@ -211,6 +211,7 @@
             this.dgv_Administradores.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgv_Administradores.Size = new System.Drawing.Size(650, 150);
             this.dgv_Administradores.TabIndex = 20;
+            this.dgv_Administradores.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_Administradores_CellContentClick);
             // 
             // label2
             // 

@@ -18,7 +18,8 @@ namespace SISTEMA_DE_MATRICULA_V1.CLASES
         public void InsertarAdmin(Ddirectivos dts)
         {
             Comando.Connection = Conexion.AbrirConexion();
-            Comando.CommandText = "insert into Directivos values('" + dts.get_nick() + "','" + dts.get_nombre() + "','" + dts.get_usuario() + "','" + dts.get_contras() + "')";
+            Comando.CommandText = "insert into Directivos values('" + dts.get_nick() + "','" + dts.get_nombre() + "'," +
+                                   "'" + dts.get_usuario() + "','" + dts.get_contras() + "')";
             Comando.CommandType = CommandType.Text;
             Comando.ExecuteNonQuery();
             Comando.Parameters.Clear();

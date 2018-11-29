@@ -94,31 +94,32 @@ namespace SISTEMA_DE_MATRICULA_V1.CLASES
             Comando.Parameters.Clear();
 
         }
-       /* public void Insertar_Estudiante (Destudiantes dte)
-        {
-            Comando.Connection = Conexion.AbrirConexion();
-            Comando.CommandText = "Insertar_Alummo";
-            Comando.Parameters.AddWithValue("@Rut_id", dte.get_rut_e());
-            Comando.Parameters.AddWithValue("@Nombre_Estudiante", dte.get_nombre_e());
-            Comando.Parameters.AddWithValue("@id_genero", dte.get_genero_e());
-            Comando.Parameters.AddWithValue("@Direccion", dte.get_direccion_e());
-            Comando.Parameters.AddWithValue("@id_comuna", dte.get_comuna_e());
-            Comando.Parameters.AddWithValue("@Fono_EmergenciaA", dte.get_fonoA());
-            Comando.Parameters.AddWithValue("@Fono_EmergenciaB", dte.get_fonoB());
-            Comando.Parameters.AddWithValue("@Fecha_Nacimiento", dte.get_fnac_e());
-            Comando.Parameters.AddWithValue("@Edad_Marzo", dte.get_edadmarzo_e());
-            Comando.Parameters.AddWithValue("@Nacionalidad_E", dte.get_nacionalidad_e());
-            Comando.Parameters.AddWithValue("@Establecimiento_Proc", dte.get_estproc_e());
-            Comando.Parameters.AddWithValue("@repitencia", dte.get_repit_e());
-            Comando.Parameters.AddWithValue("@curso_repetido", dte.get_curepit_e());
-            Comando.Parameters.AddWithValue("@id_salida", dte.get_salida_e());
-            Comando.Parameters.AddWithValue("@id_beneficio", dte.get_benef_e());
-            Comando.Parameters.AddWithValue("@NEE", dte.get_nee());
-            Comando.Parameters.AddWithValue("@id_vivecon", dte.get_vivecon_e());
-            Comando.CommandType = CommandType.StoredProcedure;
-            Comando.ExecuteNonQuery();
-            Comando.Parameters.Clear();
 
-        }*/
+        public int Buscar_estudiate(Destudiantes dte)
+        {
+            int contador = 0;
+            try
+            {
+                Comando.Connection = Conexion.AbrirConexion();
+                Comando.CommandText = "Select * from where Rut_id = '" + dte.get_rut_e() + "'";
+                Comando.CommandType = CommandType.Text;
+                LeerFilas = Comando.ExecuteReader();
+                while (LeerFilas.Read())
+                {
+                    contador++;
+                }
+
+                LeerFilas.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("no se pudo consultar");
+            }
+            
+            return contador;
+        }
+        
+
+
     }
 }

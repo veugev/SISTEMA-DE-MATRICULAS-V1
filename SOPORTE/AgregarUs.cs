@@ -127,6 +127,9 @@ namespace SISTEMA_DE_MATRICULA_V1
 
         }
 
-        
+        private void dgv_Administradores_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }
