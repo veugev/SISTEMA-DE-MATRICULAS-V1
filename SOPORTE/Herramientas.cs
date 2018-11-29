@@ -19,30 +19,32 @@ namespace SISTEMA_DE_MATRICULA_V1
 
         private void Administradores_Load(object sender, EventArgs e)
         {
-
+            
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
-
-            AbrirMantencion_tablas(new());
+            Abrir_form(new Mantencion_Datos());
+   
         }
 
-            private void AbrirMantencion_tablas(object formularioAgregar_Anio)
-            {
-                if (this.panel_contenedor.Controls.Count > 0)
-                    this.panel_contenedor.Controls.RemoveAt(0);
+        private void Herramientas_Load(object sender, EventArgs e)
+        {
 
-                Form fh = formularioAgregar_Anio as Form;
-                fh.TopLevel = false;
-                fh.Dock = DockStyle.Fill;
-                this.panel_contenedor.Controls.Add(fh);
-                this.panel_contenedor.Tag = fh;
-                fh.Show();
+        }
+        private void Abrir_form(object otroForm)
+        {
 
+            if (this.panel_contenedor.Controls.Count > 0)
+                this.panel_contenedor.Controls.RemoveAt(0);
 
-            }
-        
+            Form fh = otroForm as Form;
+            fh.TopLevel = false;
+            fh.Dock = DockStyle.Fill;
+            this.panel_contenedor.Controls.Add(fh);
+            this.panel_contenedor.Tag = fh;
+            fh.Show();
+        }
     }
 }
 

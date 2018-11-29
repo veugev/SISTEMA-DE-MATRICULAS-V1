@@ -9,12 +9,12 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
 
-namespace SISTEMA_DE_MATRICULA_V1.SOPORTE
+namespace SISTEMA_DE_MATRICULA_V1
 {
     public partial class Agregar_Anio : Form
-    { 
+    {
 
-        CLASES.MantencionTablaSQL ObjmantSQL  = new CLASES.MantencionTablaSQL();
+        CLASES.MatencionDatosSQL ObjMantension = new CLASES.MatencionDatosSQL();
         CLASES.DmantencionTabla Objdmant = new CLASES.DmantencionTabla();
    
         public Agregar_Anio()

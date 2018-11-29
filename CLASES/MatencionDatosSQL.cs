@@ -3,13 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Data;
-using System.Data.SqlClient;
-using System.Windows.Forms;
 
 namespace SISTEMA_DE_MATRICULA_V1.CLASES
 {
-    class MantencionTablaSQL
+    class MatencionDatosSQL
     {
         private BdConexion Conexion = new BdConexion();
         private SqlCommand Comando = new SqlCommand();
@@ -86,4 +83,5 @@ namespace SISTEMA_DE_MATRICULA_V1.CLASES
 
 
     }
+}
 }

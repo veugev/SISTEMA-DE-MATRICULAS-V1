@@ -63,7 +63,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CLASES\AdminSQL.cs" />
-    <Compile Include="CLASES\MantencionTablaSQL.cs" />
     <Compile Include="CLASES\DmantencionTabla.cs" />
     <Compile Include="CLASES\Dadministradores.cs" />
     <Compile Include="CLASES\Ddirectivos.cs" />
@@ -73,6 +72,7 @@
     <Compile Include="CLASES\DfichaMatri.cs" />
     <Compile Include="CLASES\FichaMatriSQL.cs" />
     <Compile Include="CLASES\Dpersonas.cs" />
+    <Compile Include="CLASES\MatencionDatosSQL.cs" />
     <Compile Include="CLASES\PersonasSQL.cs" />
     <Compile Include="CLASES\ValidarAdm.cs" />
     <Compile Include="CLASES\ValidarDir.cs" />
@@ -123,11 +123,11 @@
     <Compile Include="SOPORTE\Datos_Alumno.Designer.cs">
       <DependentUpon>Datos_Alumno.cs</DependentUpon>
     </Compile>
-    <Compile Include="SOPORTE\Mantencion_tablas.cs">
+    <Compile Include="SOPORTE\Mantencion Datos.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="SOPORTE\Mantencion_tablas.Designer.cs">
-      <DependentUpon>Mantencion_tablas.cs</DependentUpon>
+    <Compile Include="SOPORTE\Mantencion Datos.Designer.cs">
+      <DependentUpon>Mantencion Datos.cs</DependentUpon>
     </Compile>
     <Compile Include="SOPORTE\ModificarDir.cs">
       <SubType>Form</SubType>
@@ -291,8 +291,8 @@
     <EmbeddedResource Include="SOPORTE\Datos_Alumno.resx">
       <DependentUpon>Datos_Alumno.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="SOPORTE\Mantencion_tablas.resx">
-      <DependentUpon>Mantencion_tablas.cs</DependentUpon>
+    <EmbeddedResource Include="SOPORTE\Mantencion Datos.resx">
+      <DependentUpon>Mantencion Datos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="SOPORTE\ModificarDir.resx">
       <DependentUpon>ModificarDir.cs</DependentUpon>

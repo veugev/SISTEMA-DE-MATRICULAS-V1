@@ -1,4 +1,4 @@
-﻿namespace SISTEMA_DE_MATRICULA_V1.SOPORTE
+﻿namespace SISTEMA_DE_MATRICULA_V1
 {
     partial class Agregar_Comunas
     {

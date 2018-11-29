@@ -24,7 +24,7 @@ namespace SISTEMA_DE_MATRICULA_V1
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
-            AbrirAgregarUs(new AgregarUs());
+            
         }
 
         private void AbrirAgregarUs(object formularioAgregarUs)
