@@ -55,7 +55,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(789, 67);
+            this.panel1.Size = new System.Drawing.Size(788, 67);
             this.panel1.TabIndex = 0;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
@@ -209,7 +209,7 @@
             this.dgv_Administradores.Name = "dgv_Administradores";
             this.dgv_Administradores.RowHeadersVisible = false;
             this.dgv_Administradores.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgv_Administradores.Size = new System.Drawing.Size(650, 150);
+            this.dgv_Administradores.Size = new System.Drawing.Size(649, 150);
             this.dgv_Administradores.TabIndex = 20;
             this.dgv_Administradores.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_Administradores_CellContentClick);
             // 
@@ -239,7 +239,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(789, 510);
+            this.ClientSize = new System.Drawing.Size(788, 510);
             this.Controls.Add(this.dgv_Administradores);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.label6);
