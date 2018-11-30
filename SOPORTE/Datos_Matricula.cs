@@ -10,18 +10,84 @@ using System.Windows.Forms;
 
 namespace SISTEMA_DE_MATRICULA_V1
 {
-    public partial class Datos_Matricula: Form
+    public partial class Datos_Matricula : Form
     {
         public Datos_Matricula()
         {
             InitializeComponent();
 
-            button2.BackgroundImage = Properties.Resources.button_icon_png_20;
+            button4.BackgroundImage = Properties.Resources.Btn_Verde;
+            button1.BackgroundImage = Properties.Resources.button_icon_png_20;
+            button3.BackgroundImage = Properties.Resources.button_icon_png_20;
         }
+
+        private void AgregarDir_Load(object sender, EventArgs e)
+        {
+
+
+        }
+/*
+        public void ListarAnio()
+        {
+            PersonasSQL ObjpersoSQL = new PersonasSQL();
+            cmb_comuna.DataSource = ObjpersoSQL.Listar_Comuna();
+            cmb_comuna.DisplayMember = "Descripcion";
+            cmb_comuna.ValueMember = "id_comuna";
+        }
+
+        public void Listartipoalum()
+        {
+            PersonasSQL ObjpersoSQL = new PersonasSQL();
+            cmb_parentezco.DataSource = ObjpersoSQL.Listar_Parentezco();
+            cmb_parentezco.DisplayMember = "Descripcion";
+            cmb_parentezco.ValueMember = "id_parentezco";
+        }
+
+        public void ListarEstadoalum()
+        {
+            PersonasSQL ObjpersoSQL = new PersonasSQL();
+            cmb_tipoa.DataSource = ObjpersoSQL.Listar_EstadoApod();
+            cmb_tipoa.DisplayMember = "Descripcion";
+            cmb_tipoa.ValueMember = "id_estadoapod";
+        }
+
+        public void ListarProfesor()
+        {
+            PersonasSQL ObjpersoSQL = new PersonasSQL();
+            cmb_estudiante.DataSource = ObjpersoSQL.Listar_Estudiantes();
+            cmb_estudiante.DisplayMember = "NOMBRE ESTUDIANTE";
+            cmb_estudiante.ValueMember = "RUT";
+        }
+
+        public void ListarTipoEnsenanza()
+        {
+            PersonasSQL ObjpersoSQL = new PersonasSQL();
+            cmb_estudiante.DataSource = ObjpersoSQL.Listar_Estudiantes();
+            cmb_estudiante.DisplayMember = "NOMBRE ESTUDIANTE";
+            cmb_estudiante.ValueMember = "RUT";
+        }
+
+        public void Listargrado()
+        {
+            PersonasSQL ObjpersoSQL = new PersonasSQL();
+            cmb_estudiante.DataSource = ObjpersoSQL.Listar_Estudiantes();
+            cmb_estudiante.DisplayMember = "NOMBRE ESTUDIANTE";
+            cmb_estudiante.ValueMember = "RUT";
+        }
+
+        public void ListarCurso()
+        {
+            PersonasSQL ObjpersoSQL = new PersonasSQL();
+            cmb_estudiante.DataSource = ObjpersoSQL.Listar_Estudiantes();
+            cmb_estudiante.DisplayMember = "NOMBRE ESTUDIANTE";
+            cmb_estudiante.ValueMember = "RUT";
+        }*/
+
+        #region
 
         private void button1_Click(object sender, EventArgs e)
         {
-            
+
         }
 
         private void label3_Click(object sender, EventArgs e)
@@ -59,11 +125,7 @@ namespace SISTEMA_DE_MATRICULA_V1
 
         }
 
-        private void AgregarDir_Load(object sender, EventArgs e)
-        {
-      
-         
-        }
+
 
         private void combobox_tipo_SelectedIndexChanged(object sender, EventArgs e)
         {
@@ -106,6 +168,12 @@ namespace SISTEMA_DE_MATRICULA_V1
         }
 
         private void textBox1_TextChanged_1(object sender, EventArgs e)
+        {
+
+        }
+        #endregion
+
+        private void button4_Click(object sender, EventArgs e)
         {
 
         }

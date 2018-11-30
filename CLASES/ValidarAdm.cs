@@ -16,7 +16,7 @@ namespace SISTEMA_DE_MATRICULA_V1.CLASES
         public SqlDataReader LeerFilas;
         public SqlDataAdapter da;
         public DataTable dt;
-        public DataTable validar_administradores(Dadministradores dts)
+        public DataTable validar_administradores(CLASES.Dadministradores dts)
         {
             try
             {

@@ -50,5 +50,10 @@ CLASES.MatencionDatosSQL ObjmantSQL  = new CLASES.MatencionDatosSQL();
         {
 
         }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

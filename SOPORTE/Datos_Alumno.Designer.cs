@@ -72,13 +72,16 @@
             this.administradoresBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.dtp_Fnac_e = new System.Windows.Forms.DateTimePicker();
             this.button1 = new System.Windows.Forms.Button();
-            this.dgv_Administradores = new System.Windows.Forms.DataGridView();
+            this.dgv_Estudiantes = new System.Windows.Forms.DataGridView();
+            this.cmb_Nee = new System.Windows.Forms.ComboBox();
+            this.label18 = new System.Windows.Forms.Label();
+            this.button4 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.matriculaDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.administradoresBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.matriculaDataSetBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.administradoresBindingSource1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dgv_Administradores)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_Estudiantes)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -88,7 +91,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(772, 67);
+            this.panel1.Size = new System.Drawing.Size(733, 67);
             this.panel1.TabIndex = 0;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
@@ -193,7 +196,7 @@
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(311, 654);
+            this.button2.Location = new System.Drawing.Point(562, 727);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(142, 52);
             this.button2.TabIndex = 19;
@@ -523,22 +526,22 @@
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(248, 83);
+            this.button1.Location = new System.Drawing.Point(274, 727);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(114, 35);
+            this.button1.Size = new System.Drawing.Size(135, 52);
             this.button1.TabIndex = 48;
-            this.button1.Text = "BUSCAR";
+            this.button1.Text = "SELECCIONAR";
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click_1);
             // 
-            // dgv_Administradores
+            // dgv_Estudiantes
             // 
-            this.dgv_Administradores.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.dgv_Estudiantes.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.dgv_Administradores.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
-            this.dgv_Administradores.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
-            this.dgv_Administradores.BackgroundColor = System.Drawing.SystemColors.Control;
-            this.dgv_Administradores.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dgv_Estudiantes.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
+            this.dgv_Estudiantes.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
+            this.dgv_Estudiantes.BackgroundColor = System.Drawing.SystemColors.Control;
+            this.dgv_Estudiantes.BorderStyle = System.Windows.Forms.BorderStyle.None;
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
             dataGridViewCellStyle1.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -546,7 +549,7 @@
             dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.DarkCyan;
             dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgv_Administradores.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            this.dgv_Estudiantes.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
             dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
             dataGridViewCellStyle2.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -554,13 +557,60 @@
             dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.DarkCyan;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgv_Administradores.DefaultCellStyle = dataGridViewCellStyle2;
-            this.dgv_Administradores.Location = new System.Drawing.Point(35, 774);
-            this.dgv_Administradores.Name = "dgv_Administradores";
-            this.dgv_Administradores.RowHeadersVisible = false;
-            this.dgv_Administradores.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgv_Administradores.Size = new System.Drawing.Size(650, 150);
-            this.dgv_Administradores.TabIndex = 49;
+            this.dgv_Estudiantes.DefaultCellStyle = dataGridViewCellStyle2;
+            this.dgv_Estudiantes.Location = new System.Drawing.Point(19, 800);
+            this.dgv_Estudiantes.Name = "dgv_Estudiantes";
+            this.dgv_Estudiantes.RowHeadersVisible = false;
+            this.dgv_Estudiantes.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgv_Estudiantes.Size = new System.Drawing.Size(636, 151);
+            this.dgv_Estudiantes.TabIndex = 49;
+            this.dgv_Estudiantes.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_Estudiantes_CellContentClick);
+            // 
+            // cmb_Nee
+            // 
+            this.cmb_Nee.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmb_Nee.ForeColor = System.Drawing.Color.DarkCyan;
+            this.cmb_Nee.FormattingEnabled = true;
+            this.cmb_Nee.Items.AddRange(new object[] {
+            "Sin",
+            "Con"});
+            this.cmb_Nee.Location = new System.Drawing.Point(352, 655);
+            this.cmb_Nee.Name = "cmb_Nee";
+            this.cmb_Nee.Size = new System.Drawing.Size(127, 31);
+            this.cmb_Nee.TabIndex = 51;
+            this.cmb_Nee.Text = "Seleccione...";
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.BackColor = System.Drawing.Color.Transparent;
+            this.label18.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label18.ForeColor = System.Drawing.Color.DarkCyan;
+            this.label18.Location = new System.Drawing.Point(301, 658);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(45, 23);
+            this.label18.TabIndex = 50;
+            this.label18.Text = "NEE";
+            // 
+            // button4
+            // 
+            this.button4.BackColor = System.Drawing.Color.Transparent;
+            this.button4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button4.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button4.FlatAppearance.BorderColor = System.Drawing.SystemColors.Control;
+            this.button4.FlatAppearance.BorderSize = 0;
+            this.button4.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.button4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button4.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button4.ForeColor = System.Drawing.Color.White;
+            this.button4.Location = new System.Drawing.Point(414, 727);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(142, 52);
+            this.button4.TabIndex = 53;
+            this.button4.Text = "MODIFICAR";
+            this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // Datos_Alumno
             // 
@@ -568,8 +618,11 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(789, 510);
-            this.Controls.Add(this.dgv_Administradores);
+            this.ClientSize = new System.Drawing.Size(750, 510);
+            this.Controls.Add(this.button4);
+            this.Controls.Add(this.cmb_Nee);
+            this.Controls.Add(this.label18);
+            this.Controls.Add(this.dgv_Estudiantes);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.dtp_Fnac_e);
             this.Controls.Add(this.cmb_beneficio);
@@ -615,7 +668,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.administradoresBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.matriculaDataSetBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.administradoresBindingSource1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dgv_Administradores)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_Estudiantes)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -664,6 +717,9 @@
         private System.Windows.Forms.BindingSource administradoresBindingSource1;
         private System.Windows.Forms.DateTimePicker dtp_Fnac_e;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.DataGridView dgv_Administradores;
+        private System.Windows.Forms.DataGridView dgv_Estudiantes;
+        private System.Windows.Forms.ComboBox cmb_Nee;
+        private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.Button button4;
     }
 }

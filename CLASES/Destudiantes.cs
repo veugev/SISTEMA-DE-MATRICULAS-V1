@@ -123,7 +123,7 @@ namespace SISTEMA_DE_MATRICULA_V1.CLASES
         }
         public void set_fonoB(String value)
         {
-            this.fonoA = value;
+            this.fonoB = value;
         }
         public void set_fnac_e(String value)
         {
