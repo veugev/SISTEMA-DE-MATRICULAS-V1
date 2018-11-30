@@ -27,7 +27,7 @@ namespace SISTEMA_DE_MATRICULA_V1
 
         private void AgregarDir_Load(object sender, EventArgs e)
         {
-            ListarAnio();
+            /*ListarAnio();
             ListarCurso();
             ListarEstadoalum();
             Listargrado();
@@ -36,11 +36,11 @@ namespace SISTEMA_DE_MATRICULA_V1
             Listartipoalum();
             ListarTipoEnsenanza();
             ListarMatri();
-                 
+                 */
     
 
         }
-
+/*
         public void ListarAnio()
         {
             FichaMatriSQL ObjmatriculaSQL = new FichaMatriSQL();
@@ -103,7 +103,7 @@ namespace SISTEMA_DE_MATRICULA_V1
             cmb_curso.DataSource = ObjmatriculaSQL.Listar_Personas();
             cmb_curso.DisplayMember = "NOMBRE_PERSONA";
             cmb_curso.ValueMember = "RUT";
-        }
+        }*/
         private void button2_Click(object sender, EventArgs e)
         {
            
@@ -156,20 +156,20 @@ namespace SISTEMA_DE_MATRICULA_V1
 
                 MessageBox.Show("Datos ingresados exitosamente");
 
-                ListarMatri();
+              
             }
             else
             {
                 MessageBox.Show("Debe ingresar todos los datos");
             }
         }
-
+        /*
         public void ListarMatri()
         {
             FichaMatriSQL ObjmatSQL = new FichaMatriSQL();
             dgv_Matricula.DataSource = ObjmatSQL.Listar_Matriculas();
 
-        }
+        }*/
 
 
         #region

@@ -105,17 +105,17 @@
     <Compile Include="SOPORTE\Datos_Apoderado.Designer.cs">
       <DependentUpon>Datos_Apoderado.cs</DependentUpon>
     </Compile>
-    <Compile Include="SOPORTE\Datos_Padre.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="SOPORTE\Datos_Padre.Designer.cs">
-      <DependentUpon>Datos_Padre.cs</DependentUpon>
-    </Compile>
     <Compile Include="SOPORTE\Datos_Madre.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="SOPORTE\Datos_Madre.Designer.cs">
       <DependentUpon>Datos_Madre.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SOPORTE\Datos_Padre.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SOPORTE\Datos_Padre.Designer.cs">
+      <DependentUpon>Datos_Padre.cs</DependentUpon>
     </Compile>
     <Compile Include="SOPORTE\Datos_Alumno.cs">
       <SubType>Form</SubType>
@@ -282,11 +282,11 @@
     <EmbeddedResource Include="SOPORTE\Datos_Apoderado.resx">
       <DependentUpon>Datos_Apoderado.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="SOPORTE\Datos_Padre.resx">
-      <DependentUpon>Datos_Padre.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="SOPORTE\Datos_Madre.resx">
       <DependentUpon>Datos_Madre.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SOPORTE\Datos_Padre.resx">
+      <DependentUpon>Datos_Padre.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="SOPORTE\Datos_Alumno.resx">
       <DependentUpon>Datos_Alumno.cs</DependentUpon>
