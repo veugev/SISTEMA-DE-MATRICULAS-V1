@@ -397,7 +397,7 @@
             this.dgv_Personas.Name = "dgv_Personas";
             this.dgv_Personas.RowHeadersVisible = false;
             this.dgv_Personas.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgv_Personas.Size = new System.Drawing.Size(668, 151);
+            this.dgv_Personas.Size = new System.Drawing.Size(651, 151);
             this.dgv_Personas.TabIndex = 50;
             // 
             // button1

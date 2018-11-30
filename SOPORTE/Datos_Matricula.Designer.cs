@@ -28,8 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -53,14 +53,16 @@
             this.dtp_Fingreso = new System.Windows.Forms.DateTimePicker();
             this.dtp_fegreso = new System.Windows.Forms.DateTimePicker();
             this.dtp_Fretiro = new System.Windows.Forms.DateTimePicker();
-            this.dgv_Estudiantes = new System.Windows.Forms.DataGridView();
+            this.dgv_Matricula = new System.Windows.Forms.DataGridView();
             this.button1 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.cmb_apoderado = new System.Windows.Forms.ComboBox();
             this.label6 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.txt_ocupacion = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgv_Estudiantes)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_Matricula)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -70,7 +72,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(789, 67);
+            this.panel1.Size = new System.Drawing.Size(806, 67);
             this.panel1.TabIndex = 0;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
@@ -93,7 +95,7 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.DarkCyan;
-            this.label2.Location = new System.Drawing.Point(15, 90);
+            this.label2.Location = new System.Drawing.Point(18, 133);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(157, 23);
             this.label2.TabIndex = 10;
@@ -105,7 +107,7 @@
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.DarkCyan;
-            this.label3.Location = new System.Drawing.Point(15, 212);
+            this.label3.Location = new System.Drawing.Point(18, 255);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(169, 23);
             this.label3.TabIndex = 12;
@@ -118,7 +120,7 @@
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.DarkCyan;
-            this.label4.Location = new System.Drawing.Point(239, 272);
+            this.label4.Location = new System.Drawing.Point(242, 315);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(115, 23);
             this.label4.TabIndex = 14;
@@ -130,7 +132,7 @@
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.DarkCyan;
-            this.label5.Location = new System.Drawing.Point(510, 90);
+            this.label5.Location = new System.Drawing.Point(513, 133);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(42, 23);
             this.label5.TabIndex = 16;
@@ -148,7 +150,7 @@
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(565, 436);
+            this.button2.Location = new System.Drawing.Point(568, 479);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(142, 52);
             this.button2.TabIndex = 19;
@@ -161,7 +163,7 @@
             this.cmb_anio.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmb_anio.ForeColor = System.Drawing.Color.DarkCyan;
             this.cmb_anio.FormattingEnabled = true;
-            this.cmb_anio.Location = new System.Drawing.Point(587, 87);
+            this.cmb_anio.Location = new System.Drawing.Point(590, 130);
             this.cmb_anio.Name = "cmb_anio";
             this.cmb_anio.Size = new System.Drawing.Size(111, 31);
             this.cmb_anio.TabIndex = 21;
@@ -173,7 +175,7 @@
             this.cmb_prof.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmb_prof.ForeColor = System.Drawing.Color.DarkCyan;
             this.cmb_prof.FormattingEnabled = true;
-            this.cmb_prof.Location = new System.Drawing.Point(360, 269);
+            this.cmb_prof.Location = new System.Drawing.Point(363, 312);
             this.cmb_prof.Name = "cmb_prof";
             this.cmb_prof.Size = new System.Drawing.Size(337, 31);
             this.cmb_prof.TabIndex = 22;
@@ -185,7 +187,7 @@
             this.label7.BackColor = System.Drawing.Color.Transparent;
             this.label7.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.DarkCyan;
-            this.label7.Location = new System.Drawing.Point(15, 272);
+            this.label7.Location = new System.Drawing.Point(18, 315);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(57, 23);
             this.label7.TabIndex = 24;
@@ -198,7 +200,7 @@
             this.label8.BackColor = System.Drawing.Color.Transparent;
             this.label8.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.DarkCyan;
-            this.label8.Location = new System.Drawing.Point(440, 212);
+            this.label8.Location = new System.Drawing.Point(443, 255);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(61, 23);
             this.label8.TabIndex = 26;
@@ -210,7 +212,7 @@
             this.cmb_tipoal.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmb_tipoal.ForeColor = System.Drawing.Color.DarkCyan;
             this.cmb_tipoal.FormattingEnabled = true;
-            this.cmb_tipoal.Location = new System.Drawing.Point(163, 149);
+            this.cmb_tipoal.Location = new System.Drawing.Point(166, 192);
             this.cmb_tipoal.Name = "cmb_tipoal";
             this.cmb_tipoal.Size = new System.Drawing.Size(191, 31);
             this.cmb_tipoal.TabIndex = 28;
@@ -223,7 +225,7 @@
             this.label9.BackColor = System.Drawing.Color.Transparent;
             this.label9.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.DarkCyan;
-            this.label9.Location = new System.Drawing.Point(15, 152);
+            this.label9.Location = new System.Drawing.Point(18, 195);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(142, 23);
             this.label9.TabIndex = 27;
@@ -236,7 +238,7 @@
             this.label11.BackColor = System.Drawing.Color.Transparent;
             this.label11.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.ForeColor = System.Drawing.Color.DarkCyan;
-            this.label11.Location = new System.Drawing.Point(435, 152);
+            this.label11.Location = new System.Drawing.Point(438, 195);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(66, 23);
             this.label11.TabIndex = 31;
@@ -249,7 +251,7 @@
             this.label12.BackColor = System.Drawing.Color.Transparent;
             this.label12.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.ForeColor = System.Drawing.Color.DarkCyan;
-            this.label12.Location = new System.Drawing.Point(15, 331);
+            this.label12.Location = new System.Drawing.Point(18, 374);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(115, 23);
             this.label12.TabIndex = 34;
@@ -262,7 +264,7 @@
             this.label14.BackColor = System.Drawing.Color.Transparent;
             this.label14.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label14.ForeColor = System.Drawing.Color.DarkCyan;
-            this.label14.Location = new System.Drawing.Point(359, 331);
+            this.label14.Location = new System.Drawing.Point(362, 374);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(123, 23);
             this.label14.TabIndex = 37;
@@ -273,7 +275,7 @@
             this.cmb_estado.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmb_estado.ForeColor = System.Drawing.Color.DarkCyan;
             this.cmb_estado.FormattingEnabled = true;
-            this.cmb_estado.Location = new System.Drawing.Point(507, 149);
+            this.cmb_estado.Location = new System.Drawing.Point(510, 192);
             this.cmb_estado.Name = "cmb_estado";
             this.cmb_estado.Size = new System.Drawing.Size(191, 31);
             this.cmb_estado.TabIndex = 45;
@@ -284,7 +286,7 @@
             this.cmb_ensenanza.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmb_ensenanza.ForeColor = System.Drawing.Color.DarkCyan;
             this.cmb_ensenanza.FormattingEnabled = true;
-            this.cmb_ensenanza.Location = new System.Drawing.Point(190, 209);
+            this.cmb_ensenanza.Location = new System.Drawing.Point(193, 252);
             this.cmb_ensenanza.Name = "cmb_ensenanza";
             this.cmb_ensenanza.Size = new System.Drawing.Size(191, 31);
             this.cmb_ensenanza.TabIndex = 46;
@@ -295,7 +297,7 @@
             this.cmb_grado.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmb_grado.ForeColor = System.Drawing.Color.DarkCyan;
             this.cmb_grado.FormattingEnabled = true;
-            this.cmb_grado.Location = new System.Drawing.Point(507, 209);
+            this.cmb_grado.Location = new System.Drawing.Point(510, 252);
             this.cmb_grado.Name = "cmb_grado";
             this.cmb_grado.Size = new System.Drawing.Size(191, 31);
             this.cmb_grado.TabIndex = 47;
@@ -306,7 +308,7 @@
             this.cmb_curso.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmb_curso.ForeColor = System.Drawing.Color.DarkCyan;
             this.cmb_curso.FormattingEnabled = true;
-            this.cmb_curso.Location = new System.Drawing.Point(78, 269);
+            this.cmb_curso.Location = new System.Drawing.Point(81, 312);
             this.cmb_curso.Name = "cmb_curso";
             this.cmb_curso.Size = new System.Drawing.Size(129, 31);
             this.cmb_curso.TabIndex = 48;
@@ -320,7 +322,7 @@
             this.dtp_Fingreso.DropDownAlign = System.Windows.Forms.LeftRightAlignment.Right;
             this.dtp_Fingreso.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dtp_Fingreso.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtp_Fingreso.Location = new System.Drawing.Point(178, 87);
+            this.dtp_Fingreso.Location = new System.Drawing.Point(181, 130);
             this.dtp_Fingreso.MinDate = new System.DateTime(1990, 1, 1, 0, 0, 0, 0);
             this.dtp_Fingreso.Name = "dtp_Fingreso";
             this.dtp_Fingreso.Size = new System.Drawing.Size(171, 30);
@@ -335,7 +337,7 @@
             this.dtp_fegreso.DropDownAlign = System.Windows.Forms.LeftRightAlignment.Right;
             this.dtp_fegreso.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dtp_fegreso.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtp_fegreso.Location = new System.Drawing.Point(488, 325);
+            this.dtp_fegreso.Location = new System.Drawing.Point(491, 368);
             this.dtp_fegreso.MinDate = new System.DateTime(1990, 1, 1, 0, 0, 0, 0);
             this.dtp_fegreso.Name = "dtp_fegreso";
             this.dtp_fegreso.Size = new System.Drawing.Size(171, 30);
@@ -350,43 +352,43 @@
             this.dtp_Fretiro.DropDownAlign = System.Windows.Forms.LeftRightAlignment.Right;
             this.dtp_Fretiro.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dtp_Fretiro.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtp_Fretiro.Location = new System.Drawing.Point(136, 325);
+            this.dtp_Fretiro.Location = new System.Drawing.Point(139, 368);
             this.dtp_Fretiro.MinDate = new System.DateTime(1990, 1, 1, 0, 0, 0, 0);
             this.dtp_Fretiro.Name = "dtp_Fretiro";
             this.dtp_Fretiro.Size = new System.Drawing.Size(171, 30);
             this.dtp_Fretiro.TabIndex = 51;
             this.dtp_Fretiro.Value = new System.DateTime(2018, 11, 28, 0, 0, 0, 0);
             // 
-            // dgv_Estudiantes
+            // dgv_Matricula
             // 
-            this.dgv_Estudiantes.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.dgv_Matricula.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.dgv_Estudiantes.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
-            this.dgv_Estudiantes.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
-            this.dgv_Estudiantes.BackgroundColor = System.Drawing.SystemColors.Control;
-            this.dgv_Estudiantes.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.DarkCyan;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.DarkCyan;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgv_Estudiantes.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
-            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.DarkCyan;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.DarkCyan;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgv_Estudiantes.DefaultCellStyle = dataGridViewCellStyle4;
-            this.dgv_Estudiantes.Location = new System.Drawing.Point(19, 518);
-            this.dgv_Estudiantes.Name = "dgv_Estudiantes";
-            this.dgv_Estudiantes.RowHeadersVisible = false;
-            this.dgv_Estudiantes.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgv_Estudiantes.Size = new System.Drawing.Size(729, 190);
-            this.dgv_Estudiantes.TabIndex = 52;
+            this.dgv_Matricula.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
+            this.dgv_Matricula.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
+            this.dgv_Matricula.BackgroundColor = System.Drawing.SystemColors.Control;
+            this.dgv_Matricula.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.DarkCyan;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.DarkCyan;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgv_Matricula.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.DarkCyan;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.DarkCyan;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgv_Matricula.DefaultCellStyle = dataGridViewCellStyle2;
+            this.dgv_Matricula.Location = new System.Drawing.Point(22, 554);
+            this.dgv_Matricula.Name = "dgv_Matricula";
+            this.dgv_Matricula.RowHeadersVisible = false;
+            this.dgv_Matricula.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgv_Matricula.Size = new System.Drawing.Size(712, 190);
+            this.dgv_Matricula.TabIndex = 52;
             // 
             // button1
             // 
@@ -400,7 +402,7 @@
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(417, 436);
+            this.button1.Location = new System.Drawing.Point(420, 479);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(142, 52);
             this.button1.TabIndex = 53;
@@ -419,7 +421,7 @@
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button3.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.Location = new System.Drawing.Point(417, 436);
+            this.button3.Location = new System.Drawing.Point(420, 479);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(142, 52);
             this.button3.TabIndex = 54;
@@ -438,7 +440,7 @@
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button4.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button4.ForeColor = System.Drawing.Color.White;
-            this.button4.Location = new System.Drawing.Point(269, 436);
+            this.button4.Location = new System.Drawing.Point(272, 479);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(142, 52);
             this.button4.TabIndex = 55;
@@ -451,7 +453,7 @@
             this.cmb_apoderado.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmb_apoderado.ForeColor = System.Drawing.Color.DarkCyan;
             this.cmb_apoderado.FormattingEnabled = true;
-            this.cmb_apoderado.Location = new System.Drawing.Point(269, 383);
+            this.cmb_apoderado.Location = new System.Drawing.Point(272, 426);
             this.cmb_apoderado.Name = "cmb_apoderado";
             this.cmb_apoderado.Size = new System.Drawing.Size(337, 31);
             this.cmb_apoderado.TabIndex = 57;
@@ -463,11 +465,32 @@
             this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.DarkCyan;
-            this.label6.Location = new System.Drawing.Point(148, 386);
+            this.label6.Location = new System.Drawing.Point(151, 429);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(101, 23);
             this.label6.TabIndex = 56;
             this.label6.Text = "Apoderado";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.BackColor = System.Drawing.Color.Transparent;
+            this.label10.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.ForeColor = System.Drawing.Color.DarkCyan;
+            this.label10.Location = new System.Drawing.Point(33, 82);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(128, 23);
+            this.label10.TabIndex = 58;
+            this.label10.Text = "Nro. Matricula";
+            // 
+            // txt_ocupacion
+            // 
+            this.txt_ocupacion.Enabled = false;
+            this.txt_ocupacion.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_ocupacion.Location = new System.Drawing.Point(181, 79);
+            this.txt_ocupacion.Name = "txt_ocupacion";
+            this.txt_ocupacion.Size = new System.Drawing.Size(110, 30);
+            this.txt_ocupacion.TabIndex = 59;
             // 
             // Datos_Matricula
             // 
@@ -475,13 +498,15 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(806, 510);
+            this.ClientSize = new System.Drawing.Size(823, 510);
+            this.Controls.Add(this.txt_ocupacion);
+            this.Controls.Add(this.label10);
             this.Controls.Add(this.cmb_apoderado);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.dgv_Estudiantes);
+            this.Controls.Add(this.dgv_Matricula);
             this.Controls.Add(this.dtp_Fretiro);
             this.Controls.Add(this.dtp_fegreso);
             this.Controls.Add(this.dtp_Fingreso);
@@ -510,7 +535,7 @@
             this.Load += new System.EventHandler(this.AgregarDir_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgv_Estudiantes)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_Matricula)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -541,11 +566,13 @@
         private System.Windows.Forms.DateTimePicker dtp_Fingreso;
         private System.Windows.Forms.DateTimePicker dtp_fegreso;
         private System.Windows.Forms.DateTimePicker dtp_Fretiro;
-        private System.Windows.Forms.DataGridView dgv_Estudiantes;
+        private System.Windows.Forms.DataGridView dgv_Matricula;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.ComboBox cmb_apoderado;
         private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.TextBox txt_ocupacion;
     }
 }

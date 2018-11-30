@@ -54,7 +54,7 @@ namespace SISTEMA_DE_MATRICULA_V1
         {
             PersonasSQL ObjpersoSQL = new PersonasSQL();
             cmb_estudiante.DataSource = ObjpersoSQL.Listar_Estudiantes();
-            cmb_estudiante.DisplayMember = "NOMBRE ESTUDIANTE";
+            cmb_estudiante.DisplayMember = "NOMBRE_ESTUDIANTE";
             cmb_estudiante.ValueMember = "RUT";
         }
         #region

@@ -58,7 +58,7 @@ namespace SISTEMA_DE_MATRICULA_V1
         {
             DataTable Tabla = new DataTable();
             Comando.Connection = Conexion.AbrirConexion();
-            Comando.CommandText = "Listar_Personas";
+            Comando.CommandText = "Listar_Matriculas";
             Comando.CommandType = CommandType.StoredProcedure;
             LeerFilas = Comando.ExecuteReader();
             Tabla.Load(LeerFilas);
