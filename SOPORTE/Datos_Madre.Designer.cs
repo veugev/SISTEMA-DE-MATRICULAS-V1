@@ -83,9 +83,9 @@
             this.label1.ForeColor = System.Drawing.Color.DarkCyan;
             this.label1.Location = new System.Drawing.Point(256, 19);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(242, 33);
+            this.label1.Size = new System.Drawing.Size(272, 33);
             this.label1.TabIndex = 0;
-            this.label1.Text = "DATOS DEL PADRE";
+            this.label1.Text = "DATOS DE LA MADRE";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // txt_rut_p
@@ -397,7 +397,7 @@
             this.dgv_Personas.Name = "dgv_Personas";
             this.dgv_Personas.RowHeadersVisible = false;
             this.dgv_Personas.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgv_Personas.Size = new System.Drawing.Size(651, 151);
+            this.dgv_Personas.Size = new System.Drawing.Size(634, 151);
             this.dgv_Personas.TabIndex = 50;
             // 
             // button1
@@ -440,7 +440,7 @@
             this.button4.UseVisualStyleBackColor = false;
             this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
-            // Datos_Padre
+            // Datos_Madre
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -477,7 +477,7 @@
             this.Controls.Add(this.txt_rut_p);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "Datos_Padre";
+            this.Name = "Datos_Madre";
             this.Text = "AgregarUs";
             this.Load += new System.EventHandler(this.AgregarDir_Load);
             this.panel1.ResumeLayout(false);

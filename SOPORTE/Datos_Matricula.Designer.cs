@@ -387,7 +387,7 @@
             this.dgv_Matricula.Name = "dgv_Matricula";
             this.dgv_Matricula.RowHeadersVisible = false;
             this.dgv_Matricula.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgv_Matricula.Size = new System.Drawing.Size(712, 190);
+            this.dgv_Matricula.Size = new System.Drawing.Size(695, 190);
             this.dgv_Matricula.TabIndex = 52;
             // 
             // button1

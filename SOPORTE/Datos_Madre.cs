@@ -54,8 +54,8 @@ namespace SISTEMA_DE_MATRICULA_V1
         {
             PersonasSQL ObjpersoSQL = new PersonasSQL();
             cmb_estudiante.DataSource = ObjpersoSQL.Listar_Estudiantes();
-            cmb_estudiante.DisplayMember = "NOMBRE_ESTUDIANTE";
-            cmb_estudiante.ValueMember = "RUT";
+            cmb_estudiante.DisplayMember = "Nombre_Estudiante";
+            cmb_estudiante.ValueMember = "Rut_id";
         }
         #region
         private void button1_Click(object sender, EventArgs e)

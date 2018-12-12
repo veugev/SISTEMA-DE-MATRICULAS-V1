@@ -71,7 +71,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(772, 67);
+            this.panel1.Size = new System.Drawing.Size(789, 67);
             this.panel1.TabIndex = 0;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
@@ -368,6 +368,7 @@
             this.cmb_estudiante.Size = new System.Drawing.Size(308, 31);
             this.cmb_estudiante.TabIndex = 44;
             this.cmb_estudiante.Text = "Seleccione...";
+            this.cmb_estudiante.SelectedIndexChanged += new System.EventHandler(this.cmb_estudiante_SelectedIndexChanged);
             // 
             // dgv_Personas
             // 
@@ -446,7 +447,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(789, 510);
+            this.ClientSize = new System.Drawing.Size(806, 510);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.dgv_Personas);

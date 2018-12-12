@@ -27,7 +27,7 @@ namespace SISTEMA_DE_MATRICULA_V1
 
         private void AgregarDir_Load(object sender, EventArgs e)
         {
-            /*ListarAnio();
+            ListarAnio();
             ListarCurso();
             ListarEstadoalum();
             Listargrado();
@@ -35,12 +35,12 @@ namespace SISTEMA_DE_MATRICULA_V1
             ListarProfesor();
             Listartipoalum();
             ListarTipoEnsenanza();
-            ListarMatri();
-                 */
+           
+            
     
 
         }
-/*
+
         public void ListarAnio()
         {
             FichaMatriSQL ObjmatriculaSQL = new FichaMatriSQL();
@@ -69,7 +69,7 @@ namespace SISTEMA_DE_MATRICULA_V1
         {
             FichaMatriSQL ObjmatriculaSQL = new FichaMatriSQL();
             cmb_prof.DataSource = ObjmatriculaSQL.Listar_profesores();
-            cmb_prof.DisplayMember = "Descricion";
+            cmb_prof.DisplayMember = "Descripcion";
             cmb_prof.ValueMember = "id_profesor";
         }
 
@@ -100,10 +100,10 @@ namespace SISTEMA_DE_MATRICULA_V1
         public void ListarPersonas()
         {
             FichaMatriSQL ObjmatriculaSQL = new FichaMatriSQL();
-            cmb_curso.DataSource = ObjmatriculaSQL.Listar_Personas();
-            cmb_curso.DisplayMember = "NOMBRE_PERSONA";
-            cmb_curso.ValueMember = "RUT";
-        }*/
+            cmb_apoderado.DataSource = ObjmatriculaSQL.Listar_Personas();
+            cmb_apoderado.DisplayMember = "Nombre_persona";
+            cmb_apoderado.ValueMember = "id_Rut";
+        }
         private void button2_Click(object sender, EventArgs e)
         {
            
@@ -152,6 +152,7 @@ namespace SISTEMA_DE_MATRICULA_V1
                 cmb_grado.SelectedIndex = -1;
                 cmb_prof.SelectedIndex = -1;
                 cmb_tipoal.SelectedIndex = -1;
+
                 
 
                 MessageBox.Show("Datos ingresados exitosamente");
@@ -163,13 +164,13 @@ namespace SISTEMA_DE_MATRICULA_V1
                 MessageBox.Show("Debe ingresar todos los datos");
             }
         }
-        /*
+        
         public void ListarMatri()
         {
             FichaMatriSQL ObjmatSQL = new FichaMatriSQL();
             dgv_Matricula.DataSource = ObjmatSQL.Listar_Matriculas();
 
-        }*/
+        }
 
 
         #region
