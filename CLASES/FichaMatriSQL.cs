@@ -63,7 +63,6 @@ namespace SISTEMA_DE_MATRICULA_V1
             LeerFilas = Comando.ExecuteReader();
             Tabla.Load(LeerFilas);
             LeerFilas.Close();
-            { }
             Conexion.CerrarConexion();
             return Tabla;
         }

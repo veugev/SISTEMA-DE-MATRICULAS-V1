@@ -35,6 +35,7 @@ namespace SISTEMA_DE_MATRICULA_V1
             ListarProfesor();
             Listartipoalum();
             ListarTipoEnsenanza();
+            ListarMatri();
            
             
     
@@ -142,6 +143,8 @@ namespace SISTEMA_DE_MATRICULA_V1
                 //invocar al metodo insertar
                 Objmatriculasql.InsertarMatri(Objdmatr);
 
+                
+
                 //limpiar 
                 txt_ocupacion.Clear();
                 cmb_anio.SelectedIndex = -1;
@@ -167,8 +170,8 @@ namespace SISTEMA_DE_MATRICULA_V1
         
         public void ListarMatri()
         {
-            FichaMatriSQL ObjmatSQL = new FichaMatriSQL();
-            dgv_Matricula.DataSource = ObjmatSQL.Listar_Matriculas();
+            FichaMatriSQL listar = new FichaMatriSQL();
+            dgv_Matricula.DataSource = listar.Listar_Matriculas();
 
         }
 

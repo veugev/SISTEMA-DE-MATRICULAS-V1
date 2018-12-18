@@ -48,5 +48,10 @@ namespace SISTEMA_DE_MATRICULA_V1
         {
 
         }
+
+        private void dgv_Matricula_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }
