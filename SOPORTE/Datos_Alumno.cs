@@ -63,7 +63,7 @@ namespace SISTEMA_DE_MATRICULA_V1
             string fonoB = txt_fonob.Text;
             string fnac_e = dtp_Fnac_e.Text;
             string edadmarzo_e = txt_edad_e.Text;
-            string nacionalidad_e = txt_nacionalidad_e.Text;
+            string nacionalidad_e = cmb_nacionalidad.SelectedValue.ToString();
             string estproc_e = txt_proc_e.Text;
             string repit_e = cmb_repitencia.Text;
             string currepit_e = txt_currepit_e.Text;
@@ -71,6 +71,8 @@ namespace SISTEMA_DE_MATRICULA_V1
             int benef_e = Convert.ToInt32(cmb_beneficio.SelectedValue.ToString());
             string nee = cmb_Nee.Text;
             int vivecon_e = Convert.ToInt32(cmb_vivecon.SelectedValue.ToString());
+            string madre = cmb_madre.Text;
+            string padre = cmb_padre.Text;
 
             //enviamos el valor de las variables a los metodos set de la clase Dadministradores
             Objdestud.set_rut_e(rut_e);
@@ -90,15 +92,17 @@ namespace SISTEMA_DE_MATRICULA_V1
             Objdestud.set_benef_e(benef_e);
             Objdestud.set_nee(nee);
             Objdestud.set_vivecon_e(vivecon_e);
+            Objdestud.set_madre(madre);
+            Objdestud.set_padre(padre);
+            
 
-
-           if (txt_rut_e.Text != String.Empty && cmb_genero.SelectedItem.ToString() != String.Empty &&
+            if (txt_rut_e.Text != String.Empty && cmb_genero.Items.Count <= 0 &&
                 txt_nombre_e.Text != String.Empty && dtp_Fnac_e.Text != String.Empty && txt_edad_e.Text != String.Empty &&
-                txt_nacionalidad_e.Text != String.Empty && cmb_comuna.SelectedItem.ToString() != String.Empty && 
-                txt_direccion_e.Text != String.Empty && cmb_salida.SelectedItem.ToString() != String.Empty && 
-                cmb_vivecon.SelectedItem.ToString() != String.Empty && txt_fonoa.Text != String.Empty && txt_fonob.Text != String.Empty &&
-                txt_proc_e.Text != String.Empty && cmb_repitencia.SelectedItem.ToString() != String.Empty && txt_currepit_e.Text != String.Empty && 
-                cmb_beneficio.SelectedItem.ToString() != String.Empty)
+                cmb_nacionalidad.Items.Count <= 0 && cmb_comuna.Items.Count <= 0 && 
+                txt_direccion_e.Text != String.Empty && cmb_salida.Items.Count <= 0 && 
+                cmb_vivecon.Items.Count <= 0 && txt_fonoa.Text != String.Empty && txt_fonob.Text != String.Empty &&
+                txt_proc_e.Text != String.Empty && cmb_repitencia.Items.Count <= 0 && txt_currepit_e.Text != String.Empty && 
+                cmb_beneficio.Items.Count <= 0)
             {
 
                 //invocar al metodo insertar
@@ -109,7 +113,7 @@ namespace SISTEMA_DE_MATRICULA_V1
                 cmb_genero.SelectedIndex = -1;
                 txt_nombre_e.Clear();
                 txt_edad_e.Clear();
-                txt_nacionalidad_e.Clear();
+                cmb_nacionalidad.SelectedIndex = -1;
                 cmb_comuna.SelectedIndex = -1;
                 txt_direccion_e.Clear();
                 cmb_salida.SelectedIndex = -1;
@@ -121,6 +125,8 @@ namespace SISTEMA_DE_MATRICULA_V1
                 txt_currepit_e.Clear();
                 cmb_Nee.SelectedIndex = -1;
                 cmb_beneficio.SelectedIndex = -1;
+                cmb_madre.SelectedIndex = -1;
+                cmb_padre.SelectedIndex = -1;
 
                 MessageBox.Show("Datos ingresados exitosamente");
 
@@ -278,7 +284,7 @@ namespace SISTEMA_DE_MATRICULA_V1
                 txt_fonob.Text = dgv_Estudiantes.CurrentRow.Cells[6].Value.ToString();
                 dtp_Fnac_e.Text = dgv_Estudiantes.CurrentRow.Cells[7].Value.ToString();
                 txt_edad_e.Text = dgv_Estudiantes.CurrentRow.Cells[8].Value.ToString();
-                txt_nacionalidad_e.Text = dgv_Estudiantes.CurrentRow.Cells[9].Value.ToString();
+                cmb_nacionalidad.Text = dgv_Estudiantes.CurrentRow.Cells[9].Value.ToString();
                 txt_proc_e.Text = dgv_Estudiantes.CurrentRow.Cells[10].Value.ToString();
                 cmb_repitencia.Text = dgv_Estudiantes.CurrentRow.Cells[11].Value.ToString();
                 txt_currepit_e.Text = dgv_Estudiantes.CurrentRow.Cells[12].Value.ToString();
@@ -320,7 +326,7 @@ namespace SISTEMA_DE_MATRICULA_V1
             string fonoB = txt_fonob.Text;
             string fnac_e = dtp_Fnac_e.Text;
             string edadmarzo_e = txt_edad_e.Text;
-            string nacionalidad_e = txt_nacionalidad_e.Text;
+            string nacionalidad_e = cmb_nacionalidad.SelectedValue.ToString();
             string estproc_e = txt_proc_e.Text;
             string repit_e = cmb_repitencia.Text;
             string currepit_e = txt_currepit_e.Text;
@@ -328,6 +334,8 @@ namespace SISTEMA_DE_MATRICULA_V1
             int benef_e = Convert.ToInt32(cmb_beneficio.SelectedValue.ToString());
             string nee = cmb_Nee.Text;
             int vivecon_e = Convert.ToInt32(cmb_vivecon.SelectedValue.ToString());
+            string madre = cmb_madre.Text;
+            string padre = cmb_padre.Text;
 
             //enviamos el valor de las variables a los metodos set de la clase Dadministradores
             Objdestud.set_rut_e(rut_e);
@@ -347,19 +355,20 @@ namespace SISTEMA_DE_MATRICULA_V1
             Objdestud.set_benef_e(benef_e);
             Objdestud.set_nee(nee);
             Objdestud.set_vivecon_e(vivecon_e);
+            Objdestud.set_madre(madre);
+            Objdestud.set_padre(padre);
 
 
-            
 
-                //invocar al metodo insertar
-                Objestudiantesql.ModificarEstud(Objdestud);
+            //invocar al metodo insertar
+            Objestudiantesql.ModificarEstud(Objdestud);
 
                 //limpiar 
                 txt_rut_e.Clear();
                 cmb_genero.SelectedIndex = -1;
                 txt_nombre_e.Clear();
                 txt_edad_e.Clear();
-                txt_nacionalidad_e.Clear();
+                cmb_nacionalidad.SelectedIndex = -1;
                 cmb_comuna.SelectedIndex = -1;
                 txt_direccion_e.Clear();
                 cmb_salida.SelectedIndex = -1;
@@ -371,8 +380,10 @@ namespace SISTEMA_DE_MATRICULA_V1
                 txt_currepit_e.Clear();
                 cmb_Nee.SelectedIndex = -1;
                 cmb_beneficio.SelectedIndex = -1;
+                cmb_madre.SelectedIndex = -1;
+                cmb_padre.SelectedIndex = -1;
 
-                MessageBox.Show("Datos modificados exitosamente");
+            MessageBox.Show("Datos modificados exitosamente");
                 ListarEstud();
 
             

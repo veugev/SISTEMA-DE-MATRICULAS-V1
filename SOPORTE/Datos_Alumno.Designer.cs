@@ -50,7 +50,6 @@
             this.cmb_salida = new System.Windows.Forms.ComboBox();
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
-            this.txt_nacionalidad_e = new System.Windows.Forms.TextBox();
             this.cmb_vivecon = new System.Windows.Forms.ComboBox();
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
@@ -76,6 +75,11 @@
             this.cmb_Nee = new System.Windows.Forms.ComboBox();
             this.label18 = new System.Windows.Forms.Label();
             this.button4 = new System.Windows.Forms.Button();
+            this.cmb_madre = new System.Windows.Forms.ComboBox();
+            this.label19 = new System.Windows.Forms.Label();
+            this.cmb_padre = new System.Windows.Forms.ComboBox();
+            this.label20 = new System.Windows.Forms.Label();
+            this.cmb_nacionalidad = new System.Windows.Forms.ComboBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.matriculaDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.administradoresBindingSource)).BeginInit();
@@ -196,7 +200,7 @@
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(562, 727);
+            this.button2.Location = new System.Drawing.Point(565, 846);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(142, 52);
             this.button2.TabIndex = 19;
@@ -310,14 +314,6 @@
             this.label10.TabIndex = 30;
             this.label10.Text = "Nacionalidad";
             // 
-            // txt_nacionalidad_e
-            // 
-            this.txt_nacionalidad_e.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_nacionalidad_e.Location = new System.Drawing.Point(147, 275);
-            this.txt_nacionalidad_e.Name = "txt_nacionalidad_e";
-            this.txt_nacionalidad_e.Size = new System.Drawing.Size(215, 30);
-            this.txt_nacionalidad_e.TabIndex = 29;
-            // 
             // cmb_vivecon
             // 
             this.cmb_vivecon.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -410,7 +406,7 @@
             this.label15.BackColor = System.Drawing.Color.Transparent;
             this.label15.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label15.ForeColor = System.Drawing.Color.DarkCyan;
-            this.label15.Location = new System.Drawing.Point(239, 593);
+            this.label15.Location = new System.Drawing.Point(417, 593);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(137, 23);
             this.label15.TabIndex = 43;
@@ -420,9 +416,9 @@
             // txt_currepit_e
             // 
             this.txt_currepit_e.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_currepit_e.Location = new System.Drawing.Point(382, 590);
+            this.txt_currepit_e.Location = new System.Drawing.Point(560, 590);
             this.txt_currepit_e.Name = "txt_currepit_e";
-            this.txt_currepit_e.Size = new System.Drawing.Size(75, 30);
+            this.txt_currepit_e.Size = new System.Drawing.Size(137, 30);
             this.txt_currepit_e.TabIndex = 42;
             this.txt_currepit_e.TextChanged += new System.EventHandler(this.textBox10_TextChanged);
             // 
@@ -448,7 +444,7 @@
             "No"});
             this.cmb_repitencia.Location = new System.Drawing.Point(118, 590);
             this.cmb_repitencia.Name = "cmb_repitencia";
-            this.cmb_repitencia.Size = new System.Drawing.Size(115, 31);
+            this.cmb_repitencia.Size = new System.Drawing.Size(226, 31);
             this.cmb_repitencia.TabIndex = 44;
             this.cmb_repitencia.Text = "Seleccione...";
             // 
@@ -457,9 +453,9 @@
             this.cmb_beneficio.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmb_beneficio.ForeColor = System.Drawing.Color.DarkCyan;
             this.cmb_beneficio.FormattingEnabled = true;
-            this.cmb_beneficio.Location = new System.Drawing.Point(562, 590);
+            this.cmb_beneficio.Location = new System.Drawing.Point(114, 650);
             this.cmb_beneficio.Name = "cmb_beneficio";
-            this.cmb_beneficio.Size = new System.Drawing.Size(136, 31);
+            this.cmb_beneficio.Size = new System.Drawing.Size(248, 31);
             this.cmb_beneficio.TabIndex = 46;
             this.cmb_beneficio.Text = "Seleccione...";
             // 
@@ -469,7 +465,7 @@
             this.label17.BackColor = System.Drawing.Color.Transparent;
             this.label17.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label17.ForeColor = System.Drawing.Color.DarkCyan;
-            this.label17.Location = new System.Drawing.Point(463, 593);
+            this.label17.Location = new System.Drawing.Point(15, 653);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(93, 23);
             this.label17.TabIndex = 45;
@@ -508,11 +504,11 @@
             this.dtp_Fnac_e.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dtp_Fnac_e.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dtp_Fnac_e.Location = new System.Drawing.Point(208, 220);
-            this.dtp_Fnac_e.MinDate = new System.DateTime(1990, 1, 1, 0, 0, 0, 0);
+            this.dtp_Fnac_e.MinDate = new System.DateTime(1900, 1, 1, 0, 0, 0, 0);
             this.dtp_Fnac_e.Name = "dtp_Fnac_e";
             this.dtp_Fnac_e.Size = new System.Drawing.Size(171, 30);
             this.dtp_Fnac_e.TabIndex = 47;
-            this.dtp_Fnac_e.Value = new System.DateTime(2018, 11, 28, 0, 0, 0, 0);
+            this.dtp_Fnac_e.Value = new System.DateTime(1900, 1, 1, 0, 0, 0, 0);
             // 
             // button1
             // 
@@ -526,7 +522,7 @@
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(274, 727);
+            this.button1.Location = new System.Drawing.Point(277, 846);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(135, 52);
             this.button1.TabIndex = 48;
@@ -558,11 +554,11 @@
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.DarkCyan;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dgv_Estudiantes.DefaultCellStyle = dataGridViewCellStyle2;
-            this.dgv_Estudiantes.Location = new System.Drawing.Point(19, 800);
+            this.dgv_Estudiantes.Location = new System.Drawing.Point(22, 919);
             this.dgv_Estudiantes.Name = "dgv_Estudiantes";
             this.dgv_Estudiantes.RowHeadersVisible = false;
             this.dgv_Estudiantes.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgv_Estudiantes.Size = new System.Drawing.Size(636, 151);
+            this.dgv_Estudiantes.Size = new System.Drawing.Size(585, 151);
             this.dgv_Estudiantes.TabIndex = 49;
             this.dgv_Estudiantes.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_Estudiantes_CellContentClick);
             // 
@@ -574,7 +570,7 @@
             this.cmb_Nee.Items.AddRange(new object[] {
             "Sin",
             "Con"});
-            this.cmb_Nee.Location = new System.Drawing.Point(352, 655);
+            this.cmb_Nee.Location = new System.Drawing.Point(570, 650);
             this.cmb_Nee.Name = "cmb_Nee";
             this.cmb_Nee.Size = new System.Drawing.Size(127, 31);
             this.cmb_Nee.TabIndex = 51;
@@ -586,7 +582,7 @@
             this.label18.BackColor = System.Drawing.Color.Transparent;
             this.label18.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label18.ForeColor = System.Drawing.Color.DarkCyan;
-            this.label18.Location = new System.Drawing.Point(301, 658);
+            this.label18.Location = new System.Drawing.Point(519, 653);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(45, 23);
             this.label18.TabIndex = 50;
@@ -604,13 +600,77 @@
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button4.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button4.ForeColor = System.Drawing.Color.White;
-            this.button4.Location = new System.Drawing.Point(414, 727);
+            this.button4.Location = new System.Drawing.Point(417, 846);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(142, 52);
             this.button4.TabIndex = 53;
             this.button4.Text = "MODIFICAR";
             this.button4.UseVisualStyleBackColor = false;
             this.button4.Click += new System.EventHandler(this.button4_Click);
+            // 
+            // cmb_madre
+            // 
+            this.cmb_madre.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmb_madre.ForeColor = System.Drawing.Color.DarkCyan;
+            this.cmb_madre.FormattingEnabled = true;
+            this.cmb_madre.Location = new System.Drawing.Point(96, 708);
+            this.cmb_madre.Name = "cmb_madre";
+            this.cmb_madre.Size = new System.Drawing.Size(601, 31);
+            this.cmb_madre.TabIndex = 55;
+            this.cmb_madre.Text = "Seleccione...";
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.BackColor = System.Drawing.Color.Transparent;
+            this.label19.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label19.ForeColor = System.Drawing.Color.DarkCyan;
+            this.label19.Location = new System.Drawing.Point(27, 711);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(63, 23);
+            this.label19.TabIndex = 54;
+            this.label19.Text = "Madre";
+            // 
+            // cmb_padre
+            // 
+            this.cmb_padre.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmb_padre.ForeColor = System.Drawing.Color.DarkCyan;
+            this.cmb_padre.FormattingEnabled = true;
+            this.cmb_padre.Location = new System.Drawing.Point(96, 766);
+            this.cmb_padre.Name = "cmb_padre";
+            this.cmb_padre.Size = new System.Drawing.Size(601, 31);
+            this.cmb_padre.TabIndex = 57;
+            this.cmb_padre.Text = "Seleccione...";
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.BackColor = System.Drawing.Color.Transparent;
+            this.label20.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label20.ForeColor = System.Drawing.Color.DarkCyan;
+            this.label20.Location = new System.Drawing.Point(27, 769);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(58, 23);
+            this.label20.TabIndex = 56;
+            this.label20.Text = "Padre";
+            // 
+            // cmb_nacionalidad
+            // 
+            this.cmb_nacionalidad.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmb_nacionalidad.ForeColor = System.Drawing.Color.DarkCyan;
+            this.cmb_nacionalidad.Items.AddRange(new object[] {
+            "Chilena",
+            "Haitiana",
+            "Colombiana",
+            "Venezolana",
+            "Argentina",
+            "Peruana",
+            "Bolibiana"});
+            this.cmb_nacionalidad.Location = new System.Drawing.Point(141, 275);
+            this.cmb_nacionalidad.Name = "cmb_nacionalidad";
+            this.cmb_nacionalidad.Size = new System.Drawing.Size(213, 31);
+            this.cmb_nacionalidad.TabIndex = 58;
+            this.cmb_nacionalidad.Text = "Seleccione...";
             // 
             // Datos_Alumno
             // 
@@ -619,6 +679,11 @@
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(750, 510);
+            this.Controls.Add(this.cmb_nacionalidad);
+            this.Controls.Add(this.cmb_padre);
+            this.Controls.Add(this.label20);
+            this.Controls.Add(this.cmb_madre);
+            this.Controls.Add(this.label19);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.cmb_Nee);
             this.Controls.Add(this.label18);
@@ -640,7 +705,6 @@
             this.Controls.Add(this.cmb_vivecon);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.label10);
-            this.Controls.Add(this.txt_nacionalidad_e);
             this.Controls.Add(this.cmb_salida);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
@@ -695,7 +759,6 @@
         private System.Windows.Forms.ComboBox cmb_salida;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.TextBox txt_nacionalidad_e;
         private System.Windows.Forms.ComboBox cmb_vivecon;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label12;
@@ -721,5 +784,10 @@
         private System.Windows.Forms.ComboBox cmb_Nee;
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.ComboBox cmb_madre;
+        private System.Windows.Forms.Label label19;
+        private System.Windows.Forms.ComboBox cmb_padre;
+        private System.Windows.Forms.Label label20;
+        private System.Windows.Forms.ComboBox cmb_nacionalidad;
     }
 }

@@ -7,9 +7,9 @@ using System.Data;
 using System.Data.SqlClient;
 using System.Windows.Forms;
 
-namespace SISTEMA_DE_MATRICULA_V1
+namespace SISTEMA_DE_MATRICULA_V1.CLASES
 {
-    class PersonasSQL
+    class PadreSQL
     {
         private BdConexion Conexion = new BdConexion();
         private SqlCommand Comando = new SqlCommand();
@@ -28,24 +28,24 @@ namespace SISTEMA_DE_MATRICULA_V1
             return Tabla;
         }
 
-        public void InsertarPers(Dpersonas dtp)
+        public void InsertarPadre(Dpadre dtp)
         {
             Comando.Connection = Conexion.AbrirConexion();
-            Comando.CommandText = "insert into Personas values('" + dtp.get_rut_p() + "','" + dtp.get_nombre_p() + "','" + dtp.get_nacionalidad_p() + "'," +
-                                                            "'" + dtp.get_direccion_p() + "','" + dtp.get_comuna_p() + "','" + dtp.get_nivel_educacional() + "'," +
-                                                            "'" + dtp.get_ocupacion() + "','" + dtp.get_fono_p() + "','" + dtp.get_parentezco() + "'," +
-                                                            "'" + dtp.get_mail() + "','" + dtp.get_rut_e() + "')";
+            Comando.CommandText = "insert into Padre values('" + dtp.get_rut_pa() + "','" + dtp.get_nombre_pa() + "','" + dtp.get_nacionalidad_pa() + "'," +
+                                                            "'" + dtp.get_direccion_pa() + "','" + dtp.get_comuna_pa() + "','" + dtp.get_nivel_educacional_pa() + "'," +
+                                                            "'" + dtp.get_ocupacion_pa() + "','" + dtp.get_fono_pa() + "','" + dtp.get_parentezco_pa() + "'," +
+                                                            "'" + dtp.get_mail_pa() + "')";
             Comando.CommandType = CommandType.Text;
             Comando.ExecuteNonQuery();
             Comando.Parameters.Clear();
 
         }
 
-        public DataTable Listar_Personas()
+        public DataTable Listar_Padres()
         {
             DataTable Tabla = new DataTable();
             Comando.Connection = Conexion.AbrirConexion();
-            Comando.CommandText = "Listar_Personas";
+            Comando.CommandText = "Listar_Padres";
             Comando.CommandType = CommandType.StoredProcedure;
             LeerFilas = Comando.ExecuteReader();
             Tabla.Load(LeerFilas);
@@ -69,31 +69,18 @@ namespace SISTEMA_DE_MATRICULA_V1
             return Tabla;
         }
 
-        public void Modificarpers(Dpersonas dtp)
+        public void Modificarpadre(Dpadre dtp)
         {
             Comando.Connection = Conexion.AbrirConexion();
-            Comando.CommandText = "Update Personas  set Nombre_persona = '" + dtp.get_nombre_p() + "', Nacionalidad_P= '" + dtp.get_nacionalidad_p() + "'," +
-                                                            "Direccion = '" + dtp.get_direccion_p() + "', id_comuna = '" + dtp.get_comuna_p() + "', Nivel_educ = '" + dtp.get_nivel_educacional() + "'," +
-                                                            " Ocupacion = '" + dtp.get_ocupacion() + "', Fono ='" + dtp.get_fono_p() + "', id_parentezco = '" + dtp.get_parentezco() + "'," +
-                                                            "Mail = '" + dtp.get_mail() + "', Rut_id = '" + dtp.get_rut_e() + "'where id_Rut = '" + dtp.get_rut_p() + "'";
+            Comando.CommandText = "Update Padre  set Nombre_padre = '" + dtp.get_nombre_pa() + "', Nacionalidad= '" + dtp.get_nacionalidad_pa() + "'," +
+                                                            "Direccion = '" + dtp.get_direccion_pa() + "', id_comuna = '" + dtp.get_comuna_pa() + "', Nivel_educ = '" + dtp.get_nivel_educacional_pa() + "'," +
+                                                            " Ocupacion = '" + dtp.get_ocupacion_pa() + "', Fono ='" + dtp.get_fono_pa() + "', id_parentezco = '" + dtp.get_parentezco_pa() + "'," +
+                                                            "Mail = '" + dtp.get_mail_pa() + "'where id_RutP = '" + dtp.get_rut_pa() + "'";
             Comando.CommandType = CommandType.Text;
             Comando.ExecuteNonQuery();
             Comando.Parameters.Clear();
 
         }
 
-        public DataTable Listar_Estudiantes()
-        {
-            DataTable Tabla = new DataTable();
-            Comando.Connection = Conexion.AbrirConexion();
-            Comando.CommandText = "Listar_alumno";
-            Comando.CommandType = CommandType.StoredProcedure;
-            LeerFilas = Comando.ExecuteReader();
-            Tabla.Load(LeerFilas);
-            LeerFilas.Close();
-            { }
-            Conexion.CerrarConexion();
-            return Tabla;
-        }
     }
 }

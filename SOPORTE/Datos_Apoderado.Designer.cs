@@ -28,8 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.txt_rut_p = new System.Windows.Forms.TextBox();
@@ -45,14 +45,10 @@
             this.cmb_comuna = new System.Windows.Forms.ComboBox();
             this.txt_ocupacion = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.txt_nivel_educ = new System.Windows.Forms.TextBox();
-            this.cmb_tipoa = new System.Windows.Forms.ComboBox();
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
-            this.txt_nacionalidad_p = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
             this.txt_fono_p = new System.Windows.Forms.TextBox();
-            this.label14 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.txt_mail = new System.Windows.Forms.TextBox();
             this.label16 = new System.Windows.Forms.Label();
@@ -60,6 +56,9 @@
             this.dgv_Personas = new System.Windows.Forms.DataGridView();
             this.button1 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.cmb_nacionalidad = new System.Windows.Forms.ComboBox();
+            this.cmb_niveleduc = new System.Windows.Forms.ComboBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_Personas)).BeginInit();
             this.SuspendLayout();
@@ -81,11 +80,11 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Tahoma", 20.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.DarkCyan;
-            this.label1.Location = new System.Drawing.Point(256, 19);
+            this.label1.Location = new System.Drawing.Point(235, 18);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(242, 33);
+            this.label1.Size = new System.Drawing.Size(314, 33);
             this.label1.TabIndex = 0;
-            this.label1.Text = "DATOS DEL PADRE";
+            this.label1.Text = "DATOS DEL APODERADO";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // txt_rut_p
@@ -149,7 +148,7 @@
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.DarkCyan;
-            this.label5.Location = new System.Drawing.Point(321, 90);
+            this.label5.Location = new System.Drawing.Point(408, 90);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(101, 23);
             this.label5.TabIndex = 16;
@@ -201,11 +200,11 @@
             this.cmb_parentezco.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmb_parentezco.ForeColor = System.Drawing.Color.DarkCyan;
             this.cmb_parentezco.FormattingEnabled = true;
-            this.cmb_parentezco.Location = new System.Drawing.Point(428, 87);
+            this.cmb_parentezco.Location = new System.Drawing.Point(515, 87);
             this.cmb_parentezco.Name = "cmb_parentezco";
-            this.cmb_parentezco.Size = new System.Drawing.Size(270, 31);
+            this.cmb_parentezco.Size = new System.Drawing.Size(183, 31);
             this.cmb_parentezco.TabIndex = 21;
-            this.cmb_parentezco.Text = "Seleccione Parentezco...";
+            this.cmb_parentezco.Text = "Seleccione...";
             this.cmb_parentezco.SelectedIndexChanged += new System.EventHandler(this.combobox_tipo_SelectedIndexChanged);
             // 
             // cmb_comuna
@@ -240,26 +239,6 @@
             this.label8.Text = "Nivel Educacional";
             this.label8.Click += new System.EventHandler(this.label8_Click);
             // 
-            // txt_nivel_educ
-            // 
-            this.txt_nivel_educ.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_nivel_educ.Location = new System.Drawing.Point(182, 339);
-            this.txt_nivel_educ.Name = "txt_nivel_educ";
-            this.txt_nivel_educ.Size = new System.Drawing.Size(201, 30);
-            this.txt_nivel_educ.TabIndex = 25;
-            // 
-            // cmb_tipoa
-            // 
-            this.cmb_tipoa.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmb_tipoa.ForeColor = System.Drawing.Color.DarkCyan;
-            this.cmb_tipoa.FormattingEnabled = true;
-            this.cmb_tipoa.Location = new System.Drawing.Point(544, 459);
-            this.cmb_tipoa.Name = "cmb_tipoa";
-            this.cmb_tipoa.Size = new System.Drawing.Size(154, 31);
-            this.cmb_tipoa.TabIndex = 28;
-            this.cmb_tipoa.Text = "Seleccione ...";
-            this.cmb_tipoa.SelectedIndexChanged += new System.EventHandler(this.comboBox2_SelectedIndexChanged);
-            // 
             // label9
             // 
             this.label9.AutoSize = true;
@@ -285,14 +264,6 @@
             this.label10.TabIndex = 30;
             this.label10.Text = "Nacionalidad";
             // 
-            // txt_nacionalidad_p
-            // 
-            this.txt_nacionalidad_p.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_nacionalidad_p.Location = new System.Drawing.Point(147, 217);
-            this.txt_nacionalidad_p.Name = "txt_nacionalidad_p";
-            this.txt_nacionalidad_p.Size = new System.Drawing.Size(215, 30);
-            this.txt_nacionalidad_p.TabIndex = 29;
-            // 
             // label12
             // 
             this.label12.AutoSize = true;
@@ -313,18 +284,6 @@
             this.txt_fono_p.Name = "txt_fono_p";
             this.txt_fono_p.Size = new System.Drawing.Size(180, 30);
             this.txt_fono_p.TabIndex = 33;
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.BackColor = System.Drawing.Color.Transparent;
-            this.label14.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.ForeColor = System.Drawing.Color.DarkCyan;
-            this.label14.Location = new System.Drawing.Point(467, 462);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(66, 23);
-            this.label14.TabIndex = 37;
-            this.label14.Text = "Estado";
             // 
             // label13
             // 
@@ -365,7 +324,7 @@
             this.cmb_estudiante.FormattingEnabled = true;
             this.cmb_estudiante.Location = new System.Drawing.Point(149, 459);
             this.cmb_estudiante.Name = "cmb_estudiante";
-            this.cmb_estudiante.Size = new System.Drawing.Size(308, 31);
+            this.cmb_estudiante.Size = new System.Drawing.Size(549, 31);
             this.cmb_estudiante.TabIndex = 44;
             this.cmb_estudiante.Text = "Seleccione...";
             this.cmb_estudiante.SelectedIndexChanged += new System.EventHandler(this.cmb_estudiante_SelectedIndexChanged);
@@ -378,27 +337,27 @@
             this.dgv_Personas.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.dgv_Personas.BackgroundColor = System.Drawing.SystemColors.Control;
             this.dgv_Personas.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.DarkCyan;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.DarkCyan;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgv_Personas.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
-            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.DarkCyan;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.DarkCyan;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgv_Personas.DefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.DarkCyan;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.DarkCyan;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgv_Personas.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.DarkCyan;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.DarkCyan;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgv_Personas.DefaultCellStyle = dataGridViewCellStyle2;
             this.dgv_Personas.Location = new System.Drawing.Point(29, 644);
             this.dgv_Personas.Name = "dgv_Personas";
             this.dgv_Personas.RowHeadersVisible = false;
             this.dgv_Personas.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgv_Personas.Size = new System.Drawing.Size(634, 151);
+            this.dgv_Personas.Size = new System.Drawing.Size(600, 151);
             this.dgv_Personas.TabIndex = 50;
             // 
             // button1
@@ -441,6 +400,70 @@
             this.button4.UseVisualStyleBackColor = false;
             this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
+            // button3
+            // 
+            this.button3.BackColor = System.Drawing.Color.Transparent;
+            this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button3.FlatAppearance.BorderColor = System.Drawing.SystemColors.Control;
+            this.button3.FlatAppearance.BorderSize = 0;
+            this.button3.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.button3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button3.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.ForeColor = System.Drawing.Color.White;
+            this.button3.Location = new System.Drawing.Point(281, 87);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(121, 31);
+            this.button3.TabIndex = 53;
+            this.button3.Text = "Buscar";
+            this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
+            // cmb_nacionalidad
+            // 
+            this.cmb_nacionalidad.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmb_nacionalidad.ForeColor = System.Drawing.Color.DarkCyan;
+            this.cmb_nacionalidad.Items.AddRange(new object[] {
+            "Chilena",
+            "Haitiana",
+            "Colombiana",
+            "Venezolana",
+            "Argentina",
+            "Peruana",
+            "Bolibiana"});
+            this.cmb_nacionalidad.Location = new System.Drawing.Point(138, 217);
+            this.cmb_nacionalidad.Name = "cmb_nacionalidad";
+            this.cmb_nacionalidad.Size = new System.Drawing.Size(213, 31);
+            this.cmb_nacionalidad.TabIndex = 59;
+            this.cmb_nacionalidad.Text = "Seleccione...";
+            // 
+            // cmb_niveleduc
+            // 
+            this.cmb_niveleduc.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmb_niveleduc.ForeColor = System.Drawing.Color.DarkCyan;
+            this.cmb_niveleduc.Items.AddRange(new object[] {
+            "Sin estudios",
+            "1º Basico",
+            "2º Basico",
+            "3º Basico",
+            "4º Basico",
+            "5º Basico",
+            "6º Basico",
+            "7º Basico",
+            "8º Basico",
+            "1º Medio",
+            "2º Medio",
+            "3º Medio",
+            "4º Medio",
+            "Universitaria",
+            "Tecnica Profesional"});
+            this.cmb_niveleduc.Location = new System.Drawing.Point(177, 339);
+            this.cmb_niveleduc.Name = "cmb_niveleduc";
+            this.cmb_niveleduc.Size = new System.Drawing.Size(206, 31);
+            this.cmb_niveleduc.TabIndex = 60;
+            this.cmb_niveleduc.Text = "Seleccione...";
+            // 
             // Datos_Apoderado
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -448,6 +471,9 @@
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(789, 510);
+            this.Controls.Add(this.cmb_niveleduc);
+            this.Controls.Add(this.cmb_nacionalidad);
+            this.Controls.Add(this.button3);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.dgv_Personas);
@@ -455,15 +481,11 @@
             this.Controls.Add(this.label16);
             this.Controls.Add(this.label13);
             this.Controls.Add(this.txt_mail);
-            this.Controls.Add(this.label14);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.txt_fono_p);
             this.Controls.Add(this.label10);
-            this.Controls.Add(this.txt_nacionalidad_p);
-            this.Controls.Add(this.cmb_tipoa);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
-            this.Controls.Add(this.txt_nivel_educ);
             this.Controls.Add(this.txt_ocupacion);
             this.Controls.Add(this.cmb_comuna);
             this.Controls.Add(this.cmb_parentezco);
@@ -506,14 +528,10 @@
         private System.Windows.Forms.ComboBox cmb_comuna;
         private System.Windows.Forms.TextBox txt_ocupacion;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox txt_nivel_educ;
-        private System.Windows.Forms.ComboBox cmb_tipoa;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.TextBox txt_nacionalidad_p;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.TextBox txt_fono_p;
-        private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.TextBox txt_mail;
         private System.Windows.Forms.Label label16;
@@ -521,5 +539,8 @@
         private System.Windows.Forms.DataGridView dgv_Personas;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.ComboBox cmb_nacionalidad;
+        private System.Windows.Forms.ComboBox cmb_niveleduc;
     }
 }
