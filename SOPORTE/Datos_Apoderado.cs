@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Data.SqlClient;
 using System.Windows.Forms;
 
 namespace SISTEMA_DE_MATRICULA_V1
@@ -8,6 +9,10 @@ namespace SISTEMA_DE_MATRICULA_V1
 
         PersonasSQL Objpersonasql = new PersonasSQL();
         Dpersonas Objdpers = new Dpersonas();
+        private SqlDataReader dr;
+        private BdConexion Conexion = new BdConexion();
+        private SqlCommand Comando = new SqlCommand();
+
         public Datos_Apoderado()
         {
             InitializeComponent();
@@ -15,6 +20,7 @@ namespace SISTEMA_DE_MATRICULA_V1
             button2.BackgroundImage = Properties.Resources.button_icon_png_20;
             button1.BackgroundImage = Properties.Resources.button_icon_png_20;
             button3.BackgroundImage = Properties.Resources.button_icon_png_20;
+            button5.BackgroundImage = Properties.Resources.button_icon_png_20;
 
         }
         private void AgregarDir_Load(object sender, EventArgs e)
@@ -69,7 +75,7 @@ namespace SISTEMA_DE_MATRICULA_V1
             {
 
             }
-
+        #endregion
         private void button2_Click(object sender, EventArgs e)
         {
             string rut_p = txt_rut_p.Text;
@@ -143,6 +149,34 @@ namespace SISTEMA_DE_MATRICULA_V1
         }
 
 
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+                    
+
+            PersonasSQL ObjpersSQL = new PersonasSQL();
+
+            if (Objpersonasql.Buscar_apodMadre() == true)
+            {
+            
+                
+
+                    Comando.Connection = Conexion.AbrirConexion();
+                    txt_rut_p.Text = dr["id_RutM"].ToString();
+                    txt_nombre_p.Text = dr["Nombre_madre"].ToString();
+                    cmb_nacionalidad.Text = dr["Nacionalidad"].ToString();
+                    txt_direccion_p.Text = dr["Direccion"].ToString();
+                    cmb_comuna.Text = dr["id_Comuna"].ToString();
+                    cmb_niveleduc.Text = dr["Nivel_educ"].ToString();
+                    txt_ocupacion.Text = dr["Ocupacion"].ToString();
+                    txt_fono_p.Text = dr["Fono"].ToString();
+                    cmb_parentezco.Text = dr["id_parentezco"].ToString();
+                    txt_mail.Text = dr["Mail"].ToString();
+                
+            }
+           
+        }
+
+        #region
         private void label1_Click(object sender, EventArgs e)
             {
 
@@ -153,10 +187,6 @@ namespace SISTEMA_DE_MATRICULA_V1
 
             }
 
-            private void textBox2_TextChanged(object sender, EventArgs e)
-            {
-
-            }
 
 
 

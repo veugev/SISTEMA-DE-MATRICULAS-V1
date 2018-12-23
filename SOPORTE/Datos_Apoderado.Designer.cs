@@ -59,6 +59,7 @@
             this.button3 = new System.Windows.Forms.Button();
             this.cmb_nacionalidad = new System.Windows.Forms.ComboBox();
             this.cmb_niveleduc = new System.Windows.Forms.ComboBox();
+            this.button5 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_Personas)).BeginInit();
             this.SuspendLayout();
@@ -70,7 +71,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(772, 67);
+            this.panel1.Size = new System.Drawing.Size(789, 67);
             this.panel1.TabIndex = 0;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
@@ -90,9 +91,9 @@
             // txt_rut_p
             // 
             this.txt_rut_p.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_rut_p.Location = new System.Drawing.Point(60, 87);
+            this.txt_rut_p.Location = new System.Drawing.Point(60, 90);
             this.txt_rut_p.Name = "txt_rut_p";
-            this.txt_rut_p.Size = new System.Drawing.Size(215, 30);
+            this.txt_rut_p.Size = new System.Drawing.Size(168, 30);
             this.txt_rut_p.TabIndex = 9;
             this.txt_rut_p.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
@@ -102,7 +103,7 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.DarkCyan;
-            this.label2.Location = new System.Drawing.Point(15, 90);
+            this.label2.Location = new System.Drawing.Point(15, 93);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(39, 23);
             this.label2.TabIndex = 10;
@@ -357,7 +358,7 @@
             this.dgv_Personas.Name = "dgv_Personas";
             this.dgv_Personas.RowHeadersVisible = false;
             this.dgv_Personas.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgv_Personas.Size = new System.Drawing.Size(600, 151);
+            this.dgv_Personas.Size = new System.Drawing.Size(583, 151);
             this.dgv_Personas.TabIndex = 50;
             // 
             // button1
@@ -412,11 +413,11 @@
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button3.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.Location = new System.Drawing.Point(281, 87);
+            this.button3.Location = new System.Drawing.Point(241, 73);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(121, 31);
+            this.button3.Size = new System.Drawing.Size(110, 31);
             this.button3.TabIndex = 53;
-            this.button3.Text = "Buscar";
+            this.button3.Text = "Buscar Madre";
             this.button3.UseVisualStyleBackColor = false;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
@@ -464,13 +465,33 @@
             this.cmb_niveleduc.TabIndex = 60;
             this.cmb_niveleduc.Text = "Seleccione...";
             // 
+            // button5
+            // 
+            this.button5.BackColor = System.Drawing.Color.Transparent;
+            this.button5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button5.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button5.FlatAppearance.BorderColor = System.Drawing.SystemColors.Control;
+            this.button5.FlatAppearance.BorderSize = 0;
+            this.button5.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.button5.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button5.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button5.ForeColor = System.Drawing.Color.White;
+            this.button5.Location = new System.Drawing.Point(234, 110);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(117, 31);
+            this.button5.TabIndex = 61;
+            this.button5.Text = "Buscar Padre";
+            this.button5.UseVisualStyleBackColor = false;
+            // 
             // Datos_Apoderado
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(789, 510);
+            this.ClientSize = new System.Drawing.Size(806, 510);
+            this.Controls.Add(this.button5);
             this.Controls.Add(this.cmb_niveleduc);
             this.Controls.Add(this.cmb_nacionalidad);
             this.Controls.Add(this.button3);
@@ -542,5 +563,6 @@
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.ComboBox cmb_nacionalidad;
         private System.Windows.Forms.ComboBox cmb_niveleduc;
+        private System.Windows.Forms.Button button5;
     }
 }

@@ -14,7 +14,7 @@ namespace SISTEMA_DE_MATRICULA_V1
         private BdConexion Conexion = new BdConexion();
         private SqlCommand Comando = new SqlCommand();
         private SqlDataReader LeerFilas;
-
+        
         public DataTable Listar_Comuna()
         {
             DataTable Tabla = new DataTable();
@@ -94,6 +94,54 @@ namespace SISTEMA_DE_MATRICULA_V1
             { }
             Conexion.CerrarConexion();
             return Tabla;
+        }
+
+        public Boolean Buscar_apodMadre()
+        {
+            Boolean Contador = false;
+            try
+            {
+                Comando.Connection = Conexion.AbrirConexion();
+                Comando.CommandText = "buscar_apodMadre";
+                Comando.CommandType = CommandType.StoredProcedure;
+                LeerFilas = Comando.ExecuteReader();
+                while(LeerFilas.Read())
+                {
+                    Contador = true;
+                }
+                LeerFilas.Close();
+                { }
+                
+            }
+            catch(SqlException ex)
+            {
+                MessageBox.Show("no se pudo consultar" + ex.ToString());
+            }
+            
+            return Contador;
+        }
+
+        public Boolean BuscarMadre()
+        {
+            Boolean llenar = false;
+            try
+            {
+                Comando.Connection = Conexion.AbrirConexion();
+                Comando.CommandText = "buscar_apodMadre";
+               Comando.CommandType = CommandType.StoredProcedure;
+                Comando.ExecuteNonQuery();
+                if (LeerFilas.Read())
+                {
+                    llenar = true;
+
+                }
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show("no se pudo llenar" + ex.ToString());
+            }
+
+            return llenar;
         }
     }
 }
