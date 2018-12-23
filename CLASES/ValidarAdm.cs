@@ -21,9 +21,7 @@ namespace SISTEMA_DE_MATRICULA_V1.CLASES
             try
             {
                 Comando.Connection = Conexion.AbrirConexion();
-                //Comando = new SqlCommand("Validar_usuario");
                 Comando.CommandText = "Validar_usuario";
-
                 Comando.CommandType = CommandType.StoredProcedure;
                 Comando.Parameters.AddWithValue("@usu", dts.get_usuario());
                 Comando.Parameters.AddWithValue("@pass", dts.get_password());

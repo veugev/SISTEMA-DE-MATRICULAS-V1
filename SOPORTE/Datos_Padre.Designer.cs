@@ -330,7 +330,7 @@
             this.dgv_Padres.Name = "dgv_Padres";
             this.dgv_Padres.RowHeadersVisible = false;
             this.dgv_Padres.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgv_Padres.Size = new System.Drawing.Size(549, 151);
+            this.dgv_Padres.Size = new System.Drawing.Size(532, 151);
             this.dgv_Padres.TabIndex = 50;
             // 
             // button1

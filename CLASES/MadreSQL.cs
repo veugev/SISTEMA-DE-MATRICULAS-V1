@@ -72,7 +72,7 @@ namespace SISTEMA_DE_MATRICULA_V1.CLASES
         public void Modificarmadre(Dmadre dtp)
         {
             Comando.Connection = Conexion.AbrirConexion();
-            Comando.CommandText = "Update Padre  set Nombre_madre = '" + dtp.get_nombre_ma() + "', Nacionalidad= '" + dtp.get_nacionalidad_ma() + "'," +
+            Comando.CommandText = "Update Madre  set Nombre_madre = '" + dtp.get_nombre_ma() + "', Nacionalidad= '" + dtp.get_nacionalidad_ma() + "'," +
                                                             "Direccion = '" + dtp.get_direccion_ma() + "', id_comuna = '" + dtp.get_comuna_ma() + "', Nivel_educ = '" + dtp.get_nivel_educacional_ma() + "'," +
                                                             " Ocupacion = '" + dtp.get_ocupacion_ma() + "', Fono ='" + dtp.get_fono_ma() + "', id_parentezco = '" + dtp.get_parentezco_ma() + "'," +
                                                             "Mail = '" + dtp.get_mail_ma() + "'where id_RutM = '" + dtp.get_rut_ma() + "'";
