@@ -63,7 +63,7 @@ namespace SISTEMA_DE_MATRICULA_V1
             string fonoB = txt_fonob.Text;
             string fnac_e = dtp_Fnac_e.Text;
             string edadmarzo_e = txt_edad_e.Text;
-            string nacionalidad_e = cmb_nacionalidad.SelectedValue.ToString();
+            string nacionalidad_e = cmb_nacionalidad.SelectedItem.ToString();
             string estproc_e = txt_proc_e.Text;
             string repit_e = cmb_repitencia.Text;
             string currepit_e = txt_currepit_e.Text;
