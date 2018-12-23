@@ -25,6 +25,8 @@ namespace SISTEMA_DE_MATRICULA_V1.CLASES
         int benef_e;
         string nee;
         int vivecon_e;
+        string madre;
+        string padre;
 
         public string get_rut_e()
         {
@@ -97,6 +99,16 @@ namespace SISTEMA_DE_MATRICULA_V1.CLASES
             return vivecon_e;
         }
 
+        public string get_madre()
+        {
+            return madre;
+        }
+
+        public string get_padre()
+        {
+            return padre;
+        }
+
         public void set_rut_e(String value)
         {
             this.rut_e = value;
@@ -164,6 +176,16 @@ namespace SISTEMA_DE_MATRICULA_V1.CLASES
         public void set_vivecon_e(Int32 value)
         {
             this.vivecon_e = value;
+        }
+
+        public void set_madre(String value)
+        {
+            this.madre = value;
+        }
+
+        public void set_padre(String value)
+        {
+            this.padre = value;
         }
     }
 }

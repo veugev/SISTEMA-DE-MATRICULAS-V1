@@ -19,7 +19,6 @@ namespace SISTEMA_DE_MATRICULA_V1
         int parentezco;
         string mail;
         string rut_e;
-        int estado_apod;
 
 
         public string get_rut_p()
@@ -132,14 +131,5 @@ namespace SISTEMA_DE_MATRICULA_V1
             this.rut_e = value;
         }
 
-        public int get_estado_apod()
-        {
-            return estado_apod;
-        }
-
-        public void set_estado_apod(Int32 value)
-        {
-            this.estado_apod = value;
-        }
     }
 }

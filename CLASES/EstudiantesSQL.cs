@@ -90,7 +90,7 @@ namespace SISTEMA_DE_MATRICULA_V1.CLASES
                                                             "'" + dts.get_fonoB() + "','" + dts.get_fnac_e() + "','" + dts.get_edadmarzo_e() + "'," +
                                                             "'" + dts.get_nacionalidad_e() + "','" + dts.get_estproc_e() + "','" + dts.get_repit_e() + "'," +
                                                             "'" + dts.get_curepit_e() + "','" + dts.get_salida_e() + "','" + dts.get_benef_e() + "'," +
-                                                            "'" + dts.get_nee() + "','" + dts.get_vivecon_e() + "')";
+                                                            "'" + dts.get_nee() + "','" + dts.get_vivecon_e() + "','" + dts.get_madre() + "','" + dts.get_padre() + "')";
             Comando.CommandType = CommandType.Text;
             Comando.ExecuteNonQuery();
             Comando.Parameters.Clear();
@@ -147,7 +147,7 @@ namespace SISTEMA_DE_MATRICULA_V1.CLASES
                                                             "Fono_EmergenciaB ='" + dts.get_fonoB() + "', Fecha_Nacimiento ='" + dts.get_fnac_e() + "', Edad_Marzo ='" + dts.get_edadmarzo_e() + "'," +
                                                             "Nacionalidad_E ='" + dts.get_nacionalidad_e() + "', Establecimiento_Proc = '" + dts.get_estproc_e() + "', repitencia = '" + dts.get_repit_e() + "'," +
                                                             "curso_repetido ='" + dts.get_curepit_e() + "', id_salida ='" + dts.get_salida_e() + "', id_beneficio ='" + dts.get_benef_e() + "'," +
-                                                            "NEE ='" + dts.get_nee() + "', id_vivecon ='" + dts.get_vivecon_e() + "'where Rut_id ='"+dts.get_rut_e()+"'";
+                                                            "NEE ='" + dts.get_nee() + "', id_vivecon ='" + dts.get_vivecon_e() + "','" + dts.get_madre() + "','" + dts.get_padre() + "'where Rut_id ='" + dts.get_rut_e()+"'";
             Comando.CommandType = CommandType.Text;
             Comando.ExecuteNonQuery();
             Comando.Parameters.Clear();

@@ -63,16 +63,20 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CLASES\AdminSQL.cs" />
+    <Compile Include="CLASES\Dmadre.cs" />
     <Compile Include="CLASES\DmantencionTabla.cs" />
     <Compile Include="CLASES\Dadministradores.cs" />
     <Compile Include="CLASES\Ddirectivos.cs" />
     <Compile Include="CLASES\Destudiantes.cs" />
     <Compile Include="CLASES\DirecSQL.cs" />
+    <Compile Include="CLASES\Dpadre.cs" />
     <Compile Include="CLASES\EstudiantesSQL.cs" />
     <Compile Include="CLASES\DfichaMatri.cs" />
     <Compile Include="CLASES\FichaMatriSQL.cs" />
     <Compile Include="CLASES\Dpersonas.cs" />
+    <Compile Include="CLASES\MadreSQL.cs" />
     <Compile Include="CLASES\MatencionDatosSQL.cs" />
+    <Compile Include="CLASES\PadreSQL.cs" />
     <Compile Include="CLASES\PersonasSQL.cs" />
     <Compile Include="CLASES\ValidarAdm.cs" />
     <Compile Include="CLASES\ValidarDir.cs" />
@@ -93,18 +97,6 @@
     <Compile Include="SOPORTE\Agregar_Anio.Designer.cs">
       <DependentUpon>Agregar_Anio.cs</DependentUpon>
     </Compile>
-    <Compile Include="SOPORTE\Datos_Matricula.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="SOPORTE\Datos_Matricula.Designer.cs">
-      <DependentUpon>Datos_Matricula.cs</DependentUpon>
-    </Compile>
-    <Compile Include="SOPORTE\Datos_Apoderado.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="SOPORTE\Datos_Apoderado.Designer.cs">
-      <DependentUpon>Datos_Apoderado.cs</DependentUpon>
-    </Compile>
     <Compile Include="SOPORTE\Datos_Madre.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -116,6 +108,18 @@
     </Compile>
     <Compile Include="SOPORTE\Datos_Padre.Designer.cs">
       <DependentUpon>Datos_Padre.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SOPORTE\Datos_Matricula.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SOPORTE\Datos_Matricula.Designer.cs">
+      <DependentUpon>Datos_Matricula.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SOPORTE\Datos_Apoderado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SOPORTE\Datos_Apoderado.Designer.cs">
+      <DependentUpon>Datos_Apoderado.cs</DependentUpon>
     </Compile>
     <Compile Include="SOPORTE\Datos_Alumno.cs">
       <SubType>Form</SubType>
@@ -276,17 +280,17 @@
     <EmbeddedResource Include="SOPORTE\Agregar_Anio.resx">
       <DependentUpon>Agregar_Anio.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="SOPORTE\Datos_Matricula.resx">
-      <DependentUpon>Datos_Matricula.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="SOPORTE\Datos_Apoderado.resx">
-      <DependentUpon>Datos_Apoderado.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="SOPORTE\Datos_Madre.resx">
       <DependentUpon>Datos_Madre.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="SOPORTE\Datos_Padre.resx">
       <DependentUpon>Datos_Padre.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SOPORTE\Datos_Matricula.resx">
+      <DependentUpon>Datos_Matricula.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SOPORTE\Datos_Apoderado.resx">
+      <DependentUpon>Datos_Apoderado.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="SOPORTE\Datos_Alumno.resx">
       <DependentUpon>Datos_Alumno.cs</DependentUpon>
