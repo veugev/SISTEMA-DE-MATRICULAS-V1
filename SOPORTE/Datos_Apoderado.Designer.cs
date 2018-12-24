@@ -30,6 +30,7 @@
         {
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Datos_Apoderado));
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.txt_rut_p = new System.Windows.Forms.TextBox();
@@ -71,7 +72,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(789, 67);
+            this.panel1.Size = new System.Drawing.Size(772, 67);
             this.panel1.TabIndex = 0;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
@@ -358,7 +359,7 @@
             this.dgv_Personas.Name = "dgv_Personas";
             this.dgv_Personas.RowHeadersVisible = false;
             this.dgv_Personas.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgv_Personas.Size = new System.Drawing.Size(583, 151);
+            this.dgv_Personas.Size = new System.Drawing.Size(549, 151);
             this.dgv_Personas.TabIndex = 50;
             // 
             // button1
@@ -490,7 +491,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(806, 510);
+            this.ClientSize = new System.Drawing.Size(789, 510);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.cmb_niveleduc);
             this.Controls.Add(this.cmb_nacionalidad);
@@ -520,9 +521,12 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.txt_rut_p);
             this.Controls.Add(this.panel1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "Datos_Apoderado";
-            this.Text = "AgregarUs";
+            this.Text = "DATOS DEL APODERADO";
             this.Load += new System.EventHandler(this.AgregarDir_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
@@ -536,33 +540,33 @@
 
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox txt_rut_p;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox txt_nombre_p;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox txt_direccion_p;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.ComboBox cmb_parentezco;
-        private System.Windows.Forms.ComboBox cmb_comuna;
-        private System.Windows.Forms.TextBox txt_ocupacion;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.TextBox txt_fono_p;
         private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.TextBox txt_mail;
         private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.ComboBox cmb_estudiante;
         private System.Windows.Forms.DataGridView dgv_Personas;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.ComboBox cmb_nacionalidad;
-        private System.Windows.Forms.ComboBox cmb_niveleduc;
         private System.Windows.Forms.Button button5;
+        public System.Windows.Forms.TextBox txt_rut_p;
+        public System.Windows.Forms.TextBox txt_nombre_p;
+        public System.Windows.Forms.TextBox txt_direccion_p;
+        public System.Windows.Forms.ComboBox cmb_parentezco;
+        public System.Windows.Forms.ComboBox cmb_comuna;
+        public System.Windows.Forms.TextBox txt_ocupacion;
+        public System.Windows.Forms.TextBox txt_fono_p;
+        public System.Windows.Forms.TextBox txt_mail;
+        public System.Windows.Forms.ComboBox cmb_estudiante;
+        public System.Windows.Forms.ComboBox cmb_nacionalidad;
+        public System.Windows.Forms.ComboBox cmb_niveleduc;
     }
 }

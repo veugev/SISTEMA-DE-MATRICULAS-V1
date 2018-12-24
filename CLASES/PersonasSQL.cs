@@ -14,6 +14,10 @@ namespace SISTEMA_DE_MATRICULA_V1
         private BdConexion Conexion = new BdConexion();
         private SqlCommand Comando = new SqlCommand();
         private SqlDataReader LeerFilas;
+
+        CLASES.Dmadre dm = new CLASES.Dmadre();
+
+        
         
         public DataTable Listar_Comuna()
         {
@@ -96,52 +100,18 @@ namespace SISTEMA_DE_MATRICULA_V1
             return Tabla;
         }
 
-        public Boolean Buscar_apodMadre()
+        public DataTable Listar_Padres_madres()
         {
-            Boolean Contador = false;
-            try
-            {
-                Comando.Connection = Conexion.AbrirConexion();
-                Comando.CommandText = "buscar_apodMadre";
-                Comando.CommandType = CommandType.StoredProcedure;
-                LeerFilas = Comando.ExecuteReader();
-                while(LeerFilas.Read())
-                {
-                    Contador = true;
-                }
-                LeerFilas.Close();
-                { }
-                
-            }
-            catch(SqlException ex)
-            {
-                MessageBox.Show("no se pudo consultar" + ex.ToString());
-            }
-            
-            return Contador;
-        }
-
-        public Boolean BuscarMadre()
-        {
-            Boolean llenar = false;
-            try
-            {
-                Comando.Connection = Conexion.AbrirConexion();
-                Comando.CommandText = "buscar_apodMadre";
-               Comando.CommandType = CommandType.StoredProcedure;
-                Comando.ExecuteNonQuery();
-                if (LeerFilas.Read())
-                {
-                    llenar = true;
-
-                }
-            }
-            catch(Exception ex)
-            {
-                MessageBox.Show("no se pudo llenar" + ex.ToString());
-            }
-
-            return llenar;
+            DataTable Tabla = new DataTable();
+            Comando.Connection = Conexion.AbrirConexion();
+            Comando.CommandText = "Listar_Apoderados";
+            Comando.CommandType = CommandType.StoredProcedure;
+            LeerFilas = Comando.ExecuteReader();
+            Tabla.Load(LeerFilas);
+            LeerFilas.Close();
+            { }
+            Conexion.CerrarConexion();
+            return Tabla;
         }
     }
 }

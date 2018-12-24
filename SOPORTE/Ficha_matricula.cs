@@ -65,5 +65,15 @@ namespace SISTEMA_DE_MATRICULA_V1.SOPORTE
         {
 
         }
+
+        private void datosApoderadoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void asignarApoderadoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Abrir_form(new Lista_personas());
+        }
     }
 }

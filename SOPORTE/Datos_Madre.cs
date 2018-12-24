@@ -265,7 +265,10 @@ namespace SISTEMA_DE_MATRICULA_V1
             }
         }
 
-      
+        private void dgv_Madres_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }
 

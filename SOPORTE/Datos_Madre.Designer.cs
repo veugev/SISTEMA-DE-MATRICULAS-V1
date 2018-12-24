@@ -330,8 +330,9 @@
             this.dgv_Madres.Name = "dgv_Madres";
             this.dgv_Madres.RowHeadersVisible = false;
             this.dgv_Madres.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgv_Madres.Size = new System.Drawing.Size(515, 151);
+            this.dgv_Madres.Size = new System.Drawing.Size(498, 151);
             this.dgv_Madres.TabIndex = 50;
+            this.dgv_Madres.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_Madres_CellContentClick);
             // 
             // button1
             // 
