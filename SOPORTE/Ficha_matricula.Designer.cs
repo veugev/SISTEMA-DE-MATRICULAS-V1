@@ -35,7 +35,6 @@
             this.ingresarAlumnoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.datosApoderadoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.asignarApoderadoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.nuevoApoderadoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.editarPoderadoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.datosDeMatriculaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panel_contenedor2 = new System.Windows.Forms.Panel();
@@ -89,7 +88,6 @@
             // 
             this.datosApoderadoToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.asignarApoderadoToolStripMenuItem,
-            this.nuevoApoderadoToolStripMenuItem,
             this.editarPoderadoToolStripMenuItem});
             this.datosApoderadoToolStripMenuItem.Name = "datosApoderadoToolStripMenuItem";
             this.datosApoderadoToolStripMenuItem.Size = new System.Drawing.Size(130, 20);
@@ -99,21 +97,16 @@
             // asignarApoderadoToolStripMenuItem
             // 
             this.asignarApoderadoToolStripMenuItem.Name = "asignarApoderadoToolStripMenuItem";
-            this.asignarApoderadoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.asignarApoderadoToolStripMenuItem.Size = new System.Drawing.Size(206, 22);
             this.asignarApoderadoToolStripMenuItem.Text = "Asignar Apoderado";
             this.asignarApoderadoToolStripMenuItem.Click += new System.EventHandler(this.asignarApoderadoToolStripMenuItem_Click);
-            // 
-            // nuevoApoderadoToolStripMenuItem
-            // 
-            this.nuevoApoderadoToolStripMenuItem.Name = "nuevoApoderadoToolStripMenuItem";
-            this.nuevoApoderadoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.nuevoApoderadoToolStripMenuItem.Text = "Nuevo Apoderado";
             // 
             // editarPoderadoToolStripMenuItem
             // 
             this.editarPoderadoToolStripMenuItem.Name = "editarPoderadoToolStripMenuItem";
-            this.editarPoderadoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.editarPoderadoToolStripMenuItem.Text = "Editar Apoderado";
+            this.editarPoderadoToolStripMenuItem.Size = new System.Drawing.Size(206, 22);
+            this.editarPoderadoToolStripMenuItem.Text = "Listar y Editar Apoderado";
+            this.editarPoderadoToolStripMenuItem.Click += new System.EventHandler(this.editarPoderadoToolStripMenuItem_Click);
             // 
             // datosDeMatriculaToolStripMenuItem
             // 
@@ -164,7 +157,6 @@
         private System.Windows.Forms.ToolStripMenuItem datosDelPadreToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem datosApoderadoToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem asignarApoderadoToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem nuevoApoderadoToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem editarPoderadoToolStripMenuItem;
     }
 }

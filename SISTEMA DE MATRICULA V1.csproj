@@ -98,6 +98,18 @@
     <Compile Include="SOPORTE\Agregar_Anio.Designer.cs">
       <DependentUpon>Agregar_Anio.cs</DependentUpon>
     </Compile>
+    <Compile Include="SOPORTE\Editar_Apoderado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SOPORTE\Editar_Apoderado.Designer.cs">
+      <DependentUpon>Editar_Apoderado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SOPORTE\Listar_Apoderados.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SOPORTE\Listar_Apoderados.Designer.cs">
+      <DependentUpon>Listar_Apoderados.cs</DependentUpon>
+    </Compile>
     <Compile Include="SOPORTE\Lista_Personas.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -286,6 +298,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="SOPORTE\Agregar_Anio.resx">
       <DependentUpon>Agregar_Anio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SOPORTE\Editar_Apoderado.resx">
+      <DependentUpon>Editar_Apoderado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SOPORTE\Listar_Apoderados.resx">
+      <DependentUpon>Listar_Apoderados.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="SOPORTE\Lista_Personas.resx">
       <DependentUpon>Lista_Personas.cs</DependentUpon>

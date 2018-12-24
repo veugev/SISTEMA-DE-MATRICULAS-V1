@@ -11,7 +11,7 @@ namespace SISTEMA_DE_MATRICULA_V1
     class BdConexion
     {
 
-        static public string CadenaConexion = "server=DESKTOP-J3LLPBF\\EXPRESS2014 ; database=BD_EscuelaBasica ; integrated security = true";
+        static public string CadenaConexion = "server=DESKTOP-CM1ROJC\\EXPRESS2014 ; database=BD_EscuelaBasica ; integrated security = true";
 
         public SqlConnection Conexion = new SqlConnection(CadenaConexion);    
 

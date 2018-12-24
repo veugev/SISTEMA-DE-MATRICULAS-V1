@@ -18,20 +18,16 @@ namespace SISTEMA_DE_MATRICULA_V1
         public Datos_Apoderado()
         {
             InitializeComponent();
-            button4.BackgroundImage = Properties.Resources.Btn_Verde;
+           
             button2.BackgroundImage = Properties.Resources.button_icon_png_20;
-            button1.BackgroundImage = Properties.Resources.button_icon_png_20;
-            button3.BackgroundImage = Properties.Resources.button_icon_png_20;
-            button5.BackgroundImage = Properties.Resources.button_icon_png_20;
-
+            
         }
         private void AgregarDir_Load(object sender, EventArgs e)
         {
             ListarComuna();
             ListarEstudiante();
             ListarParentezco();
-            ListarPerson();
-
+            
         }
 
         public void ListarComuna()
@@ -82,10 +78,10 @@ namespace SISTEMA_DE_MATRICULA_V1
         {
             string rut_p = txt_rut_p.Text;
             string nombre_p = txt_nombre_p.Text;
-            string nacionalidad_p = cmb_nacionalidad.SelectedValue.ToString();
+            string nacionalidad_p = cmb_nacionalidad.SelectedItem.ToString();
             string direccion_p = txt_direccion_p.Text;
             int comuna_p = Convert.ToInt32(cmb_comuna.SelectedValue.ToString());
-            string nivel_educacional = cmb_niveleduc.SelectedValue.ToString();
+            string nivel_educacional = cmb_niveleduc.SelectedItem.ToString();
             string ocupacion = txt_ocupacion.Text;
             string fono_p = txt_fono_p.Text;
             int parentezco = Convert.ToInt32(cmb_parentezco.SelectedValue.ToString());
@@ -110,9 +106,7 @@ namespace SISTEMA_DE_MATRICULA_V1
 
             if (txt_rut_p.Text != String.Empty &&
                 txt_nombre_p.Text != String.Empty &&
-                cmb_nacionalidad.Items.Count <= 0 &&
                 txt_direccion_p.Text != String.Empty &&
-                cmb_niveleduc.Items.Count <= 0 &&
                 txt_ocupacion.Text != String.Empty &&
                 txt_fono_p.Text != String.Empty &&
                 txt_mail.Text != String.Empty)
@@ -135,7 +129,7 @@ namespace SISTEMA_DE_MATRICULA_V1
 
                 MessageBox.Show("Datos ingresados exitosamente");
 
-                ListarPerson();
+            
             }
             else
             {
@@ -143,12 +137,7 @@ namespace SISTEMA_DE_MATRICULA_V1
             }
         }
 
-        public void ListarPerson()
-        {
-            PersonasSQL ObjpersSQL = new PersonasSQL();
-            dgv_Personas.DataSource = ObjpersSQL.Listar_Personas();
-
-        }
+        
 
 
         private void textBox2_TextChanged(object sender, EventArgs e)
@@ -219,98 +208,15 @@ namespace SISTEMA_DE_MATRICULA_V1
 
         private void button1_Click_1(object sender, EventArgs e)
         {
-            string rut_p = txt_rut_p.Text;
-            string nombre_p = txt_nombre_p.Text;
-            string nacionalidad_p = cmb_nacionalidad.SelectedValue.ToString();
-            string direccion_p = txt_direccion_p.Text;
-            int comuna_p = Convert.ToInt32(cmb_comuna.SelectedValue.ToString());
-            string nivel_educacional = cmb_niveleduc.SelectedValue.ToString();
-            string ocupacion = txt_ocupacion.Text;
-            string fono_p = txt_fono_p.Text;
-            int parentezco = Convert.ToInt32(cmb_parentezco.SelectedValue.ToString());
-            string mail = txt_mail.Text;
-            string rut_e = cmb_estudiante.SelectedValue.ToString();
-
-            //enviamos el valor de las variables a los metodos set de la clase Dadministradores
-
-            Objdpers.set_rut_p(rut_p);
-            Objdpers.set_nombre_p(nombre_p);
-            Objdpers.set_nacionalidad_p(nacionalidad_p);
-            Objdpers.set_direccion_p(direccion_p);
-            Objdpers.set_comuna_p(comuna_p);
-            Objdpers.set_nivel_educacional(nivel_educacional);
-            Objdpers.set_ocupacion(ocupacion);
-            Objdpers.set_fono_p(fono_p);
-            Objdpers.set_parentezco(parentezco);
-            Objdpers.set_mail(mail);
-            Objdpers.set_rut_e(rut_e);
-       
-
-            if (txt_rut_p.Text != String.Empty &&
-                txt_nombre_p.Text != String.Empty &&
-                cmb_nacionalidad.Items.Count <= 0 &&
-                txt_direccion_p.Text != String.Empty &&
-                cmb_niveleduc.Items.Count <= 0 &&
-                txt_ocupacion.Text != String.Empty &&
-                txt_fono_p.Text != String.Empty &&
-                txt_mail.Text != String.Empty)
-            {
-                //invocar al metodo insertar
-                Objpersonasql.Modificarpers(Objdpers);
-
-                //limpiar 
-                txt_rut_p.Clear();
-                txt_nombre_p.Clear();
-                cmb_nacionalidad.SelectedIndex = -1;
-                txt_direccion_p.Clear();
-                cmb_comuna.SelectedIndex = -1;
-                cmb_niveleduc.SelectedIndex = -1;
-                txt_ocupacion.Clear();
-                txt_fono_p.Clear();
-                cmb_parentezco.SelectedIndex = -1;
-                txt_mail.Clear();
-                cmb_estudiante.SelectedIndex = -1;
-                
-
-                MessageBox.Show("Datos ingresados exitosamente");
-
-                ListarPerson();
-            }
-            else
-            {
-                MessageBox.Show("Debe ingresar todos los datos");
-            }
+            
         }
 
-        private void button4_Click(object sender, EventArgs e)
-        {
-            if (dgv_Personas.SelectedRows.Count > 0)
-            {
-                txt_rut_p.Text = dgv_Personas.CurrentRow.Cells[0].Value.ToString();
-                txt_nombre_p.Text = dgv_Personas.CurrentRow.Cells[1].Value.ToString();
-                cmb_nacionalidad.Text = dgv_Personas.CurrentRow.Cells[2].Value.ToString();
-                txt_direccion_p.Text = dgv_Personas.CurrentRow.Cells[3].Value.ToString();
-                cmb_comuna.Text = dgv_Personas.CurrentRow.Cells[4].Value.ToString();
-                cmb_niveleduc.Text = dgv_Personas.CurrentRow.Cells[5].Value.ToString();
-                txt_ocupacion.Text = dgv_Personas.CurrentRow.Cells[6].Value.ToString();
-                txt_fono_p.Text = dgv_Personas.CurrentRow.Cells[7].Value.ToString();
-                cmb_parentezco.Text = dgv_Personas.CurrentRow.Cells[8].Value.ToString();
-                txt_mail.Text = dgv_Personas.CurrentRow.Cells[9].Value.ToString();
-                cmb_estudiante.Text = dgv_Personas.CurrentRow.Cells[10].Value.ToString();
-               
-                
-            }
-        }
 
         private void cmb_estudiante_SelectedIndexChanged(object sender, EventArgs e)
         {
 
         }
 
-        private void button3_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }
 

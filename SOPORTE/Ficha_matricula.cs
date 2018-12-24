@@ -21,7 +21,7 @@ namespace SISTEMA_DE_MATRICULA_V1.SOPORTE
         {
 
         }
-
+        //metodo para abrir un formulario dentro de otro
         private void Abrir_form (object otroForm)
         {
 
@@ -74,6 +74,11 @@ namespace SISTEMA_DE_MATRICULA_V1.SOPORTE
         private void asignarApoderadoToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Abrir_form(new Lista_personas());
+        }
+
+        private void editarPoderadoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Abrir_form(new Listar_Apoderados());
         }
     }
 }

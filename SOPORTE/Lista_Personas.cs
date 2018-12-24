@@ -10,7 +10,7 @@ namespace SISTEMA_DE_MATRICULA_V1
         {
             InitializeComponent();
 
-            
+            button4.BackgroundImage = Properties.Resources.button_icon_png_20;
 
         }
 
@@ -64,6 +64,17 @@ namespace SISTEMA_DE_MATRICULA_V1
             }
 
 
+        }
+        private void button4_MouseMove(object sender, MouseEventArgs e)
+        {
+            //cambiar imagen de boton al pasar por arriba
+            button4.BackgroundImage = Properties.Resources.button_icon_png_21;
+        }
+
+        private void button4_MouseLeave(object sender, EventArgs e)
+        {
+            //volver al a imagen de inicio de boton al salir de encima
+            button4.BackgroundImage = Properties.Resources.button_icon_png_20;
         }
 
         private void dgv_Personas_CellContentClick(object sender, DataGridViewCellEventArgs e)

@@ -113,5 +113,15 @@ namespace SISTEMA_DE_MATRICULA_V1
             Conexion.CerrarConexion();
             return Tabla;
         }
+
+        public void Eliminarpers(Dpersonas dtp)
+        {
+            Comando.Connection = Conexion.AbrirConexion();
+            Comando.CommandText = "delete Personas where id_Rut = '" + dtp.get_rut_p() + "'";
+            Comando.CommandType = CommandType.Text;
+            Comando.ExecuteNonQuery();
+            Comando.Parameters.Clear();
+
+        }
     }
 }
