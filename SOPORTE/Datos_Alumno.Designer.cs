@@ -116,6 +116,7 @@
             // 
             this.txt_rut_e.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_rut_e.Location = new System.Drawing.Point(60, 87);
+            this.txt_rut_e.MaxLength = 11;
             this.txt_rut_e.Name = "txt_rut_e";
             this.txt_rut_e.Size = new System.Drawing.Size(182, 30);
             this.txt_rut_e.TabIndex = 9;
@@ -150,6 +151,7 @@
             // 
             this.txt_nombre_e.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_nombre_e.Location = new System.Drawing.Point(182, 151);
+            this.txt_nombre_e.MaxLength = 50;
             this.txt_nombre_e.Name = "txt_nombre_e";
             this.txt_nombre_e.Size = new System.Drawing.Size(516, 30);
             this.txt_nombre_e.TabIndex = 11;
@@ -183,6 +185,7 @@
             // 
             this.txt_direccion_e.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_direccion_e.Location = new System.Drawing.Point(108, 337);
+            this.txt_direccion_e.MaxLength = 50;
             this.txt_direccion_e.Name = "txt_direccion_e";
             this.txt_direccion_e.Size = new System.Drawing.Size(590, 30);
             this.txt_direccion_e.TabIndex = 15;
@@ -356,6 +359,7 @@
             // 
             this.txt_fonoa.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_fonoa.Location = new System.Drawing.Point(141, 462);
+            this.txt_fonoa.MaxLength = 50;
             this.txt_fonoa.Name = "txt_fonoa";
             this.txt_fonoa.Size = new System.Drawing.Size(180, 30);
             this.txt_fonoa.TabIndex = 33;
@@ -364,6 +368,7 @@
             // 
             this.txt_fonob.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_fonob.Location = new System.Drawing.Point(518, 462);
+            this.txt_fonob.MaxLength = 50;
             this.txt_fonob.Name = "txt_fonob";
             this.txt_fonob.Size = new System.Drawing.Size(180, 30);
             this.txt_fonob.TabIndex = 35;

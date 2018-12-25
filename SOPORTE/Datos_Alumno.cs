@@ -53,86 +53,90 @@ namespace SISTEMA_DE_MATRICULA_V1
         private void button2_Click(object sender, EventArgs e)
         {
             
-            //declaramos variables que recibe valores que el usuario ingresa
-            string rut_e = txt_rut_e.Text;
-            string nombre_e = txt_nombre_e.Text;
-            int genero_e = Convert.ToInt32(cmb_genero.SelectedValue.ToString());
-            string direccion_e = txt_direccion_e.Text;
-            int comuna_e = Convert.ToInt32(cmb_comuna.SelectedValue.ToString());
-            string fonoA = txt_fonoa.Text;
-            string fonoB = txt_fonob.Text;
-            string fnac_e = dtp_Fnac_e.Text;
-            string edadmarzo_e = txt_edad_e.Text;
-            string nacionalidad_e = cmb_nacionalidad.SelectedItem.ToString();
-            string estproc_e = txt_proc_e.Text;
-            string repit_e = cmb_repitencia.Text;
-            string currepit_e = txt_currepit_e.Text;
-            int salida_e = Convert.ToInt32(cmb_salida.SelectedValue.ToString());
-            int benef_e = Convert.ToInt32(cmb_beneficio.SelectedValue.ToString());
-            string nee = cmb_Nee.Text;
-            int vivecon_e = Convert.ToInt32(cmb_vivecon.SelectedValue.ToString());
-            string madre = cmb_madre.Text;
-            string padre = cmb_padre.Text;
+                //declaramos variables que recibe valores que el usuario ingresa
+                string rut_e = txt_rut_e.Text;
+                string nombre_e = txt_nombre_e.Text;
+                int genero_e = Convert.ToInt32(cmb_genero.SelectedValue.ToString());
+                string direccion_e = txt_direccion_e.Text;
+                int comuna_e = Convert.ToInt32(cmb_comuna.SelectedValue.ToString());
+                string fonoA = txt_fonoa.Text;
+                string fonoB = txt_fonob.Text;
+                string fnac_e = dtp_Fnac_e.Text;
+                string edadmarzo_e = txt_edad_e.Text;
+                string nacionalidad_e = cmb_nacionalidad.SelectedItem.ToString();
+                string estproc_e = txt_proc_e.Text;
+                string repit_e = cmb_repitencia.SelectedItem.ToString();
+                string currepit_e = txt_currepit_e.Text;
+                int salida_e = Convert.ToInt32(cmb_salida.SelectedValue.ToString());
+                int benef_e = Convert.ToInt32(cmb_beneficio.SelectedValue.ToString());
+                string nee = cmb_Nee.SelectedItem.ToString();
+                int vivecon_e = Convert.ToInt32(cmb_vivecon.SelectedValue.ToString());
+                string padre = cmb_padre.SelectedValue.ToString();
+                string madre = cmb_madre.SelectedValue.ToString();
+
 
             //enviamos el valor de las variables a los metodos set de la clase Dadministradores
             Objdestud.set_rut_e(rut_e);
-            Objdestud.set_nombre_e(nombre_e);
-            Objdestud.set_genero_e(genero_e);
-            Objdestud.set_direccion_e(direccion_e);
-            Objdestud.set_comuna_e(comuna_e);
-            Objdestud.set_fonoA(fonoA);
-            Objdestud.set_fonoB(fonoB);
-            Objdestud.set_fnac_e(fnac_e);
-            Objdestud.set_edadmarzo_e(edadmarzo_e);
-            Objdestud.set_nacionalidad_e(nacionalidad_e);
-            Objdestud.set_estproc_e(estproc_e);
-            Objdestud.set_repit_e(repit_e);
-            Objdestud.set_currepit_e(currepit_e);
-            Objdestud.set_salida_e(salida_e);
-            Objdestud.set_benef_e(benef_e);
-            Objdestud.set_nee(nee);
-            Objdestud.set_vivecon_e(vivecon_e);
-            Objdestud.set_madre(madre);
-            Objdestud.set_padre(padre);
+                Objdestud.set_nombre_e(nombre_e);
+                Objdestud.set_genero_e(genero_e);
+                Objdestud.set_direccion_e(direccion_e);
+                Objdestud.set_comuna_e(comuna_e);
+                Objdestud.set_fonoA(fonoA);
+                Objdestud.set_fonoB(fonoB);
+                Objdestud.set_fnac_e(fnac_e);
+                Objdestud.set_edadmarzo_e(edadmarzo_e);
+                Objdestud.set_nacionalidad_e(nacionalidad_e);
+                Objdestud.set_estproc_e(estproc_e);
+                Objdestud.set_repit_e(repit_e);
+                Objdestud.set_currepit_e(currepit_e);
+                Objdestud.set_salida_e(salida_e);
+                Objdestud.set_benef_e(benef_e);
+                Objdestud.set_nee(nee);
+                Objdestud.set_vivecon_e(vivecon_e);
+                Objdestud.set_padre(padre);
+                Objdestud.set_madre(madre);
+                
+
+
+                if (txt_rut_e.Text != String.Empty &&
+                    txt_nombre_e.Text != String.Empty && dtp_Fnac_e.Text != String.Empty && txt_edad_e.Text != String.Empty &&
+                    txt_direccion_e.Text != String.Empty && txt_fonoa.Text != String.Empty && txt_fonob.Text != String.Empty &&
+                    txt_proc_e.Text != String.Empty && txt_currepit_e.Text != String.Empty)
+                {
+
+                    //invocar al metodo insertar
+                    Objestudiantesql.InsertarEstud(Objdestud);
+
+                    //limpiar 
+                    txt_rut_e.Clear();
+                    cmb_genero.SelectedIndex = -1;
+                    txt_nombre_e.Clear();
+                    txt_edad_e.Clear();
+                    cmb_nacionalidad.SelectedIndex = -1;
+                    cmb_comuna.SelectedIndex = -1;
+                    txt_direccion_e.Clear();
+                    cmb_salida.SelectedIndex = -1;
+                    cmb_vivecon.SelectedIndex = -1;
+                    txt_fonoa.Clear();
+                    txt_fonob.Clear();
+                    txt_proc_e.Clear();
+                    cmb_repitencia.SelectedIndex = -1;
+                    txt_currepit_e.Clear();
+                    cmb_Nee.SelectedIndex = -1;
+                    cmb_beneficio.SelectedIndex = -1;
+                    cmb_madre.SelectedIndex = -1;
+                    cmb_padre.SelectedIndex = -1;
+
+                    MessageBox.Show("Datos ingresados exitosamente");
+
+                    ListarEstud();
+                }
+                else
+                {
+                    MessageBox.Show("Debe ingresar todos los datos");
+                }
+
             
-
-            if (txt_rut_e.Text != String.Empty &&
-                txt_nombre_e.Text != String.Empty && dtp_Fnac_e.Text != String.Empty && txt_edad_e.Text != String.Empty &&
-                txt_direccion_e.Text != String.Empty && txt_fonoa.Text != String.Empty && txt_fonob.Text != String.Empty &&
-                txt_proc_e.Text != String.Empty && txt_currepit_e.Text != String.Empty )
-            {
-
-                //invocar al metodo insertar
-                Objestudiantesql.InsertarEstud(Objdestud);
-
-                //limpiar 
-                txt_rut_e.Clear();
-                cmb_genero.SelectedIndex = -1;
-                txt_nombre_e.Clear();
-                txt_edad_e.Clear();
-                cmb_nacionalidad.SelectedIndex = -1;
-                cmb_comuna.SelectedIndex = -1;
-                txt_direccion_e.Clear();
-                cmb_salida.SelectedIndex = -1;
-                cmb_vivecon.SelectedIndex = -1;
-                txt_fonoa.Clear();
-                txt_fonob.Clear();
-                txt_proc_e.Clear();
-                cmb_repitencia.SelectedIndex = -1;
-                txt_currepit_e.Clear();
-                cmb_Nee.SelectedIndex = -1;
-                cmb_beneficio.SelectedIndex = -1;
-                cmb_madre.SelectedIndex = -1;
-                cmb_padre.SelectedIndex = -1;
-
-                MessageBox.Show("Datos ingresados exitosamente");
-
-                ListarEstud();
-            }
-             else
-             {
-                 MessageBox.Show("Debe ingresar todos los datos");
-             }
         }
 
 
@@ -350,8 +354,8 @@ namespace SISTEMA_DE_MATRICULA_V1
             int benef_e = Convert.ToInt32(cmb_beneficio.SelectedValue.ToString());
             string nee = cmb_Nee.Text;
             int vivecon_e = Convert.ToInt32(cmb_vivecon.SelectedValue.ToString());
-            string madre = cmb_madre.Text;
-            string padre = cmb_padre.Text;
+            string madre = cmb_madre.SelectedValue.ToString();
+            string padre = cmb_padre.SelectedValue.ToString();
 
             //enviamos el valor de las variables a los metodos set de la clase Dadministradores
             Objdestud.set_rut_e(rut_e);
