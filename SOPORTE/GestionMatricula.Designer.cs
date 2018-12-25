@@ -103,9 +103,9 @@
             this.panel_contenedor.BackgroundImage = global::SISTEMA_DE_MATRICULA_V1.Properties.Resources.fondo1;
             this.panel_contenedor.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel_contenedor.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel_contenedor.Location = new System.Drawing.Point(130, 0);
+            this.panel_contenedor.Location = new System.Drawing.Point(127, 0);
             this.panel_contenedor.Name = "panel_contenedor";
-            this.panel_contenedor.Size = new System.Drawing.Size(738, 514);
+            this.panel_contenedor.Size = new System.Drawing.Size(808, 514);
             this.panel_contenedor.TabIndex = 1;
             this.panel_contenedor.Paint += new System.Windows.Forms.PaintEventHandler(this.panel_contenedor_Paint);
             // 
@@ -114,7 +114,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightGreen;
-            this.ClientSize = new System.Drawing.Size(868, 514);
+            this.ClientSize = new System.Drawing.Size(935, 514);
             this.ControlBox = false;
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel_contenedor);

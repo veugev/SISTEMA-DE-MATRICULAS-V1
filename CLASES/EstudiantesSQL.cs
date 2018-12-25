@@ -154,6 +154,32 @@ namespace SISTEMA_DE_MATRICULA_V1.CLASES
 
         }
 
+        public DataTable Listar_Mama()
+        {
+            DataTable Tabla = new DataTable();
+            Comando.Connection = Conexion.AbrirConexion();
+            Comando.CommandText = "Listar_Mama";
+            Comando.CommandType = CommandType.StoredProcedure;
+            LeerFilas = Comando.ExecuteReader();
+            Tabla.Load(LeerFilas);
+            LeerFilas.Close();
+            { }
+            Conexion.CerrarConexion();
+            return Tabla;
+        }
 
+        public DataTable Listar_Papa()
+        {
+            DataTable Tabla = new DataTable();
+            Comando.Connection = Conexion.AbrirConexion();
+            Comando.CommandText = "Listar_Papa";
+            Comando.CommandType = CommandType.StoredProcedure;
+            LeerFilas = Comando.ExecuteReader();
+            Tabla.Load(LeerFilas);
+            LeerFilas.Close();
+            { }
+            Conexion.CerrarConexion();
+            return Tabla;
+        }
     }
 }

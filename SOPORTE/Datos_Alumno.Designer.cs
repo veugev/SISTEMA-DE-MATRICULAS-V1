@@ -558,7 +558,7 @@
             this.dgv_Estudiantes.Name = "dgv_Estudiantes";
             this.dgv_Estudiantes.RowHeadersVisible = false;
             this.dgv_Estudiantes.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgv_Estudiantes.Size = new System.Drawing.Size(585, 151);
+            this.dgv_Estudiantes.Size = new System.Drawing.Size(568, 151);
             this.dgv_Estudiantes.TabIndex = 49;
             this.dgv_Estudiantes.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_Estudiantes_CellContentClick);
             // 

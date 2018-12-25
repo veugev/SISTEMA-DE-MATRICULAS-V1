@@ -96,13 +96,10 @@ namespace SISTEMA_DE_MATRICULA_V1
             Objdestud.set_padre(padre);
             
 
-            if (txt_rut_e.Text != String.Empty && cmb_genero.Items.Count <= 0 &&
+            if (txt_rut_e.Text != String.Empty &&
                 txt_nombre_e.Text != String.Empty && dtp_Fnac_e.Text != String.Empty && txt_edad_e.Text != String.Empty &&
-                cmb_nacionalidad.Items.Count <= 0 && cmb_comuna.Items.Count <= 0 && 
-                txt_direccion_e.Text != String.Empty && cmb_salida.Items.Count <= 0 && 
-                cmb_vivecon.Items.Count <= 0 && txt_fonoa.Text != String.Empty && txt_fonob.Text != String.Empty &&
-                txt_proc_e.Text != String.Empty && cmb_repitencia.Items.Count <= 0 && txt_currepit_e.Text != String.Empty && 
-                cmb_beneficio.Items.Count <= 0)
+                txt_direccion_e.Text != String.Empty && txt_fonoa.Text != String.Empty && txt_fonob.Text != String.Empty &&
+                txt_proc_e.Text != String.Empty && txt_currepit_e.Text != String.Empty )
             {
 
                 //invocar al metodo insertar
@@ -164,6 +161,8 @@ namespace SISTEMA_DE_MATRICULA_V1
             ListarVivecon();
             ListarBeneficio();
             ListarEstud();
+            ListarMama();
+            ListarPapa();
 
 
         }
@@ -260,6 +259,23 @@ namespace SISTEMA_DE_MATRICULA_V1
             cmb_beneficio.ValueMember = "id_beneficio";
 
         }
+        public void ListarMama()
+        {
+            CLASES.EstudiantesSQL ObjetestSQL = new CLASES.EstudiantesSQL();
+            cmb_madre.DataSource = ObjetestSQL.Listar_Mama();
+            cmb_madre.DisplayMember = "Nombre_Madre";
+            cmb_madre.ValueMember = "id_RutM";
+
+        }
+
+        public void ListarPapa()
+        {
+            CLASES.EstudiantesSQL ObjetestSQL = new CLASES.EstudiantesSQL();
+            cmb_padre.DataSource = ObjetestSQL.Listar_Papa();
+            cmb_padre.DisplayMember = "Nombre_Padre";
+            cmb_padre.ValueMember = "id_RutP";
+
+        }
 
         private void textBox5_TextChanged(object sender, EventArgs e)
         {
@@ -326,7 +342,7 @@ namespace SISTEMA_DE_MATRICULA_V1
             string fonoB = txt_fonob.Text;
             string fnac_e = dtp_Fnac_e.Text;
             string edadmarzo_e = txt_edad_e.Text;
-            string nacionalidad_e = cmb_nacionalidad.SelectedValue.ToString();
+            string nacionalidad_e = cmb_nacionalidad.SelectedItem.ToString();
             string estproc_e = txt_proc_e.Text;
             string repit_e = cmb_repitencia.Text;
             string currepit_e = txt_currepit_e.Text;
