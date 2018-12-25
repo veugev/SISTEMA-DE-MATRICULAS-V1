@@ -60,7 +60,7 @@
             this.cmb_apoderado = new System.Windows.Forms.ComboBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
-            this.txt_ocupacion = new System.Windows.Forms.TextBox();
+            this.txt_Nmatricula = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_Matricula)).BeginInit();
             this.SuspendLayout();
@@ -387,7 +387,7 @@
             this.dgv_Matricula.Name = "dgv_Matricula";
             this.dgv_Matricula.RowHeadersVisible = false;
             this.dgv_Matricula.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgv_Matricula.Size = new System.Drawing.Size(758, 190);
+            this.dgv_Matricula.Size = new System.Drawing.Size(741, 190);
             this.dgv_Matricula.TabIndex = 52;
             // 
             // button1
@@ -427,6 +427,7 @@
             this.button3.TabIndex = 54;
             this.button3.Text = "MODIFICAR";
             this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button4
             // 
@@ -465,7 +466,7 @@
             this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.DarkCyan;
-            this.label6.Location = new System.Drawing.Point(151, 429);
+            this.label6.Location = new System.Drawing.Point(147, 429);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(101, 23);
             this.label6.TabIndex = 56;
@@ -483,14 +484,14 @@
             this.label10.TabIndex = 58;
             this.label10.Text = "Nro. Matricula";
             // 
-            // txt_ocupacion
+            // txt_Nmatricula
             // 
-            this.txt_ocupacion.Enabled = false;
-            this.txt_ocupacion.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_ocupacion.Location = new System.Drawing.Point(181, 79);
-            this.txt_ocupacion.Name = "txt_ocupacion";
-            this.txt_ocupacion.Size = new System.Drawing.Size(110, 30);
-            this.txt_ocupacion.TabIndex = 59;
+            this.txt_Nmatricula.Enabled = false;
+            this.txt_Nmatricula.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_Nmatricula.Location = new System.Drawing.Point(181, 79);
+            this.txt_Nmatricula.Name = "txt_Nmatricula";
+            this.txt_Nmatricula.Size = new System.Drawing.Size(110, 30);
+            this.txt_Nmatricula.TabIndex = 59;
             // 
             // Datos_Matricula
             // 
@@ -499,7 +500,7 @@
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(823, 510);
-            this.Controls.Add(this.txt_ocupacion);
+            this.Controls.Add(this.txt_Nmatricula);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.cmb_apoderado);
             this.Controls.Add(this.label6);
@@ -573,6 +574,6 @@
         private System.Windows.Forms.ComboBox cmb_apoderado;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.TextBox txt_ocupacion;
+        private System.Windows.Forms.TextBox txt_Nmatricula;
     }
 }

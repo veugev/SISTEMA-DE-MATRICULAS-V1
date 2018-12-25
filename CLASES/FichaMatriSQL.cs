@@ -30,10 +30,10 @@ namespace SISTEMA_DE_MATRICULA_V1
         public void InsertarMatri(DfichaMatri dtp)
         {
             Comando.Connection = Conexion.AbrirConexion();
-            Comando.CommandText = "insert into Ficha_Matricula values('" + dtp.get_anio() + "','" + dtp.get_tipoalumno() + "'," +
-                                                            "'" + dtp.get_estadoalum() + "','" + dtp.get_profesor() + "','" + dtp.get_tipoensenanza() + "'," +
-                                                            "'" + dtp.get_grado() + "','" + dtp.get_curso() + "','" + dtp.get_fechaingreso() + "'," +
-                                                            "'" + dtp.get_fecharetiro() + "','" + dtp.get_fechaegreso() + "','" + dtp.get_rut_p() + "')";
+            Comando.CommandText = "insert into Ficha_Matricula values('" + dtp.get_anio() + "'," +
+                                                            "'" + dtp.get_tipoalumno() + "','" + dtp.get_estadoalum() + "','" + dtp.get_profesor() + "'," +
+                                                            "'" + dtp.get_tipoensenanza() + "','" + dtp.get_grado() + "','" + dtp.get_curso() + "'," +
+                                                            "'" + dtp.get_rut_p() + "','" + dtp.get_fechaingreso() + "','" + dtp.get_fecharetiro() + "','" + dtp.get_fechaegreso() + "')";
             Comando.CommandType = CommandType.Text;
             Comando.ExecuteNonQuery();
             Comando.Parameters.Clear();

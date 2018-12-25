@@ -187,6 +187,7 @@ namespace SISTEMA_DE_MATRICULA_V1
             {
                 //invocar al metodo insertar
                 Objpersonasql.Modificarpers(Objdpers);
+               
 
                 //limpiar 
                 txt_rut_p.Clear();

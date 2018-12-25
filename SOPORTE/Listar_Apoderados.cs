@@ -68,7 +68,7 @@ namespace SISTEMA_DE_MATRICULA_V1
                  frm.cmb_estudiante.Text = dgv_Apoderados.CurrentRow.Cells[10].Value.ToString();
 
                 frm.ShowDialog();
-
+                ListarPerson();
             }
 
 

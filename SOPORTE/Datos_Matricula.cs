@@ -36,10 +36,7 @@ namespace SISTEMA_DE_MATRICULA_V1
             Listartipoalum();
             ListarTipoEnsenanza();
             ListarMatri();
-           
-            
-    
-
+        
         }
 
         public void ListarAnio()
@@ -123,17 +120,22 @@ namespace SISTEMA_DE_MATRICULA_V1
             //enviamos el valor de las variables a los metodos set de la clase Dadministradores
 
             Objdmatr.set_anio(anio);
-            Objdmatr.set_curso(curso);
+            Objdmatr.set_tipoalumno(tipoalumno);
             Objdmatr.set_estadoalum(estadoalumno);
-            Objdmatr.set_fechaegreso(fecha_egreso);
+            Objdmatr.set_profesor(profesor);
+            Objdmatr.set_tipoensenanza(tipoensenanza);
+            Objdmatr.set_grado(grado);
+            Objdmatr.set_curso(curso);
             Objdmatr.set_fechaingreso(fecha_ingreso);
             Objdmatr.set_fecharetiro(fecha_retiro);
-            Objdmatr.set_grado(grado);
-            
-            Objdmatr.set_profesor(profesor);
+            Objdmatr.set_fechaegreso(fecha_egreso);
             Objdmatr.set_rut_p(rut_p);
-            Objdmatr.set_tipoalumno(tipoalumno);
-            Objdmatr.set_tipoensenanza(tipoensenanza);
+            
+            
+            
+            
+            
+            
 
             if (dtp_fegreso.Text != String.Empty &&
                 dtp_Fingreso.Text != String.Empty &&
@@ -143,10 +145,11 @@ namespace SISTEMA_DE_MATRICULA_V1
                 //invocar al metodo insertar
                 Objmatriculasql.InsertarMatri(Objdmatr);
 
+                ListarMatri();
                 
 
                 //limpiar 
-                txt_ocupacion.Clear();
+                txt_Nmatricula.Clear();
                 cmb_anio.SelectedIndex = -1;
                 cmb_apoderado.SelectedIndex = -1;
                 cmb_curso.SelectedIndex = -1;
@@ -267,5 +270,77 @@ namespace SISTEMA_DE_MATRICULA_V1
         {
 
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            int Nmatricula = Convert.ToInt32(txt_Nmatricula.ToString());
+            int anio = Convert.ToInt32(cmb_anio.SelectedValue.ToString());
+            int tipoalumno = Convert.ToInt32(cmb_tipoal.SelectedValue.ToString());
+            int estadoalumno = Convert.ToInt32(cmb_estado.SelectedValue.ToString());
+            int profesor = Convert.ToInt32(cmb_prof.SelectedValue.ToString());
+            int tipoensenanza = Convert.ToInt32(cmb_ensenanza.SelectedValue.ToString());
+            int grado = Convert.ToInt32(cmb_grado.SelectedValue.ToString());
+            int curso = Convert.ToInt32(cmb_curso.SelectedValue.ToString());
+            string fecha_ingreso = dtp_Fingreso.Text;
+            string fecha_retiro = dtp_Fretiro.Text;
+            string fecha_egreso = dtp_fegreso.Text;
+            int rut_p = Convert.ToInt32(cmb_apoderado.SelectedValue.ToString());
+
+            //enviamos el valor de las variables a los metodos set de la clase Dadministradores
+
+            Objdmatr.set_Nro_Matricula(Nmatricula);
+            Objdmatr.set_anio(anio);
+            Objdmatr.set_tipoalumno(tipoalumno);
+            Objdmatr.set_estadoalum(estadoalumno);
+            Objdmatr.set_profesor(profesor);
+            Objdmatr.set_tipoensenanza(tipoensenanza);
+            Objdmatr.set_grado(grado);
+            Objdmatr.set_curso(curso);
+            Objdmatr.set_fechaingreso(fecha_ingreso);
+            Objdmatr.set_fecharetiro(fecha_retiro);
+            Objdmatr.set_fechaegreso(fecha_egreso);
+            Objdmatr.set_rut_p(rut_p);
+
+
+
+
+
+
+
+            if (dtp_fegreso.Text != String.Empty &&
+                dtp_Fingreso.Text != String.Empty &&
+                dtp_Fretiro.Text != String.Empty
+                )
+            {
+                //invocar al metodo insertar
+                Objmatriculasql.InsertarMatri(Objdmatr);
+
+                ListarMatri();
+
+
+                //limpiar 
+                txt_Nmatricula.Clear();
+                cmb_anio.SelectedIndex = -1;
+                cmb_apoderado.SelectedIndex = -1;
+                cmb_curso.SelectedIndex = -1;
+                cmb_ensenanza.SelectedIndex = -1;
+                cmb_estado.SelectedIndex = -1;
+                cmb_grado.SelectedIndex = -1;
+                cmb_prof.SelectedIndex = -1;
+                cmb_tipoal.SelectedIndex = -1;
+
+
+
+                MessageBox.Show("Datos ingresados exitosamente");
+
+
+            }
+            else
+            {
+                MessageBox.Show("Debe ingresar todos los datos");
+            }
+        }
+
     }
 }
+
